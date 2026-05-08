@@ -23,6 +23,16 @@ body {
   line-height: 1.55;
 }
 
+a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .masthead {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr);
@@ -123,6 +133,62 @@ h3 {
 .source-note,
 .disclaimer {
   color: var(--muted);
+}
+
+.detail-header {
+  padding: 34px clamp(20px, 5vw, 72px) 28px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.detail-layout {
+  padding: 30px clamp(16px, 5vw, 72px) 56px;
+}
+
+.detail-content {
+  max-width: 1080px;
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.detail-content h1 {
+  font-size: 34px;
+}
+
+.detail-content h2 {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.detail-content h3 {
+  margin-top: 26px;
+}
+
+.detail-content p,
+.detail-content li {
+  color: #344256;
+}
+
+.detail-content hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 26px 0;
+}
+
+.detail-table {
+  margin: 16px 0 22px;
+}
+
+.detail-table table {
+  min-width: 760px;
 }
 
 .matrix {
@@ -231,8 +297,14 @@ code {
   }
 
   .masthead,
-  .band {
+  .band,
+  .detail-header,
+  .detail-layout {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .detail-content {
+    padding: 18px;
   }
 }
