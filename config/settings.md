@@ -1,29 +1,29 @@
-# Project Settings & Preferences
+# 项目设置与偏好
 
-## Trading Preferences
-- **Market**: US Equities (NYSE, NASDAQ), ETFs
-- **Default timeframe**: Swing trade (1–4 weeks), open to position trades (1–3 months)
-- **Preferred market cap**: Mid to Large cap ($2B+); small cap only with clear catalyst
-- **Max risk per trade**: 2% of total account
-- **Preferred sectors**: Tech, AI/Semiconductors, Biotech, Energy (adjust as needed)
+## 交易偏好
+- **市场**：美股权益类（NYSE、NASDAQ）、ETF
+- **默认时间框架**：摆动交易（1–4 周），可接受中期持仓（1–3 个月）
+- **偏好市值**：中大盘（$2B+）；小盘股仅在有明确催化剂时考虑
+- **单笔最大风险**：账户总值的 2%
+- **偏好行业**：科技、AI / 半导体、生物科技、能源（按需调整）
 
-## Analysis Preferences
-- **Technical indicators to emphasize**: SMA 50/200, RSI, Volume, VWAP
-- **Fundamental focus**: Revenue growth, margin trends, FCF, forward guidance
-- **Sentiment weight**: 30% of overall score
-- **News lookback window**: 7 days for news, 30 days for analyst ratings
+## 分析偏好
+- **重点关注的技术指标**：50/200 日 SMA、RSI、成交量、VWAP
+- **基本面关注重点**：营收增长、利润率趋势、自由现金流、前瞻性指引
+- **舆情权重**：占总评分的 30%
+- **新闻回溯窗口**：新闻 7 天，分析师评级 30 天
 
-## Scan Preferences
-- **Default scan type**: Momentum + catalyst
-- **Exclude**: Penny stocks (<$5), stocks with <500K avg daily volume
-- **Prefer**: Stocks with upcoming catalysts (earnings, FDA, product launch)
+## 扫描偏好
+- **默认扫描类型**：动量 + 催化剂
+- **排除**：低价仙股（<$5）、日均成交量 <500K 的股票
+- **偏好**：有即将到来的催化剂的股票（财报、FDA、产品发布）
 
-## Output Preferences
-- Always include risk/reward ratio in strategies
-- Flag if short interest >15% (squeeze potential)
-- Flag if insider buying detected
-- Currency: USD
+## 输出偏好
+- 策略中始终包含风险/回报比
+- 空头利率 >15% 时标注（轧空潜力）
+- 检测到内部人买入时标注
+- 货币单位：USD
 
-## Notes
-- Update this file to personalize analysis outputs
-- These settings inform how /scan, /analyze, and /strategy behave
+## 备注
+- 编辑本文件可以个性化分析输出
+- 这些设置会影响 /scan、/analyze、/strategy 的行为

@@ -1,35 +1,35 @@
-# US Stock Analysis Project
+# 美股分析项目
 
-## Purpose
-AI-assisted US stock analysis system: scan candidates, deep-dive analysis, and trade strategy generation.
+## 目的
+AI 辅助的美股分析体系：扫描候选标的、深度多维分析、生成交易策略。
 
-## Skills (Slash Commands)
-| Command | Usage | Purpose |
-|---------|-------|---------|
-| `/scan` | `/scan [sector/theme]` | Scan market for high-potential stocks |
-| `/analyze` | `/analyze TICKER` | Deep analysis: sentiment + financials + technicals |
-| `/strategy` | `/strategy TICKER [long\|short]` | Generate specific trade plan |
+## Skills（斜杠命令）
+| 命令 | 用法 | 用途 |
+|------|------|------|
+| `/scan` | `/scan [行业/主题]` | 扫描市场，挖掘高潜力股票 |
+| `/analyze` | `/analyze TICKER` | 深度分析：舆情 + 基本面 + 技术面 |
+| `/strategy` | `/strategy TICKER [long\|short]` | 生成具体交易计划 |
 
-## Workflow
+## 工作流
 ```
-/scan → pick tickers → /analyze TICKER → /strategy TICKER long
+/scan → 挑选 ticker → /analyze TICKER → /strategy TICKER long
 ```
 
-## Data Sources (via WebSearch/WebFetch)
-- **Price/Fundamentals**: Yahoo Finance, Finviz, Macrotrends
-- **Sentiment/News**: Seeking Alpha, Benzinga, MarketBeat, Reuters
-- **Social**: Reddit r/wallstreetbets, r/stocks, StockTwits
-- **Analyst Ratings**: TipRanks, Marketbeat, Benzinga
-- **Macro/Options**: CBOE (VIX, put/call ratio), Fed calendar
+## 数据源（通过 WebSearch / WebFetch 获取）
+- **价格 / 基本面**：Yahoo Finance、Finviz、Macrotrends
+- **舆情 / 新闻**：Seeking Alpha、Benzinga、MarketBeat、Reuters
+- **社交平台**：Reddit r/wallstreetbets、r/stocks、StockTwits
+- **分析师评级**：TipRanks、Marketbeat、Benzinga
+- **宏观 / 期权**：CBOE（VIX、Put/Call 比率）、美联储日历
 
-## Output Conventions
-- All prices in USD
-- Date format: YYYY-MM-DD
-- Risk levels: Low / Medium / High / Extreme
-- Sentiment: Strongly Bearish / Bearish / Neutral / Bullish / Strongly Bullish
-- Conviction scores: 1–10
+## 输出约定
+- 所有价格均使用 USD
+- 日期格式：YYYY-MM-DD
+- 风险等级：低 / 中 / 高 / 极高
+- 舆情倾向：极度看跌 / 看跌 / 中性 / 看涨 / 极度看涨
+- 信念分：1–10
 
-## File Conventions
-- Saved analyses: `data/analyses/TICKER_YYYYMMDD.md`
-- Active watchlist: `data/watchlist.md`
-- Config/preferences: `config/settings.md`
+## 文件命名约定
+- 已保存的分析：`data/analyses/TICKER_YYYYMMDD.md`
+- 当前自选股：`data/watchlist.md`
+- 配置 / 偏好：`config/settings.md`

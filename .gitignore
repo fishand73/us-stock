@@ -1,3 +1,9 @@
 .DS_Store
 data/.DS_Store
 .claude/settings.local.json
+
+# 敏感：真实持仓与账户金额（AGENTS.md 已声明）
+data/portfolio.md
+
+# OpenCode 依赖（可从 package.json 重建）
+.opencode/node_modules/

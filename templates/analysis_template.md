@@ -1,37 +1,37 @@
-# [TICKER] — [Company Name] Analysis
-**Date**: [YYYY-MM-DD]
-**Analyst**: Claude
-**Price at Analysis**: $[X]
-**Sector / Industry**: [sector] / [industry]
-**Market Cap**: $[X]B
+# [TICKER] —— [公司名称] 分析报告
+**日期**：[YYYY-MM-DD]
+**分析师**：Claude
+**分析时价格**：$[X]
+**行业 / 子行业**：[sector] / [industry]
+**市值**：$[X]B
 
 ---
 
-## Quick Verdict
+## 速览结论
 | | |
 |-|-|
-| **Bias** | Bullish / Neutral / Bearish |
-| **Conviction** | [X/10] |
-| **Horizon** | Day / Swing / Position |
-| **Sentiment Score** | [X/10] |
-| **Risk Level** | Low / Medium / High / Extreme |
+| **方向偏好** | 看涨 / 中性 / 看跌 |
+| **信念分** | [X/10] |
+| **持仓周期** | 日内 / 摆动 / 中期 |
+| **舆情评分** | [X/10] |
+| **风险等级** | 低 / 中 / 高 / 极高 |
 
 ---
 
-## Technical Picture
-[Technical analysis content]
+## 技术面
+[技术分析内容]
 
-## Fundamental Snapshot
-[Fundamental analysis content]
+## 基本面快照
+[基本面分析内容]
 
-## News & Catalysts (Last 7 Days)
-[Recent news content]
+## 新闻与催化剂（最近 7 天）
+[近期新闻内容]
 
-## Sentiment Summary
-[Sentiment analysis content]
+## 舆情小结
+[舆情分析内容]
 
-## Bull vs Bear
-[Bull/bear case content]
+## 多空对照
+[多头 / 空头逻辑内容]
 
-## Linked Strategy
-See: `[TICKER]_strategy_[DATE].md`
+## 关联策略
+参见：`[TICKER]_strategy_[DATE].md`

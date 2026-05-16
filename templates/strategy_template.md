@@ -1,32 +1,32 @@
-# [TICKER] [LONG/SHORT] Strategy
-**Date**: [YYYY-MM-DD]
-**Direction**: LONG / SHORT
-**Entry Price**: $[X]
-**Strategy Type**: [Momentum / Breakout / Catalyst / Reversal]
+# [TICKER] [LONG/SHORT] 策略
+**日期**：[YYYY-MM-DD]
+**方向**：LONG / SHORT
+**入场价**：$[X]
+**策略类型**：[动量 / 突破 / 催化剂 / 反转]
 
 ---
 
-## Entry
-| Type | Price | Condition |
-|------|-------|-----------|
-| Aggressive | $[X] | |
-| Conservative | $[X] | |
+## 入场
+| 类型 | 价格 | 条件 |
+|------|------|------|
+| 激进 | $[X] | |
+| 保守 | $[X] | |
 
-## Stops & Targets
-| Level | Price | Action |
-|-------|-------|--------|
-| Hard Stop | $[X] | Full exit |
-| T1 | $[X] | Sell 1/3 |
-| T2 | $[X] | Sell 1/3 |
-| T3 | $[X] | Trail stop |
+## 止损与止盈
+| 价位 | 价格 | 操作 |
+|------|------|------|
+| 硬止损 | $[X] | 全部离场 |
+| T1 | $[X] | 卖出 1/3 |
+| T2 | $[X] | 卖出 1/3 |
+| T3 | $[X] | 移动止损 |
 
-**R/R Ratio**: [X]:1
+**风险/回报比**：[X]:1
 
-## Key Dates
-[Upcoming catalyst dates]
+## 关键日期
+[即将到来的催化剂日期]
 
-## Status
-- [ ] Entered at $[X] on [DATE]
-- [ ] T1 hit on [DATE]
-- [ ] T2 hit on [DATE]
-- [ ] Closed at $[X] on [DATE] — P&L: [+/-X]%
+## 状态
+- [ ] 已于 [DATE] 在 $[X] 入场
+- [ ] T1 已触发，时间 [DATE]
+- [ ] T2 已触发，时间 [DATE]
+- [ ] 已于 [DATE] 在 $[X] 平仓 —— 盈亏：[+/-X]%

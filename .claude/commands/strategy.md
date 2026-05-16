@@ -1,142 +1,142 @@
-You are a professional US equity trader. Generate a specific, actionable trade plan for the stock in `$ARGUMENTS`.
+你是一名专业的美股交易员。请为 `$ARGUMENTS` 中的股票生成一份具体、可执行的交易计划。
 
-**Input format**: `$ARGUMENTS` = `TICKER [long|short]`  
-Examples: `NVDA long`, `TSLA short`, `AAPL` (default to long if direction omitted)
+**输入格式**：`$ARGUMENTS` = `TICKER [long|short]`
+示例：`NVDA long`、`TSLA short`、`AAPL`（未指定方向时默认为 long）
 
-Parse $ARGUMENTS: extract TICKER and DIRECTION (default: long).
+解析 $ARGUMENTS：抽取 TICKER 与 DIRECTION（默认 long）。
 
-## Pre-Strategy Context Gathering
+## 策略前置背景收集
 
-Before building the strategy, check if there's a recent analysis in context or `data/analyses/`. If not, do a quick search:
+在构建策略之前，先检查上下文中或 `data/analyses/` 里是否已有近期分析。如果没有，做一次快速搜索：
 1. "[TICKER] current price today"
 2. "[TICKER] upcoming earnings date catalyst 2025"
 3. "[TICKER] options expiry IV implied volatility"
 
 ---
 
-## Strategy Output Format
+## 策略输出格式
 
 ---
-# [TICKER] [LONG/SHORT] Trade Strategy
-**Date**: [TODAY]  
-**Direction**: [LONG / SHORT]  
-**Current Price**: $[price]  
-**Strategy Type**: [Momentum / Mean Reversion / Catalyst Play / Breakout / Reversal]
-
----
-
-## Trade Setup
-
-### Entry Plan
-
-| Trigger Type | Price Level | Condition |
-|-------------|-------------|-----------|
-| Aggressive Entry | $[X] | [e.g., market open if holds above $X] |
-| Conservative Entry | $[X] | [e.g., on pullback to support / confirmed breakout] |
-| Scale-in Level 2 | $[X] | [if initial entry works, add here] |
-
-**Entry Rationale**: [Why these specific levels make sense technically and fundamentally]
-
-**Best Entry Timing**: [Time of day, pre/post-market consideration, catalyst timing]
+# [TICKER] [LONG/SHORT] 交易策略
+**日期**：[TODAY]
+**方向**：[LONG / SHORT]
+**当前价格**：$[price]
+**策略类型**：[动量 / 均值回归 / 催化剂博弈 / 突破 / 反转]
 
 ---
 
-### Position Sizing
+## 交易设置
 
-| Account Size | Suggested Allocation | Max Position |
-|-------------|---------------------|-------------|
-| $10,000 | [X]% ($[X]) | [X] shares |
-| $50,000 | [X]% ($[X]) | [X] shares |
-| $100,000 | [X]% ($[X]) | [X] shares |
+### 入场计划
 
-**Risk per trade**: Max 1-2% of total account  
-**Shares to buy at $[entry price]**: [formula: (Account × Risk%) / (Entry - Stop)]
+| 触发类型 | 价格水位 | 条件 |
+|----------|----------|------|
+| 激进入场 | $[X] | [例：开盘后若守住 $X 之上即入场] |
+| 保守入场 | $[X] | [例：回踩支撑 / 突破确认后入场] |
+| 加仓位 2 | $[X] | [若初始入场奏效，在此处加仓] |
 
----
+**入场逻辑**：[为什么这些具体价位在技术面与基本面上合理]
 
-### Stop Loss
-
-| Stop Type | Level | Rationale |
-|-----------|-------|-----------|
-| Hard Stop | $[X] | [Technical level — below support/above resistance] |
-| Closing Stop | $[X] | [Exit if daily close beyond this level] |
-| Time Stop | [Date] | [Exit if thesis not playing out by this date] |
-
-**Max Loss per 100 shares**: $[X] ([X]% from entry)
+**最佳入场时机**：[一天中的时段、是否考虑盘前/盘后、催化剂时点]
 
 ---
 
-### Profit Targets
+### 仓位管理
 
-| Target | Price | % Gain | Action |
-|--------|-------|--------|--------|
-| T1 (Conservative) | $[X] | +[X]% | Sell 1/3 position |
-| T2 (Base Case) | $[X] | +[X]% | Sell 1/3 position |
-| T3 (Stretch/Home Run) | $[X] | +[X]% | Trail stop on remainder |
+| 账户规模 | 建议配置 | 最大仓位 |
+|----------|----------|----------|
+| $10,000 | [X]%（$[X]） | [X] 股 |
+| $50,000 | [X]%（$[X]） | [X] 股 |
+| $100,000 | [X]%（$[X]） | [X] 股 |
 
-**Risk/Reward Ratio**: [X:1] (e.g., 3:1 means $300 upside per $100 risked)
-
----
-
-### Trade Management Rules
-
-1. **If price reaches T1**: Move stop to breakeven (entry price)
-2. **If price reaches T2**: Trail stop to T1 level; sell 2/3 total position
-3. **If stop hit on day 1**: Take full loss, do not average down
-4. **If sideways >5 days with no catalyst**: Re-evaluate, consider exiting
-5. **Pre-earnings**: [specify whether to hold through earnings or exit before]
+**单笔交易风险**：账户总值的 1–2% 上限
+**在 $[entry price] 应买入股数**：[公式：(账户 × 风险%) / (入场价 - 止损价)]
 
 ---
 
-## Options Alternative (if applicable)
+### 止损
 
-If you prefer defined risk:
+| 止损类型 | 价位 | 逻辑 |
+|----------|------|------|
+| 硬止损 | $[X] | [技术位 —— 支撑下方 / 阻力上方] |
+| 收盘止损 | $[X] | [日 K 收盘越过此位则离场] |
+| 时间止损 | [日期] | [若到此日期论点仍未兑现则离场] |
 
-| Strategy | Details | Cost | Max Profit | Break-even |
-|----------|---------|------|------------|------------|
-| [e.g., Call Debit Spread] | Buy $[X]C / Sell $[X]C exp [DATE] | $[X] per contract | $[X] | $[X] |
-| [e.g., Put Debit Spread] | Buy $[X]P / Sell $[X]P exp [DATE] | $[X] per contract | $[X] | $[X] |
-
-**Options rationale**: [When to prefer options over shares — high IV = sell premium; low IV = buy options]
-
----
-
-## Key Dates & Catalysts
-
-| Date | Event | Expected Impact |
-|------|-------|----------------|
-| [DATE] | Earnings Release | [High volatility — gap risk] |
-| [DATE] | Fed Meeting / CPI | [Macro sensitivity] |
-| [DATE] | Options Expiration | [Potential pinning or volatile move] |
-| [DATE] | [Other catalyst] | |
+**每 100 股最大亏损**：$[X]（距入场 [X]%）
 
 ---
 
-## Scenario Analysis
+### 止盈目标
 
-| Scenario | Probability | Price Target | Action |
-|----------|------------|-------------|--------|
-| Bull case: [description] | [X]% | $[X] | Hold to T3 |
-| Base case: [description] | [X]% | $[X] | Take T1-T2 |
-| Bear case: [description] | [X]% | $[X] | Stop out at $[X] |
+| 目标 | 价格 | 涨幅 | 操作 |
+|------|------|------|------|
+| T1（保守） | $[X] | +[X]% | 卖出 1/3 仓位 |
+| T2（基准） | $[X] | +[X]% | 卖出 1/3 仓位 |
+| T3（拉伸 / 全垒打） | $[X] | +[X]% | 剩余仓位移动止损 |
 
----
-
-## Checklist Before Entering
-
-- [ ] Price is at/near planned entry level
-- [ ] Volume confirms (not thin/illiquid)
-- [ ] No major news event in next 24h that could gap the stock adversely
-- [ ] Position size calculated and does not exceed max risk
-- [ ] Stop loss order ready to set immediately after entry
-- [ ] Know your exit plan for BOTH directions before entering
+**风险/回报比**：[X:1]（例：3:1 表示每承担 $100 风险换取 $300 上行）
 
 ---
 
-**Strategy Conviction**: [X/10]  
-**Best Case Outcome**: +[X]% in [X] weeks  
-**Worst Case (stopped out)**: -[X]% (controlled loss)
+### 持仓管理规则
+
+1. **价格触及 T1**：将止损上移至盈亏平衡点（入场价）
+2. **价格触及 T2**：将止损跟进至 T1 价位；累计卖出总仓位的 2/3
+3. **第 1 天即触发止损**：全额止损，不做加仓摊低
+4. **横盘超过 5 天且无催化剂**：重新评估，考虑离场
+5. **临近财报**：[明确说明是持仓过财报还是提前离场]
 
 ---
 
-After outputting, offer to save this strategy to `data/analyses/[TICKER]_strategy_[DATE].md`.
+## 期权替代方案（如适用）
+
+如果你倾向于风险已知的结构：
+
+| 策略 | 细节 | 成本 | 最大利润 | 盈亏平衡 |
+|------|------|------|----------|----------|
+| [例：买入认购价差] | 买入 $[X]C / 卖出 $[X]C，到期 [DATE] | 每张 $[X] | $[X] | $[X] |
+| [例：买入认沽价差] | 买入 $[X]P / 卖出 $[X]P，到期 [DATE] | 每张 $[X] | $[X] | $[X] |
+
+**期权使用逻辑**：[何时优先用期权而非正股 —— 高 IV = 卖权利金；低 IV = 买期权]
+
+---
+
+## 关键日期与催化剂
+
+| 日期 | 事件 | 预期影响 |
+|------|------|----------|
+| [日期] | 财报发布 | [高波动 —— 跳空风险] |
+| [日期] | 美联储会议 / CPI | [宏观敏感度] |
+| [日期] | 期权到期 | [可能的钉价或剧烈波动] |
+| [日期] | [其他催化剂] | |
+
+---
+
+## 情景分析
+
+| 情景 | 概率 | 价格目标 | 操作 |
+|------|------|----------|------|
+| 多头情景：[描述] | [X]% | $[X] | 持有至 T3 |
+| 基准情景：[描述] | [X]% | $[X] | 在 T1–T2 兑现 |
+| 空头情景：[描述] | [X]% | $[X] | 在 $[X] 止损 |
+
+---
+
+## 入场前清单
+
+- [ ] 价格已抵达 / 接近计划入场水位
+- [ ] 成交量已确认（未陷入稀薄 / 缺乏流动性）
+- [ ] 未来 24 小时内无重大新闻事件可能造成不利跳空
+- [ ] 已计算仓位，不超过最大风险阈值
+- [ ] 入场后立刻挂出止损单已准备就绪
+- [ ] 入场前已知道两个方向各自的退出方案
+
+---
+
+**策略信念分**：[X/10]
+**最优结果**：[X] 周内 +[X]%
+**最差结果（被止损）**：-[X]%（受控亏损）
+
+---
+
+输出完毕后，主动询问是否将本策略保存到 `data/analyses/[TICKER]_strategy_[DATE].md`。
