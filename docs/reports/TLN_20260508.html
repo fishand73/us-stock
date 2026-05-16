@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TLN — Talen Energy Corporation 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>TLN — Talen Energy Corporation 深度分析</h1>
     <p class="summary">由 <code>data/analyses/TLN_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：公用事业 / 独立电力生产商（核电 + 燃气 + SMR）</p>
 <p><strong>市值</strong>：~$170 亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -75,7 +87,7 @@
 <li>阻力：$408（最低 PT）→ $432（共识 PT）→ $498（Morgan Stanley）→ <strong>$576（Melius Research，从 $427 大幅上调）</strong></li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -159,7 +171,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：Q1 EBITDA 翻倍 + Adj FCF 翻 4 倍，<strong>指引未上调但 Cornerstone 关闭后必然上调</strong>。AWS 1,920 MW 长协至 2042 提供 17 年现金流可见性。$1.9B 流动性 + 优质再融资 + 持续回购 = 财务结构最优雅的纯纳米股之一。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-05-05</strong>：Q1 财报，<strong>EBITDA 翻倍 / FCF 翻 4 倍 / EPS $5.55 beat</strong>，单日 +3.35%（同业最强）— 重磅正面</p>
 <p>2. <strong>2026-05-01</strong>：<strong>Morgan Stanley 上调 PT $479→$498</strong>（OW） — 重磅正面</p>
 <p>3. <strong>2026 上旬</strong>：<strong>Melius Research 大幅上调 PT $427→$576</strong>（+35%）— 重磅正面</p>
@@ -169,7 +181,7 @@
 <p>7. <strong>Cornerstone 收购</strong> 待 FERC 批准，预计 H2 2026 关闭 — 重大正面催化（指引上调先决条件）</p>
 <p>8. <strong>Q1 $100M 回购</strong>，$1.9B 总额至 2028 — 持续正面</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -223,8 +235,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>8/10 — Strongly Bullish</strong>（财报后整个市场重新认识 TLN 价值）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>Q1 EBITDA 翻倍 + FCF 翻 4 倍</strong>（$473M / $350M），执行力顶级</li>
 <li><strong>AWS 1,920 MW 至 2042</strong>：17 年长协，现金流可见性极高</li>
@@ -236,7 +248,7 @@
 <li>流动性 $1.9B，杠杆健康（净负债 &lt; 3.5x EBITDA）</li>
 <li><strong>批次 2 里技术面最干净</strong>（金叉 + 财报后 +3.35%）</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>P/E 54 偏贵</strong>，公用事业行业属高估值</li>
 <li>规模仅 13.1 GW（vs CEG 55 GW），客户集中（AWS 占比大）</li>
@@ -247,7 +259,7 @@
 <li>已突破前高，从 $300 反弹至 $392（+30%），短期可能整理</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>Medium</strong>（基本面强、估值高、催化充分）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -291,7 +303,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Bullish（中长期）/ Bullish（短期）</strong></p>
 <p><strong>确信度</strong>：<strong>7.5/10</strong>（电力主题里执行力最强 + 技术面最干净）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -308,7 +320,7 @@
 <li>Cornerstone 关闭后 Q3 财报上调指引（H2 2026）</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>✅ <strong>可建仓</strong> $385–$395（同业最强、财报后突破）</li>
 <li>✅ 加仓位：$371（200 SMA）回调时</li>
@@ -319,7 +331,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy TLN long</code>（生成具体买点 + 加仓 + 止损 + 三档目标价）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://www.globenewswire.com/news-release/2026/05/05/3288253/0/en/Talen-Energy-Reports-First-Quarter-2026-Results-Reaffirms-2026-Guidance.html" target="_blank" rel="noopener">Talen Q1 2026 Press Release – GlobeNewswire</a></li>
 <li><a href="https://www.stocktitan.net/news/TLN/talen-energy-reports-first-quarter-2026-results-reaffirms-2026-ifiux9jegmsw.html" target="_blank" rel="noopener">Talen Q1 EBITDA $473M Reaffirms – StockTitan</a></li>
@@ -334,6 +346,7 @@
 <li><a href="https://www.macrotrends.net/stocks/charts/TLN/talen-energy/pe-ratio" target="_blank" rel="noopener">TLN PE Ratio – MacroTrends</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

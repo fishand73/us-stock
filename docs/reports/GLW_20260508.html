@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GLW — Corning Incorporated 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>GLW — Corning Incorporated 深度分析</h1>
     <p class="summary">由 <code>data/analyses/GLW_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：科技/工业 / 光纤光学 + 玻璃 + 太阳能玻璃</p>
 <p><strong>市值</strong>：~$1,550 亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -80,7 +92,7 @@
 <li>阻力：$200（心理位）→ $210（Oppenheimer 最高 PT）→ $250（更激进）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -149,7 +161,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：从&quot;无聊玻璃股&quot;到&quot;AI 神经系统&quot;的剧变叙事——光通信 +36%、太阳能 +80%，核心 EPS +30%。<strong>Springboard 计划目标 $300 亿年化收入至 2028 年（vs 2026 年 $200 亿）</strong>，配合 Meta $60 亿 + 两个类似 hyperscaler 协议 + NVDA 战略合作，AI 数据中心光纤龙头地位确立。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-05-06</strong>：单日 <strong>+12.02%</strong>，<strong>$5 亿 AI 大单</strong>触发突破 $180 — 重磅正面</p>
 <p>2. <strong>2026-05-07</strong>：<strong>Oppenheimer PT $120 → $210（+75%）</strong> —— 大幅上调 — 重磅正面</p>
 <p>3. <strong>2026-04-27</strong>：Q1 财报（核心营收 +18%，EPS +30%，光通信 +36%）— 重磅正面</p>
@@ -159,7 +171,7 @@
 <p>7. <strong>Multicore Fiber Solution</strong> + <strong>Co-packaged Optics（CPO）</strong> at OFC 2026 — 长期叙事正面</p>
 <p>8. <strong>Q2 太阳能晶圆厂检修</strong> —— 短期负面但长期正面（产能升级）</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -208,8 +220,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>8.5/10 — Strongly Bullish</strong>（叙事+催化双重加持，但共识 PT 已被超越意味着上行空间在收敛）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>AI 光纤超级周期</strong>：Meta $60 亿 + 两个 hyperscaler 类似规模 + NVDA 合作 + $5 亿新单</li>
 <li><strong>Springboard $300 亿 2028 目标</strong>（vs 当前年化 $170 亿）= 76% 增量空间</li>
@@ -220,7 +232,7 @@
 <li>太阳能 +80%、医疗、汽车多元化护城河</li>
 <li>股息 + 1% 收益率 + 持续上调</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>距 200 日 SMA 已 +90.5%</strong> —— 极端超买，回调概率极高</li>
 <li><strong>共识 PT $159 已被现价 $181 超越</strong> —— 上行空间在收敛</li>
@@ -233,7 +245,7 @@
 <li>YTD +74% 已透支大量预期</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>High</strong>（业务面强但价格已极端）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -277,7 +289,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Bullish（中长期）/ Neutral-Bearish（短期，等回调）</strong></p>
 <p><strong>确信度</strong>：<strong>7/10</strong>（业务面极强、价格已极端）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -294,7 +306,7 @@
 <li>NVIDIA 协议进展（产能扩张里程碑）</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>⛔ <strong>严禁追高 $180+</strong>（距 200 SMA +90% 是历史级超买）</li>
 <li>✅ 等回调至 <strong>$160–$165</strong>（5/6 缺口 + 20 日 SMA）分批</li>
@@ -307,7 +319,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy GLW long</code>（等回调买点 + 三档目标）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Announces-Strong-First-Quarter-2026-Financial-Results-1/default.aspx" target="_blank" rel="noopener">Corning Q1 2026 Press Release – IR</a></li>
 <li><a href="https://www.businesswire.com/news/home/20260427020032/en/Corning-Announces-Strong-First-Quarter-2026-Financial-Results-1" target="_blank" rel="noopener">Corning Q1 2026 Earnings BusinessWire</a></li>
@@ -321,6 +333,7 @@
 <li><a href="https://www.marketbeat.com/stocks/NYSE/GLW/forecast/" target="_blank" rel="noopener">GLW Forecast &amp; PTs – MarketBeat</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>INOD — Innodata Inc 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>INOD — Innodata Inc 深度分析</h1>
     <p class="summary">由 <code>data/analyses/INOD_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：科技 / AI 训练数据服务（数据标注、数据工程）</p>
 <p><strong>市值</strong>：~$2.0 亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -70,7 +82,7 @@
 <li>阻力：$70（短期挤空目标）→ $100（共识 PT，+52%）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -139,14 +151,14 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：业务&quot;完美&quot;——Q1 营收 +54%、EPS 翻 5 倍、EBITDA 翻倍超预期、guidance 上调、新增大客户 $51M。<strong>但 58% 营收来自单一客户</strong>是结构性风险，且合约通常 30-90 天可终止。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-05-07</strong>：Q1 财报 <strong>$90M 营收 +54% / EPS $0.42 beat 147–425%</strong>，单日 <strong>+88%</strong> — 重磅正面（已反映）</p>
 <p>2. <strong>2026-05-07</strong>：guidance 上调至 +40%+ YoY、新签 $51M 大客户、$68M 预训练数据 pipeline — 重磅正面</p>
 <p>3. <strong>2026-05 上旬</strong>：分析师 PT 上调至 $100 — 正面（但仅 2 位分析师）</p>
 <p>4. <strong>2026-05</strong>：AQR 加仓 +446%、Millennium / RFG 新建仓 — 正面（资金面）</p>
 <p>5. <strong>客户集中</strong>：58% 一客户 — 重大持续风险</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -195,8 +207,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>8/10 — 强烈看多但已 FOMO</strong>（追涨陷阱风险高）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>Q1 业绩 + 指引完美</strong>——营收 +54%、EPS +147% beat、EBITDA 翻 2 倍</li>
 <li><strong>2026 营收增速从 35% 上调至 40%+</strong></li>
@@ -208,7 +220,7 @@
 <li>机构资金涌入（AQR、Millennium）</li>
 <li>共识 PT $100 隐含 +52%</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>单日 +88% 已严重透支</strong> —— 追涨即&quot;接最后一棒&quot;风险</li>
 <li><strong>58% 营收来自单一客户 + 合约 30-90 天可终止</strong> —— 极大客户集中风险</li>
@@ -221,7 +233,7 @@
 <li>历史模式：新闻驱动股票常在巅峰后 2 周内回吐 30–50%</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>High</strong>（业绩好但价格已 FOMO + 客户集中）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -265,7 +277,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Speculative Bullish（短期）</strong></p>
 <p><strong>确信度</strong>：<strong>5/10</strong>（业绩面 8、估值/客户集中面 3，平均 5.5）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -281,7 +293,7 @@
 <li>客户集中度变化（关键监控指标）</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>⛔ <strong>绝不在 +88% 后追涨</strong> —— &quot;接最后一棒&quot;风险极高</li>
 <li>⏸ 等回调至 $50 以下再考虑（接近前阻力变支撑位）</li>
@@ -292,7 +304,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy INOD long</code>（仅在已建仓 / 短线交易者考虑）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://www.stocktitan.net/sec-filings/INOD/8-k-innodata-inc-reports-material-event-ad2e74c3a155.html" target="_blank" rel="noopener">INOD Q1 2026 Press Release – StockTitan</a></li>
 <li><a href="https://www.stocktitan.net/sec-filings/INOD/10-q-innodata-inc-quarterly-earnings-report-ec813d501fbf.html" target="_blank" rel="noopener">INOD Q1 2026 10-Q – StockTitan</a></li>
@@ -306,6 +318,7 @@
 <li><a href="https://www.marketbeat.com/stocks/NASDAQ/INOD/short-interest/" target="_blank" rel="noopener">INOD Short Interest 16.48% – MarketBeat</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PLTR — Palantir Technologies Inc 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>PLTR — Palantir Technologies Inc 深度分析</h1>
     <p class="summary">由 <code>data/analyses/PLTR_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：科技 / 企业 AI 软件平台</p>
 <p><strong>市值</strong>：~$3,500 亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -85,7 +97,7 @@
 <li>阻力：$150（20 日 SMA + 心理位）→ $172（200 日 SMA）→ $181（50 日 SMA）→ $194（共识 PT）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -174,7 +186,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：业绩<strong>完美</strong>——85% 营收增速 + 60% 营业利润率 + 57% FCF 利润率，<strong>史上最赚钱的高增长软件公司</strong>。$80 亿现金、零负债。<strong>但估值 50x sales 是极致</strong>，分析师 Citi 已从 $260 砍至 $210。当下是&quot;基本面 vs 估值&quot;的拉锯战。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-05-04</strong>：Q1 2026 财报，营收 +85%、EPS beat、指引上调 — 重磅正面（业绩本身）</p>
 <p>2. <strong>2026-05-05</strong>：单日 -6.9%，因 <strong>DA Davidson PT 砍 $180→$165</strong>（维持 Neutral） — 重磅负面</p>
 <p>3. <strong>2026-05-01</strong>：<strong>HSBC 降级至 Hold，PT $205→$151</strong> — 重磅负面</p>
@@ -185,7 +197,7 @@
 <p>8. <strong>2026-02-20</strong>：<strong>CEO Karp 卖 49.3 万股 $66M + Cohen 卖 32.7 万股 $43.7M</strong>（同一天集体抛售） — 极重磅负面</p>
 <p>9. <strong>过去 90 天内部人卖出 103 万股 = $1.377 亿</strong>，<strong>零内部人买入</strong> — <strong>极重磅负面信号</strong></p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -239,8 +251,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>4/10 — Bearish-Neutral</strong>（业绩信仰派 vs 估值担忧派 + 内部人卖出&quot;用脚投票&quot;）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>史上最赚钱的高增长软件公司</strong> —— 60% 营业利润率 + 85% 营收增速</li>
 <li>Q1 2026 营收 +85% <strong>加速</strong>（不是减速）</li>
@@ -252,7 +264,7 @@
 <li><strong>DC AI 监管/地缘紧张利好政府软件主题</strong></li>
 <li><strong>Argus、Oppenheimer、DZ Bank 集中初次覆盖看多</strong> PT $175–$200</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>估值 50x sales</strong> —— 即便是软件历史上的极端值，需要十年完美执行</li>
 <li><strong>三大行连续砍 PT</strong>（HSBC -$54、DA Davidson -$15、Citi -$50）</li>
@@ -265,7 +277,7 @@
 <li>估值若回归正常软件公司（15–20x sales），股价空间还有 -50%</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>High</strong>（业务低风险、估值高风险、情绪极差）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -309,7 +321,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Cautious-Bullish（中长期）/ Neutral（短期，等基本面 vs 估值平衡）</strong></p>
 <p><strong>确信度</strong>：<strong>6/10</strong>（业务面 9 分，估值/情绪面 3 分，平均 6）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -325,7 +337,7 @@
 <li>AIP 重要企业大单公告（季度催化）</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>⏸ <strong>不追</strong> $145+ 反弹（HSBC PT $151 是市场对短期上限的判断）</li>
 <li>✅ 左侧分批：$140 / $130 / $115 三档</li>
@@ -336,7 +348,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy PLTR long</code>（左侧分批 + 严格止损方案）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://investors.palantir.com/news-details/2026/Palantir-Reports-Q1-2026-U-S--Revenue-Growth-of-104-YY-and-Revenue-Growth-of-85-YY-Raises-FY-2026-Revenue-Guidance-to-71-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-120-YY-Crushing-Consensus-Expectations/" target="_blank" rel="noopener">Palantir Q1 2026 IR Press Release</a></li>
 <li><a href="https://www.cnbc.com/2026/05/04/palantir-pltr-q1-earnings-report-2026.html" target="_blank" rel="noopener">PLTR Q1 2026 Earnings – CNBC</a></li>
@@ -352,6 +364,7 @@
 <li><a href="https://www.marketbeat.com/stocks/NASDAQ/PLTR/insider-trades/" target="_blank" rel="noopener">PLTR Insider Trades – MarketBeat</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SNDK — SanDisk Corporation 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>SNDK — SanDisk Corporation 深度分析</h1>
     <p class="summary">由 <code>data/analyses/SNDK_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：科技 / 半导体（NAND 闪存、SSD）</p>
 <p><strong>市值</strong>：~$200B（流通股 ~148M）</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -85,7 +97,7 @@
 <li>阻力：$1,401（ATH）→ $1,500（期权区间上沿）→ $1,625（Mizuho PT）→ $2,000（Susquehanna 激进 PT）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -169,7 +181,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：从 WDC 拆分仅 14 个月，财务结构脱胎换骨——<strong>零债务 + 60 亿回购 + 78% 毛利率</strong>。Q3 EPS 超预期 65%（$23 vs $14）属史诗级 beat。NAND 价格 Q1 涨 60%、Q2 预计再涨 70–75%，定价权极强。Forward P/E 8.89 看似便宜，但前提是这种盈利能持续——这正是争议焦点。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-04-30</strong>：Q3 FY26 财报，营收 +97% QoQ，EPS $23.03 vs 共识 $14.17（<strong>beat $9.24</strong>），授权 <strong>$60 亿回购</strong>，单日 +8% — 重磅正面</p>
 <p>2. <strong>2026-05-05</strong>：单日 +13%，创 52 周新高 $1,400.99 — 重磅正面</p>
 <p>3. <strong>2026-02-18</strong>：WDC 二级发行 5.82M 股 + 后续 1.69M 股，已<strong>全部清仓</strong>（@$545），<strong>抛压解除</strong> — 重大正面（最大不确定性消除）</p>
@@ -178,7 +190,7 @@
 <p>6. <strong>NAND 价格 Q1 涨 60%、Q2 预测涨 70–75%</strong> — 行业基本面正面</p>
 <p>7. <strong>与 Kioxia 战略联盟深化</strong>（2026-01）：日本 Yokkaichi 和 Kitakami 全球最大 NAND 工厂 — 中性偏正</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -232,8 +244,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>8/10 — Strongly Bullish</strong>（但 average PT 暗示下行 + IV 107% 揭示市场预期巨幅波动）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>零债务 + $60 亿回购</strong> —— 资本结构与回报双优</li>
 <li>Q3 EPS 超预期 65%（<strong>$23 vs $14</strong>），Q4 指引 $30–33 EPS 继续加速</li>
@@ -244,7 +256,7 @@
 <li>分析师激进端目标价 <strong>$2,000</strong>（Susquehanna），意味 +49% 上行</li>
 <li>$6B 买盘（占市值约 3%）支撑回调</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>12 个月 +3,391%</strong> —— 历史级抛物线，回撤风险极高</li>
 <li><strong>共识平均 PT $953 隐含 -29% 下行</strong> —— 多数分析师&quot;目标价&quot;已严重落后股价但大部分未跟进</li>
@@ -256,7 +268,7 @@
 <li>拆分仅 14 个月，无完整周期数据可参考</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>Extreme</strong>（业务质量优秀，但价格风险极高）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -300,7 +312,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Bullish（中长期）/ 强烈 Cautious（短期）</strong></p>
 <p><strong>确信度</strong>：<strong>6.5/10</strong>（业务面 9 分，估值面 4 分，平均 6.5）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -317,7 +329,7 @@
 <li>Samsung HBM/NAND 财报（5 月底）—— 同业指引</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>⛔ <strong>绝不追高</strong> $1,340+（隐含波动率 107% 的红色警报）</li>
 <li>✅ 等回调至 <strong>$1,000–$1,200</strong>（200 日 SMA 与期权区间下沿之间）</li>
@@ -327,7 +339,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy SNDK long</code>（生成具体买点 + 止损 + 目标价的交易计划）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-third-quarter-2026-financial-results" target="_blank" rel="noopener">Sandisk Q3 FY2026 Financial Results – IR</a></li>
 <li><a href="https://www.businesswire.com/news/home/20260430227141/en/Sandisk-Reports-Fiscal-Third-Quarter-2026-Financial-Results" target="_blank" rel="noopener">Sandisk Q3 FY2026 Press Release – BusinessWire</a></li>
@@ -344,6 +356,7 @@
 <li><a href="https://247wallst.com/investing/2026/05/05/micron-rockets-12-sandisk-leaps-10-as-tight-memory-supply-fuels-parabolic-ai-trade/" target="_blank" rel="noopener">Micron 12% / SNDK 10% on Tight Memory – 24/7 Wall St</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

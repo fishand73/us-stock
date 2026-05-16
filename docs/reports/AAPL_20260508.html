@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AAPL — Apple Inc 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>AAPL — Apple Inc 深度分析</h1>
     <p class="summary">由 <code>data/analyses/AAPL_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：科技 / 消费电子 + 服务</p>
 <p><strong>市值</strong>：~$4.2 万亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -85,7 +97,7 @@
 <li>阻力：$288.62（52 周高）→ $300（BNP 目标）→ $350（Bernstein）→ $400（Wedbush 最新）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -174,7 +186,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：Q2 财报是教科书级&quot;全面超预期 + 指引大超&quot; —— 总营收 +17%、EPS +22%、Services 创纪录、毛利率 49.3%、Q3 指引 +14–17% vs 共识 +9.5%。<strong>FCF $1290 亿（TTM）、+31% YoY</strong> 是真正的护城河。Forward P/E 30x 不算便宜，但 Services &gt;70% 毛利持续扩张支撑估值。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-04-30</strong>：Q2 FY26 大幅超预期 + Q3 指引 +14–17%（共识 +9.5%），股价跳空 — <strong>重磅正面</strong></p>
 <p>2. <strong>2026-05-08</strong>：<strong>Wedbush 将 PT 从 $350 上调至 $400</strong> —— 最新看多催化 — <strong>重磅正面</strong></p>
 <p>3. <strong>2026-05-01</strong>：Wedbush PT 从前值上调至 $350 — 正面</p>
@@ -185,7 +197,7 @@
 <p>8. <strong>2026-09-01</strong>：<strong>Tim Cook → 执行主席，John Ternus 接任 CEO</strong> — 中性偏正（市场已消化）</p>
 <p>9. <strong>关税风险</strong>：15% 平面关税应用于进口电子元件（H1 已生效） — 中度负面</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -244,8 +256,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>8/10 — Bullish</strong>（共识 PT 偏低 → 市场对 AAPL 仍有&quot;低估&quot;空间）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>Q3 指引 +14–17% vs 共识 +9.5%</strong> —— Apple 罕见的激进 guidance，意味着管理层信心极强</li>
 <li>TTM FCF $1290 亿 +31% YoY，<strong>全球第一现金流机器</strong></li>
@@ -256,7 +268,7 @@
 <li>总毛利率 49.3% 创纪录，FX 顺风 + Services mix 双驱动</li>
 <li>Wedbush $400 PT（+41%）显示华尔街仍有大幅上修空间</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>共识 PT 仅 $302</strong>（较现价 +6%）—— 多数分析师 PT 已被超越，需要进一步上修才能延续上涨</li>
 <li><strong>15% 进口电子关税</strong>已生效，Q2 已感受成本压力（H2 或继续）</li>
@@ -268,7 +280,7 @@
 <li>反垄断风险（美 Epic 案、欧盟 DMA、应用商店分成压力）</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>Low–Medium</strong>（业务低风险、估值中等、催化丰富）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -312,7 +324,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Bullish（中长期）/ Bullish（短期）</strong></p>
 <p><strong>确信度</strong>：<strong>8/10</strong>（核心仓首选 — 风险回报比最优）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -329,7 +341,7 @@
 <li><strong>9/1 CEO 换届</strong>（已知日期，市场已消化）</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>✅ <strong>可建仓</strong>：当前 $284 是 Q2 财报后健康突破，Wedbush $400 PT（+41%）远未到位</li>
 <li>✅ 回调买点：$277（缺口）→ $271（50 SMA）→ $248（200 SMA，深度回调位）</li>
@@ -339,7 +351,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy AAPL long</code>（生成具体买点 + WWDC 前后两套交易计划）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/" target="_blank" rel="noopener">Apple Q2 FY2026 Press Release</a></li>
 <li><a href="https://www.cnbc.com/2026/04/30/apple-aapl-q2-2026-earnings-report.html" target="_blank" rel="noopener">Apple Q2 2026 Revenue Tops Estimates – CNBC</a></li>
@@ -355,6 +367,7 @@
 <li><a href="https://www.marketbeat.com/stocks/NASDAQ/AAPL/insider-trades/" target="_blank" rel="noopener">AAPL Insider Trades – MarketBeat</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

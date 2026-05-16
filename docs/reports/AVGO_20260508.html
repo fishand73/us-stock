@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AVGO — Broadcom Inc 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>AVGO — Broadcom Inc 深度分析</h1>
     <p class="summary">由 <code>data/analyses/AVGO_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：科技 / 半导体（定制 AI ASIC、网络芯片、企业软件 VMware）</p>
 <p><strong>市值</strong>：~$2.0 万亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -85,7 +97,7 @@
 <li>阻力：$451（共识 PT，仅 +7%）→ $458（中位 PT）→ $480（Mizuho）→ $535（高端）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -154,7 +166,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：AI 业务从 Q1 $8.4B → Q2 $10.7B 单季 +27%，CEO 喊出 <strong>2027 年 AI 营收 $1000 亿</strong> 的天文目标。已锁定 Meta（1GW+）、Google（TPU 至 2031）、<strong>OpenAI（2027 年 1GW+ 部署）</strong>三大 hyperscaler。Fwd P/E 36x 高于半导体行业 24x 但远低于 PLTR 50x sales，是&quot;AI 软件 + 硬件&quot;混合体中估值最合理的核心持仓。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-06-03（即将）</strong>：<strong>Q2 FY26 财报</strong> —— 关键 binary，验证 $22B 营收 + $10.7B AI — <strong>重磅催化</strong></p>
 <p>2. <strong>2026-04-15</strong>：Meta 与 AVGO 深化合作，<strong>1GW+ 定制 AI 硅片</strong>（多 GW 滚动） — 重大正面</p>
 <p>3. <strong>2026-04-07</strong>：Alphabet/Anthropic 多年 AI 合同锁定 + 股价单日 +6% — 正面</p>
@@ -164,7 +176,7 @@
 <p>7. <strong>CLO Mark Brazeal 卖 38,281 股 $12.54M</strong>（$322–$345 区间）— 中度负面</p>
 <p>8. <strong>过去 90 天内部人净卖出 $1.062 亿</strong>，<strong>12 个月净卖出 $4.11 亿</strong> — 中度负面信号</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -213,8 +225,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>8.5/10 — Strongly Bullish</strong>（Wall Street 共识最强 + AI 叙事最干净）</p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>AI 营收 $8.4B → $10.7B 单季 +27%</strong>，加速而非减速</li>
 <li><strong>2027 年 AI 营收 $100B 目标</strong> —— 若兑现，FY26 $40B 仅是起点</li>
@@ -226,7 +238,7 @@
 <li>派息 + 大额回购&quot;双轨回报&quot;</li>
 <li>与 PLTR 比：<strong>AI 营收增速更快、估值更合理、商业模式更多元</strong></li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>RSI 77–84 极度超买</strong>，距 50 日 SMA $340 已超 24%</li>
 <li>Forward P/E 36 <strong>远高于半导体行业 24</strong> —— AI 故事如有半点裂缝估值会回归</li>
@@ -238,7 +250,7 @@
 <li>$100B 2027 目标过于雄心，市场对 CEO Hock Tan 的&quot;承诺&quot;信任度需观察</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>Medium</strong>（业务低风险、估值中高、技术超买）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -282,7 +294,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Bullish（中长期）/ Neutral-Bullish（短期，等回调）</strong></p>
 <p><strong>确信度</strong>：<strong>7.5/10</strong>（AI 叙事最干净 + 估值相对合理 + 共识最强）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -298,7 +310,7 @@
 <li>长期：$100B AI 2027 目标里程碑</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>⏸ <strong>不追</strong> $422+（RSI 84 极度超买）</li>
 <li>✅ 等回调至 $380–$400 区间分批，最深 $360（200 日 SMA + 缓冲）</li>
@@ -308,7 +320,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy AVGO long</code>（6/3 财报前后两套交易计划 + 回调买点）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-first-quarter-fiscal-year-2026-financial" target="_blank" rel="noopener">Broadcom Q1 FY26 IR Press Release</a></li>
 <li><a href="https://www.cnbc.com/2026/03/04/broadcom-avgo-q1-earnings-report-2026.html" target="_blank" rel="noopener">AVGO Q1 FY26 Beat – CNBC</a></li>
@@ -323,6 +335,7 @@
 <li><a href="https://news.alphastreet.com/broadcom-avgo-custom-chip-strategy-targets-60b-hyperscaler-ai-infrastructure-market/" target="_blank" rel="noopener">AVGO Custom Chip $60B Hyperscaler Market – AlphaStreet</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

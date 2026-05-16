@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>持仓组合卖出策略(短期 1-4 周技术面)</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-13.html">← 返回 2026-05-13</a>
+    <p class="eyebrow">Strategy · 2026-05-13</p>
+    <h1>持仓组合卖出策略(短期 1-4 周技术面)</h1>
+    <p class="summary">由 <code>data/analyses/portfolio_sell_strategy_20260513.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>持仓组合卖出策略(短期 1-4 周技术面)</h1>
+<p><strong>生成日期</strong>: 2026-05-13</p>
+<p><strong>持仓快照</strong>: 5 只美股 / 市值 $89,398.88 / 总盈亏 +$660.95 (+0.74%)</p>
+<p><strong>视角</strong>: 短期 1-4 周技术面卖点 + 临近催化剂</p>
+<p><strong>核心变量(已修正)</strong>:</p>
+<p>1. <strong>⚡ 中美元首峰会 2026-05-14 ~ 05-15(48 小时内)</strong>:Trump 已抵京,Jensen Huang(NVDA CEO)+ Kelly Ortberg(BA CEO)随行 → 直接冲击 BA + NVDA + DRAM(约 56% 组合)</p>
+<p>2. NVDA Q1 FY27 财报 2026-05-20 盘后(峰会后 5 天)</p>
+<p>3. Micron 财报 ~2026-06-24(DRAM 加权敞口 23%)</p>
+<hr>
+<h2 id="一组合一句话结论已按峰会修正">一、组合一句话结论(已按峰会修正)</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>顺序</th>
+<th>操作</th>
+<th>标的</th>
+<th>触发条件 / 价位</th>
+</tr></thead><tbody>
+<tr>
+<td>① <strong>最高优先</strong></td>
+<td><strong>峰会前不做主动减仓 BA / NVDA / DRAM</strong></td>
+<td>BA + NVDA + DRAM</td>
+<td>5/14 开盘前所有&quot;减仓&quot;操作暂停,等峰会信号</td>
+</tr>
+<tr>
+<td>② 高</td>
+<td><strong>峰会期间设硬性 trailing stop</strong></td>
+<td>BA、NVDA、DRAM</td>
+<td>见第二节&quot;峰会场景预案&quot;</td>
+</tr>
+<tr>
+<td>③ 高</td>
+<td><strong>META 设硬性止损</strong>(峰会影响小)</td>
+<td>META</td>
+<td>跌破 $588 全数离场;反弹至 $625-630 平本位减半</td>
+</tr>
+<tr>
+<td>④ 高</td>
+<td><strong>MSFT 反弹离场</strong>(峰会影响小)</td>
+<td>MSFT</td>
+<td>反弹至 $416-418(成本+50DMA)平本位卖,跌破 $395 止损</td>
+</tr>
+<tr>
+<td>⑤ 中</td>
+<td><strong>NVDA 5/19 财报前再判断</strong></td>
+<td>NVDA</td>
+<td>峰会落地后,根据是否解禁芯片出口决定减仓节奏</td>
+</tr>
+<tr>
+<td>⑥ 中</td>
+<td><strong>BA 突破止盈 / DRAM 移动止盈</strong></td>
+<td>BA、DRAM</td>
+<td>峰会利好后冲高时减仓,而非提前抢跑</td>
+</tr>
+</tbody></table></div>
+<p>&gt; <strong>关键调整</strong>:原方案&quot;NVDA 5/19 前必减 30%&quot;在峰会未知前是错误的——若峰会宣布解除/放宽对华芯片出口,NVDA 大概率跳空高开,提前减仓会卖在低点。<strong>峰会出结果再行动</strong>。</p>
+<hr>
+<h2 id="二组合级观察">二、组合级观察</h2>
+<h3 id="1-行业集中度">1. 行业集中度</h3>
+<ul>
+<li>AI/半导体 (NVDA + DRAM): ~44%,组合最大风险源</li>
+<li>大盘科技 (MSFT + META): ~43%,两只均处于亏损状态</li>
+<li>工业 (BA): ~13%,技术面最中性</li>
+</ul>
+<h3 id="2-临近事件日历未来-4-6-周按时间先后">2. 临近事件日历(未来 4-6 周,按时间先后)</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>影响标的</th>
+<th>性质</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-12(已发生)</strong></td>
+<td>美对华关税 145%→30%,中对美 125%→10%(90 天缓冲)</td>
+<td>全市场风险偏好↑</td>
+<td>已 price-in</td>
+</tr>
+<tr>
+<td><strong>🔥 2026-05-14 (周四)</strong></td>
+<td><strong>Trump-Xi 北京峰会 Day 1</strong>:贸易、AI/芯片、台湾、伊朗</td>
+<td><strong>BA(飞机大单)、NVDA(芯片出口管制)、DRAM(韩国对华出口)</strong></td>
+<td><strong>最高优先级二元风险</strong></td>
+</tr>
+<tr>
+<td><strong>🔥 2026-05-15 (周五)</strong></td>
+<td><strong>峰会 Day 2 + 联合声明/成果文件</strong></td>
+<td>同上</td>
+<td>收盘前最关键时点</td>
+</tr>
+<tr>
+<td>2026-05-18(周一)</td>
+<td>亚洲盘前 + 美股开盘对峰会消化</td>
+<td>DRAM(韩股盘前)</td>
+<td>跳空缺口</td>
+</tr>
+<tr>
+<td><strong>2026-05-20 盘后</strong></td>
+<td>NVDA Q1 FY27 财报(共识 EPS $1.78,收入 $78.8B);若峰会芯片出口放宽,管理层指引会上调</td>
+<td>NVDA、<strong>DRAM ~47% 敞口</strong>(SK Hynix+Samsung)</td>
+<td>二元风险(峰会后叠加)</td>
+</tr>
+<tr>
+<td><strong>2026-06-24 前后</strong></td>
+<td><strong>Micron Q3 FY26 财报</strong></td>
+<td>DRAM ~23% 敞口</td>
+<td>二元风险</td>
+</tr>
+<tr>
+<td>2026-07-初</td>
+<td>DRAM 季度再平衡</td>
+<td>DRAM</td>
+<td>强势成分股可能被减持</td>
+</tr>
+<tr>
+<td>2026-07-28</td>
+<td>MSFT Q4 FY26 财报</td>
+<td>MSFT</td>
+<td>超出短期窗口</td>
+</tr>
+</tbody></table></div>
+<h3 id="3-峰会场景预案514-15">3. 峰会场景预案(5/14-15)</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>场景</th>
+<th>主要信号</th>
+<th>BA 反应</th>
+<th>NVDA 反应</th>
+<th>DRAM 反应</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A. 大利好</strong>(双赢)</td>
+<td>500+ 架 737 MAX 订单 + 芯片出口部分放宽 + 90 天关税延长</td>
+<td><strong>跳空 +5~10%</strong>(突破 $250)</td>
+<td><strong>跳空 +3~7%</strong>(突破 $235)</td>
+<td><strong>+3~5%</strong>(SK Hynix/Samsung 大涨)</td>
+</tr>
+<tr>
+<td><strong>B. 中性</strong>(基本款)</td>
+<td>关税维持 30%、达成部分采购协议、芯片管制现状</td>
+<td>+1~3%</td>
+<td>-1~+2%(等财报)</td>
+<td>-1~+1%</td>
+</tr>
+<tr>
+<td><strong>C. 利空</strong>(谈崩)</td>
+<td>关税重启、芯片管制加码、台湾问题升温</td>
+<td><strong>跳空 -5~10%</strong>(跌破 $228)</td>
+<td><strong>跳空 -3~7%</strong>(跌破 $209)</td>
+<td><strong>-3~6%</strong>(韩股盘前先跌)</td>
+</tr>
+</tbody></table></div>
+<p><strong>操作框架(基于场景)</strong>:</p>
+<ul>
+<li><strong>场景 A</strong>:不主动减仓,改为追踪止盈(BA $250 trail $5、NVDA $235 trail $8、DRAM $58 trail $2)</li>
+<li><strong>场景 B</strong>:回到原计划(NVDA 5/19 前减 30%,其他保持)</li>
+<li><strong>场景 C</strong>:<strong>立即触发硬止损</strong>(BA $228 全清、NVDA $209 减半、DRAM $51 减半);亚洲盘前 KOSPI 跌幅 -3% 以上要在美股盘前抢卖 DRAM</li>
+</ul>
+<h3 id="3-整体技术面观察">3. 整体技术面观察</h3>
+<ul>
+<li>组合中 <strong>2 只盈利</strong>(NVDA、DRAM)、<strong>3 只亏损</strong>(MSFT、META、BA)</li>
+<li>盈利仓位都是 AI/记忆体强势主题,<strong>回撤风险被低估</strong></li>
+<li>亏损仓位中 <strong>META 技术面最差</strong>(死叉延续、所有均线之下),应优先管理</li>
+</ul>
+<hr>
+<h2 id="三个股卖出策略">三、个股卖出策略</h2>
+<h3 id="1-nvda英伟达-持有-100-股-211292-22531-663">1. NVDA(英伟达)| 持有 100 股 @ $211.292 → $225.31 / +6.63%</h3>
+<h4>技术现状</h4>
+<ul>
+<li>当日区间 $220.65–$227.16,收 $225.31</li>
+<li>关键支撑:<strong>$209.96 / $194.27 / $183</strong></li>
+<li>关键阻力:<strong>$235 / $240</strong>(突破即无明显阻力)</li>
+<li>技术指标:均线 12 买 0 卖,日线强买入;37 位分析师&quot;买入&quot;共识</li>
+</ul>
+<h4>关键催化剂</h4>
+<ul>
+<li><strong>5 月 20 日盘后财报</strong>:历史平均隐含波动 ±8-10%,即 $208-$245 区间</li>
+<li>财报前一周通常存在 IV 上升带来的盘整或小幅冲高</li>
+</ul>
+<h4>卖出策略(优先级 ★★★★★,已按峰会修正)</h4>
+<p><strong>第一阶段:峰会窗口 5/14-15</strong>(暂停所有主动减仓)</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发</th>
+<th>操作</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>峰会落地 + 芯片管制放宽信号 + 股价跳空 <strong>$235+</strong></td>
+<td><strong>不减仓,改追踪止盈</strong>(从 $235 起 trail $8)</td>
+<td>Huang 随行 = 强烈信号,提前减仓可能错失 +10% 跳空</td>
+</tr>
+<tr>
+<td>峰会无突破 + 股价在 <strong>$220-228</strong> 区间</td>
+<td><strong>保持仓位</strong>,等 5/19 决定</td>
+<td>基本款情景</td>
+</tr>
+<tr>
+<td>峰会利空 + 股价 <strong>跌破 $209</strong></td>
+<td><strong>减仓至 50 股</strong>(立刻)</td>
+<td>趋势 + 宏观双破位</td>
+</tr>
+</tbody></table></div>
+<p><strong>第二阶段:峰会落地后,财报前(5/18-5/19)</strong></p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发</th>
+<th>操作</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>场景 A(峰会大利好)</td>
+<td><strong>5/19 收盘前减 20 股</strong>(留 80 股)</td>
+<td>收益已部分锁定,留 80 股博财报</td>
+</tr>
+<tr>
+<td>场景 B(峰会中性)</td>
+<td><strong>5/19 收盘前减 30 股</strong>(留 70 股)</td>
+<td>回到原计划,降低纯财报二元风险</td>
+</tr>
+<tr>
+<td>场景 C(峰会利空)</td>
+<td><strong>已在第一阶段减至 50 股</strong>,不再加减</td>
+<td>防御为主</td>
+</tr>
+</tbody></table></div>
+<p><strong>第三阶段:财报后(5/21 起)</strong></p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发</th>
+<th>操作</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>财报后跳空高开 <strong>$240+</strong> 且无回补</td>
+<td>持有,把止盈上移到 <strong>$230</strong></td>
+<td>让赢家跑</td>
+</tr>
+<tr>
+<td>财报后跌破 <strong>$209</strong></td>
+<td>剩余仓位 <strong>全清</strong></td>
+<td>趋势破坏</td>
+</tr>
+</tbody></table></div>
+<h4>备选思路</h4>
+<ul>
+<li>若想纯粹对冲峰会风险:可买入 5/16 到期 <strong>$215 put</strong>(短期保险,覆盖峰会两天)</li>
+<li>若想对冲整个事件区间(峰会+财报):买入 5/22 到期 <strong>$210 put</strong></li>
+</ul>
+<hr>
+<h3 id="2-msft微软-持有-50-股-41666-40262-337">2. MSFT(微软)| 持有 50 股 @ $416.66 → $402.62 / -3.37%</h3>
+<h4>技术现状</h4>
+<ul>
+<li>收盘 $402.62,日线轴心 $415.92,处于 $369–$540 大区间下半部</li>
+<li>关键支撑:<strong>$395 / $369</strong></li>
+<li>关键阻力:<strong>$416-418(用户成本附近)/ $430 / $450</strong></li>
+<li>技术指标:5 多 21 空,<strong>短期偏空</strong></li>
+<li>距下次财报(7/28)还有 11 周,<strong>无短期催化剂</strong></li>
+</ul>
+<h4>卖出策略(优先级 ★★★★)</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发</th>
+<th>操作</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>反弹触及 <strong>$416-418</strong></td>
+<td><strong>全部清仓</strong>(50 股)</td>
+<td>成本附近止损,资金可释放给 NVDA 等强势</td>
+</tr>
+<tr>
+<td>跌破 <strong>$395</strong></td>
+<td><strong>全部清仓</strong></td>
+<td>损失控制在 ~5%(账面 -$1,083)</td>
+</tr>
+<tr>
+<td>横盘至 6 月底仍未破上述区间</td>
+<td>重新评估(看 7/28 财报前一周再决定)</td>
+<td>无催化剂的久盘是低收益占用</td>
+</tr>
+</tbody></table></div>
+<h4>操作建议</h4>
+<p><strong>MSFT 是当前组合中&quot;机会成本最高&quot;的一只</strong>:亏损中、无短期驱动、行业有更强动量品种。<strong>优先在反弹中卖出,而非死守等回本</strong>。</p>
+<hr>
+<h3 id="3-meta-持有-30-股-61365-60473-145">3. META | 持有 30 股 @ $613.65 → $604.73 / -1.45%</h3>
+<h4>技术现状</h4>
+<ul>
+<li>收盘 $604.73,<strong>所有均线之下</strong>(20DMA -7.1%、50DMA -4.2%、100DMA -6.6%、200DMA -11.3%)</li>
+<li>关键支撑:<strong>$588 / $560 / $520</strong>(52 周低)</li>
+<li>关键阻力:<strong>$625(50DMA) / $660 / $688</strong></li>
+<li><strong>死叉</strong>:50DMA 于 2025-12 跌破 200DMA,<strong>至今未修复</strong></li>
+<li>分析师 96% 维持&quot;买入&quot;,但近期价格不认同</li>
+</ul>
+<h4>卖出策略(优先级 ★★★★)</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发</th>
+<th>操作</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>跌破 <strong>$588</strong></td>
+<td><strong>全部清仓</strong>(30 股)</td>
+<td>跌破近期低位即趋势破坏,损失 ~2.7%</td>
+</tr>
+<tr>
+<td>反弹触及 <strong>$625(50DMA)</strong></td>
+<td><strong>减仓 15 股</strong>(留 15 股)</td>
+<td>死叉下的均线测试通常被卖压压回</td>
+</tr>
+<tr>
+<td>反弹站稳 50DMA + 突破 <strong>$660</strong></td>
+<td>剩余 15 股持有,止损上移到 $620</td>
+<td>死叉修复信号,可让仓位跑</td>
+</tr>
+</tbody></table></div>
+<h4>关键判断</h4>
+<p>META 是<strong>技术面最弱的持仓</strong>,即便分析师乐观也无法对抗死叉下的供给压力。<strong>1-4 周内若不能站上 $625</strong>,继续持有的预期回报很低。建议把它当作<strong>&quot;反弹即卖&quot;</strong>的标的。</p>
+<hr>
+<h3 id="4-dramroundhill-记忆体-etf-持有-306-股-53589-5448-166">4. DRAM(Roundhill 记忆体 ETF)| 持有 306 股 @ $53.589 → $54.48 / +1.66%</h3>
+<p>&gt; <strong>ETF ≠ 单一股票</strong>:DRAM 的卖出决策必须从&quot;成分股权重 + 各成分股催化剂的加权敞口&quot;出发,而不是只看 ETF 自身 K 线。</p>
+<h4>成分股构成(截至 2026-05,9 只持仓)</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>排名</th>
+<th>成分股</th>
+<th>代码 / 来源</th>
+<th>权重</th>
+<th>4 周内催化剂</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>SK Hynix</td>
+<td>005930.KS / Swap</td>
+<td><strong>26.37%</strong></td>
+<td>NVDA 财报(HBM 大客户)、韩国盘前跳空</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Samsung Electronics</td>
+<td>005930.KS / Swap</td>
+<td><strong>20.42%</strong></td>
+<td>同上,Q1 财报已发布</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Micron Technology</td>
+<td>MU(双 Swap 计 23.32%)</td>
+<td><strong>23.32%</strong></td>
+<td><strong>Q3 FY26 财报 ~6/24</strong>(超 4 周窗口)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SanDisk</td>
+<td>SNDK(双结构计 10.84%)</td>
+<td><strong>10.84%</strong></td>
+<td>年内 +400%,<strong>纯动量</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Kioxia</td>
+<td>285A.JP</td>
+<td>4.86%</td>
+<td>日股盘前</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Western Digital</td>
+<td>WDC</td>
+<td>4.77%</td>
+<td>无即期事件</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Seagate</td>
+<td>STX</td>
+<td>4.73%</td>
+<td>无即期事件</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nanya Technology</td>
+<td>2408.TW</td>
+<td>3.89%</td>
+<td>台股盘前</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Winbond</td>
+<td>2344.TW</td>
+<td>2.40%</td>
+<td>台股盘前</td>
+</tr>
+</tbody></table></div>
+<ul>
+<li><strong>TOP3 集中度</strong>:SK Hynix + Samsung + Micron = <strong>~70%</strong>(分析 DRAM ≈ 分析这三只的加权)</li>
+<li><strong>地理结构</strong>:<strong>~47% 是韩股</strong>(SK Hynix + Samsung)通过 swap 持有 → 韩国 KOSPI 盘前跳空会直接传导到 DRAM 美股开盘</li>
+<li><strong>管理方式</strong>:主动管理 + <strong>季度再平衡</strong>(下次约 7 月初)</li>
+<li><strong>费率</strong>:0.65%(主题 ETF 偏高)</li>
+</ul>
+<h4>关键基本面背景(影响所有成分股)</h4>
+<ul>
+<li><strong>HBM3E 价格 2026 全年上调约 20%</strong>(Samsung/SK Hynix 提价至 ~$350/模块)</li>
+<li><strong>HBM4 单价 ~$500+</strong>,2026 Q2 开始放量,SK Hynix 在 HBM 市占领先</li>
+<li><strong>Micron</strong> 2026 全年 HBM 供应已锁定价格和数量,DRAM 售价 Q1 环比 +20%</li>
+<li><strong>风险</strong>:HBM4 量产后,HBM3E 价格可能松动(供应过剩担忧),这是主题级风险</li>
+</ul>
+<h4>4 周催化剂时间表</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>加权影响敞口</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-20</strong></td>
+<td>NVDA Q1 FY27 财报</td>
+<td><strong>~47%</strong>(SK Hynix + Samsung 直接受 HBM 订单影响)+ Micron 间接</td>
+</tr>
+<tr>
+<td>2026-05 下半月</td>
+<td>韩国 KOSPI 任何记忆体相关公告</td>
+<td>~47%</td>
+</tr>
+<tr>
+<td><strong>2026-06-24 前后</strong></td>
+<td><strong>Micron Q3 FY26 财报</strong></td>
+<td><strong>~23%</strong>(在 4 周窗口外缘,但需提前准备)</td>
+</tr>
+<tr>
+<td>任何时点</td>
+<td>SNDK 极端波动(因 +400% 后回吐)</td>
+<td>~11%</td>
+</tr>
+</tbody></table></div>
+<h4>卖出策略(基于成分股催化剂,优先级 ★★★★)</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发条件</th>
+<th>操作</th>
+<th>加权敞口逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>峰会芯片管制放宽</strong>(场景 A)+ KOSPI 盘前 SK Hynix +3%+</td>
+<td><strong>不减仓,改 trail $54 起 trail $1.5</strong></td>
+<td>韩国成分股 47% 直接受益,提前减仓会卖低</td>
+</tr>
+<tr>
+<td><strong>峰会谈崩</strong>(场景 C)+ KOSPI 盘前 SK Hynix/Samsung 跳空 <strong>-3%</strong></td>
+<td><strong>美股盘前/开盘减 150 股</strong>(留 156 股)</td>
+<td>47% 韩股仓位直接跳水,<strong>必须在美股盘前应对</strong>(亚洲已收盘定价)</td>
+</tr>
+<tr>
+<td><strong>NVDA 5/20 财报利空</strong> + DRAM 跟跌 -3%</td>
+<td><strong>减仓 100 股</strong>(留 156 股)</td>
+<td>NVDA-HBM 主题逻辑松动</td>
+</tr>
+<tr>
+<td>NVDA 5/20 财报利好 + DRAM 跟涨至 <strong>$58+</strong></td>
+<td><strong>减仓 100 股</strong>(留 206 股)</td>
+<td>顶部主题获利回吐风险 ↑</td>
+</tr>
+<tr>
+<td>DRAM 跌破 <strong>$51.50</strong>(成本附近)</td>
+<td><strong>减仓至 150 股以下</strong></td>
+<td>价格已破成本,趋势转弱</td>
+</tr>
+<tr>
+<td>DRAM 跌破 <strong>$48</strong></td>
+<td><strong>全部清仓</strong>(306 股)</td>
+<td>抛物线破位,主题资金外撤</td>
+</tr>
+<tr>
+<td><strong>SNDK 单日 -10% 以上</strong></td>
+<td>减仓 50 股</td>
+<td>SNDK 11% 权重+ 高动量,通常领先 ETF 见顶</td>
+</tr>
+<tr>
+<td>6/24 前 1 周(Micron 财报临近)</td>
+<td><strong>若仍持有 200+ 股,主动减至 150 股</strong></td>
+<td>Micron 23% 权重 ≈ DRAM 自带 1/4 个财报二元风险</td>
+</tr>
+</tbody></table></div>
+<h4>ETF 特有风险(普通股票不存在)</h4>
+<p>1. <strong>盘前跳空风险</strong>:47% 韩股 + 5% 日股 + 6% 台股 = <strong>58% 持仓在美股盘前已定价</strong>,DRAM 美股开盘几乎是&quot;跟盘&quot;,<strong>当日内技术止损常常滞后</strong></p>
+<p>2. <strong>Swap 对手方风险</strong>:Samsung、SK Hynix、Micron 都通过 swap 持有,极端市况下买卖价差扩大</p>
+<p>3. <strong>再平衡换手</strong>:7 月初季度再平衡,若 SK Hynix 涨幅过大可能被减持(对 ETF 是利空)</p>
+<p>4. <strong>HBM4 量产后 HBM3E 价格风险</strong>:Q3 之后基本面叙事可能松动</p>
+<h4>仓位定性</h4>
+<p>DRAM 仓位 $16,670(占组合 18.6%)= <strong>0.47 × 韩股 + 0.23 × Micron + 0.11 × SNDK + 0.19 × 其他</strong>。</p>
+<p>本质上是一个 <strong>&quot;NVDA 财报 + Micron 财报 + HBM 主题&quot;</strong> 的捆绑包,而不是&quot;一只独立的科技股&quot;。</p>
+<p><strong>建议视为&quot;获利的主题趋势仓&quot;</strong>:用基于成分股催化剂的硬止损保护本金,而非死守 K 线。</p>
+<hr>
+<h3 id="5-ba波音-持有-50-股-23936-23849-037">5. BA(波音)| 持有 50 股 @ $239.36 → $238.49 / -0.37%</h3>
+<p>&gt; <strong>优先级升级 ★★ → ★★★★★</strong>:BA CEO Kelly Ortberg 随 Trump 抵京,中国可能下 500+ 架 737 MAX 大单(2017 以来首单)。<strong>BA 是峰会最直接受益标的</strong>。</p>
+<h4>技术现状</h4>
+<ul>
+<li>收盘 $238.49,52 周区间 $176.77–$254.35</li>
+<li>关键支撑:<strong>$228 / $220</strong></li>
+<li>关键阻力:<strong>$240 / $246 / $254 / $268</strong></li>
+<li>基本面正向:737 MAX 4 月交付 47 架、目标年底产能 47/月、BofA 看多</li>
+<li><strong>位置敏感</strong>:就在 $240 阻力下方,任何利好都可能引发突破</li>
+</ul>
+<h4>峰会场景敏感度(最强)</h4>
+<ul>
+<li><strong>场景 A(下大单 + 关税延长)</strong>:跳空 +5-10%,直奔 $250-$260,可能挑战 $268</li>
+<li><strong>场景 B(部分采购协议,无 737 MAX)</strong>:小幅 +1-3%,$240-$245 区间震荡</li>
+<li><strong>场景 C(谈崩,中国不下单)</strong>:跌回 $228-$230,破位风险</li>
+</ul>
+<h4>卖出策略(已升级,按峰会场景分层)</h4>
+<p><strong>第一阶段:峰会窗口 5/14-15</strong></p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发</th>
+<th>操作</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td>跳空 <strong>$250+</strong>(场景 A 信号)</td>
+<td><strong>不减仓,改追踪止盈</strong>(从 $250 起 trail $4)</td>
+<td>大单是结构性利好,可能持续多日</td>
+</tr>
+<tr>
+<td>触及 <strong>$254</strong>(52 周高)</td>
+<td><strong>减 13 股</strong>(留 37 股),trail 上移到 $250</td>
+<td>历史高点必有获利回吐</td>
+</tr>
+<tr>
+<td>触及 <strong>$268</strong></td>
+<td>再减 12 股(留 25 股)</td>
+<td>上一波结构高点</td>
+</tr>
+<tr>
+<td>跌破 <strong>$228</strong></td>
+<td><strong>全部清仓</strong>(50 股)</td>
+<td>场景 C 触发,基本面 + 技术面同时破</td>
+</tr>
+</tbody></table></div>
+<p><strong>第二阶段:峰会落地后(无新信号则维持)</strong></p>
+<ul>
+<li>场景 B(中性):<strong>条件单</strong>保留——止损 $228、止盈 $246 减 12 股、$254 再减 13 股</li>
+<li>BA 不像 NVDA 有后续财报催化剂(Q1 已于 4/22 发布),<strong>5/14-15 是全部&quot;赌注&quot;</strong></li>
+</ul>
+<h4>关键判断</h4>
+<p><strong>BA 是组合中峰会非对称收益最高的一只</strong>——下行风险约 -4%(到 $228),上行潜力 +12%(到 $268)。<strong>峰会前不动</strong>,让市场告诉你哪个场景成真,再分批离场。</p>
+<hr>
+<h2 id="四执行清单按时间顺序已重排">四、执行清单(按时间顺序,已重排)</h2>
+<h3 id="峰会前今晚-513-514-开盘前">🔴 <strong>峰会前(今晚 5/13 ~ 5/14 开盘前)</strong></h3>
+<p><strong>只做防御止损,不做主动减仓</strong>:</p>
+<p>1. 设条件止损单(适用于场景 C 谈崩):</p>
+<ul>
+<li><strong>BA</strong>: 止损 $228 全清</li>
+<li><strong>NVDA</strong>: 止损 $209 减仓 30 股</li>
+<li><strong>DRAM</strong>: 止损 $51.50 减半 + $48 全清</li>
+</ul>
+<p>2. 设条件止盈单(适用于场景 A 大利好):</p>
+<ul>
+<li><strong>BA</strong>: $250 起追踪 trail $4</li>
+<li><strong>NVDA</strong>: $235 起追踪 trail $8</li>
+<li><strong>DRAM</strong>: $58 起追踪 trail $2</li>
+</ul>
+<p>3. 与峰会无关的标的:</p>
+<ul>
+<li><strong>META</strong>: 止损 $588 全清、反弹 $625 减半</li>
+<li><strong>MSFT</strong>: 反弹 $417 全清、止损 $395 全清</li>
+</ul>
+<h3 id="峰会窗口514-周四-515-周五">🔥 <strong>峰会窗口(5/14 周四 ~ 5/15 周五)</strong></h3>
+<ul>
+<li>关注实时新闻:737 MAX 订单数量、芯片出口管制是否放宽、90 天关税是否延长成永久</li>
+<li>KOSPI 盘前(韩国时间 9am = 美东 8pm 前夜)看 SK Hynix/Samsung 反应,提前预判 DRAM 美股开盘缺口</li>
+<li><strong>不要在峰会进行中改单</strong>——让条件单自动执行</li>
+</ul>
+<h3 id="峰会后516-周六518-周一开盘">🟡 <strong>峰会后(5/16 周六~5/18 周一开盘)</strong></h3>
+<ul>
+<li>评估峰会场景(A/B/C),按对应预案行动:</li>
+<li><strong>A 大利好</strong>:不主动减仓,让 trailing stop 跑;NVDA 5/19 前减 20 股(留 80)</li>
+<li><strong>B 中性</strong>:执行原计划,NVDA 5/19 前减 30 股(留 70)</li>
+<li><strong>C 谈崩</strong>:止损已触发,评估剩余仓位是否再减</li>
+</ul>
+<h3 id="520-当日nvda-财报">🟠 <strong>5/20 当日(NVDA 财报)</strong></h3>
+<ul>
+<li>美东 1:20pm PT 看 CFO Colette Kress 致辞</li>
+<li>5pm ET 财报电话会</li>
+<li>DRAM 同步联动,做好两端预案</li>
+</ul>
+<h3 id="521-之后">🟢 <strong>5/21 之后</strong></h3>
+<ul>
+<li>根据 NVDA 财报反应重新评估 NVDA + DRAM</li>
+<li>复核 META 是否能站上 $625</li>
+<li>准备 6/24 Micron 财报前 DRAM 二次减仓</li>
+</ul>
+<hr>
+<h2 id="五风险与免责">五、风险与免责</h2>
+<h3 id="假设依赖">假设依赖</h3>
+<ul>
+<li>价格数据基于 2026-05-13 收盘 + 用户 22:43 持仓快照</li>
+<li>NVDA 财报日期来自 NVIDIA IR 官方确认(May 20, 2026 after close)</li>
+<li>技术位为常规支撑阻力,<strong>重大基本面事件可能瞬间击穿</strong></li>
+</ul>
+<h3 id="主要风险">主要风险</h3>
+<p>1. <strong>🔥 峰会突发风险</strong>:5/14-15 任何意外声明(台湾、伊朗、出口管制升级)都可能瞬间击穿技术止损,<strong>滑点可能 -3~-5%</strong></p>
+<p>2. <strong>峰会&quot;卖事实&quot;风险</strong>:即便场景 A 大利好,市场可能&quot;buy the rumor, sell the news&quot;,高开低走</p>
+<p>3. <strong>NVDA 财报二元风险</strong>:即便减仓 30%,剩余仓位仍承担 ±10% 跳空风险;峰会落地后 IV 可能急跌(削弱期权对冲价值)</p>
+<p>4. <strong>DRAM 流动性 + FX 风险</strong>:ETF 规模 6.24B、9 只持仓高集中,47% 韩股 swap 持仓在峰会突发时价差可能扩大</p>
+<p>5. <strong>META 死叉延续</strong>:若指数同步走弱,可能直接跌破 $588 滑点止损</p>
+<p>6. <strong>本组合无对冲仓位</strong>(无 SPY put、无现金缓冲),股票占比 100%——峰会两天的系统性风险无法横向分散</p>
+<h3 id="操作纪律">操作纪律</h3>
+<ul>
+<li><strong>不预测、只反应</strong>:严格按价位执行,不因&quot;再等一天&quot;放弃止损</li>
+<li><strong>NVDA 减仓不可推迟</strong>:5/19 收盘前必须完成,事件风险无法在事中应对</li>
+<li><strong>META 反弹卖出不要犹豫</strong>:技术形态在,反弹即压力</li>
+</ul>
+<hr>
+<h2 id="六数据源">六、数据源</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>标的 / 主题</th>
+<th>主源</th>
+<th>副源(交叉验证)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>中美峰会</strong></td>
+<td>CNN(5/13 抵京报道)、Al Jazeera(5/14-15 议程)</td>
+<td>WaPo、CNBC、CSIS、Digitimes(Huang 随行)</td>
+</tr>
+<tr>
+<td><strong>峰会经济成果</strong></td>
+<td>白宫官方 fact sheet、SCMP(Seoul 准备谈判)</td>
+<td>EconoTimes(CEO 名单)</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td>NVIDIA IR (财报日期)、Yahoo Finance</td>
+<td>TradingView、TipRanks、Cybernews(Huang 随行)</td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td>ChartMill、Yahoo Finance</td>
+<td>Barchart Cheat Sheet</td>
+</tr>
+<tr>
+<td>META</td>
+<td>Benzinga、Barchart</td>
+<td>MarketBeat、TipRanks</td>
+</tr>
+<tr>
+<td>DRAM</td>
+<td>Roundhill 官网、Yahoo Finance</td>
+<td>StockAnalysis.com、Morningstar、Digitimes(HBM 涨价)</td>
+</tr>
+<tr>
+<td>BA</td>
+<td>TradingView、Yahoo Finance</td>
+<td>Cryptonomist 技术报告、Bank of America 研报</td>
+</tr>
+</tbody></table></div>
+<p><strong>重要提醒</strong>:本文不构成投资建议。所有数据基于截至 2026-05-13 22:43 的公开来源,实际交易需结合自身风险承受能力和实时盘面。<strong>峰会期间(5/14-15)极易出现突发新闻,请密切关注实时报道,本策略中的所有触发条件均为参考。</strong></p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#一组合一句话结论已按峰会修正">一、组合一句话结论(已按峰会修正)</a></li><li><a class="toc-l2" href="#二组合级观察">二、组合级观察</a></li><li><a class="toc-l3" href="#1-行业集中度">1. 行业集中度</a></li><li><a class="toc-l3" href="#2-临近事件日历未来-4-6-周按时间先后">2. 临近事件日历(未来 4-6 周,按时间先后)</a></li><li><a class="toc-l3" href="#3-峰会场景预案514-15">3. 峰会场景预案(5/14-15)</a></li><li><a class="toc-l3" href="#3-整体技术面观察">3. 整体技术面观察</a></li><li><a class="toc-l2" href="#三个股卖出策略">三、个股卖出策略</a></li><li><a class="toc-l3" href="#1-nvda英伟达-持有-100-股-211292-22531-663">1. NVDA(英伟达)| 持有 100 股 @ $211.292 → $225.31 / +6.63%</a></li><li><a class="toc-l3" href="#2-msft微软-持有-50-股-41666-40262-337">2. MSFT(微软)| 持有 50 股 @ $416.66 → $402.62 / -3.37%</a></li><li><a class="toc-l3" href="#3-meta-持有-30-股-61365-60473-145">3. META | 持有 30 股 @ $613.65 → $604.73 / -1.45%</a></li><li><a class="toc-l3" href="#4-dramroundhill-记忆体-etf-持有-306-股-53589-5448-166">4. DRAM(Roundhill 记忆体 ETF)| 持有 306 股 @ $53.589 → $54.48 / +1.66%</a></li><li><a class="toc-l3" href="#5-ba波音-持有-50-股-23936-23849-037">5. BA(波音)| 持有 50 股 @ $239.36 → $238.49 / -0.37%</a></li><li><a class="toc-l2" href="#四执行清单按时间顺序已重排">四、执行清单(按时间顺序,已重排)</a></li><li><a class="toc-l3" href="#峰会前今晚-513-514-开盘前">🔴 峰会前(今晚 5/13 ~ 5/14 开盘前)</a></li><li><a class="toc-l3" href="#峰会窗口514-周四-515-周五">🔥 峰会窗口(5/14 周四 ~ 5/15 周五)</a></li><li><a class="toc-l3" href="#峰会后516-周六518-周一开盘">🟡 峰会后(5/16 周六~5/18 周一开盘)</a></li><li><a class="toc-l3" href="#520-当日nvda-财报">🟠 5/20 当日(NVDA 财报)</a></li><li><a class="toc-l3" href="#521-之后">🟢 5/21 之后</a></li><li><a class="toc-l2" href="#五风险与免责">五、风险与免责</a></li><li><a class="toc-l3" href="#假设依赖">假设依赖</a></li><li><a class="toc-l3" href="#主要风险">主要风险</a></li><li><a class="toc-l3" href="#操作纪律">操作纪律</a></li><li><a class="toc-l2" href="#六数据源">六、数据源</a></li></ul></aside>
+  </main>
+</body>
+</html>

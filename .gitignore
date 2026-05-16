@@ -7,3 +7,7 @@ data/portfolio.md
 
 # OpenCode 依赖（可从 package.json 重建）
 .opencode/node_modules/
+
+# Wrangler 本地缓存
+.wrangler/
+node_modules/

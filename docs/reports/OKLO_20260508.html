@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OKLO — Oklo Inc 深度分析</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Deep Dive · 2026-05-08</p>
     <h1>OKLO — Oklo Inc 深度分析</h1>
     <p class="summary">由 <code>data/analyses/OKLO_20260508.md</code> 生成。</p>
   </header>
@@ -21,7 +33,7 @@
 <p><strong>板块/行业</strong>：公用事业 / SMR 核电（<strong>Pre-revenue</strong>）</p>
 <p><strong>市值</strong>：~$110 亿美元</p>
 <hr>
-<h2>1. 价格与技术面</h2>
+<h2 id="1-价格与技术面">1. 价格与技术面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -70,7 +82,7 @@
 <li>阻力：$80（前日收盘）→ $96（HSBC PT）→ $101（共识 PT）→ $130（Tigress）→ $140 / $193（高端）</li>
 </ul>
 <hr>
-<h2>2. 基本面快照</h2>
+<h2 id="2-基本面快照">2. 基本面快照</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>指标</th>
 <th>数值</th>
@@ -124,7 +136,7 @@
 </tbody></table></div>
 <p><strong>基本面总结</strong>：<strong>纯叙事股</strong>——零营收、年烧 $1 亿运营 + $4 亿资本，2027+ 才有商业部署。$25 亿流动性可烧约 5 年。NRC 5/6 通过 PDC 主题报告（加速通道）是真实进展，但商业化时间表仍远。</p>
 <hr>
-<h2>3. 近期催化与新闻</h2>
+<h2 id="3-近期催化与新闻">3. 近期催化与新闻</h2>
 <p>1. <strong>2026-05-12（即将）</strong>：<strong>Q1 2026 财报</strong> + 业务更新会议 — <strong>重磅 binary</strong></p>
 <p>2. <strong>2026-05-11（即将）</strong>：NRC 进一步评估 — 重要催化</p>
 <p>3. <strong>2026-05-06</strong>：<strong>NRC 批准 Aurora Powerhouse PDC 主题报告（加速审查）</strong>，单日 +12% — 重大正面（但未持续）</p>
@@ -134,7 +146,7 @@
 <p>7. <strong>过去 90 天内部人卖 $50.9M</strong> — 中度负面</p>
 <p>8. Air Force Eielson AFB 30 年固定价合约（约 $1 亿） — 长期正面（已定价）</p>
 <hr>
-<h2>4. 情绪面</h2>
+<h2 id="4-情绪面">4. 情绪面</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>来源</th>
 <th>情绪</th>
@@ -188,8 +200,8 @@
 </tbody></table></div>
 <p><strong>情绪评分</strong>：<strong>5/10 — 极度分歧 / 高赔率 / 高风险</strong></p>
 <hr>
-<h2>5. 多空辩论</h2>
-<h3>多头逻辑（Bull Case）</h3>
+<h2 id="5-多空辩论">5. 多空辩论</h2>
+<h3 id="多头逻辑bull-case">多头逻辑（Bull Case）</h3>
 <ul>
 <li><strong>NRC 加速审查通过 PDC 报告</strong> —— 监管路径清晰化（5/6 重大里程碑）</li>
 <li><strong>NVIDIA + LANL 合作</strong> —— 顶级品牌背书 AI 数据中心方向</li>
@@ -200,7 +212,7 @@
 <li>流动性 $25 亿支持 5 年烧钱</li>
 <li>共识 PT $101 隐含 +40% 上行；Tigress $130 +80%</li>
 </ul>
-<h3>空头逻辑（Bear Case）</h3>
+<h3 id="空头逻辑bear-case">空头逻辑（Bear Case）</h3>
 <ul>
 <li><strong>零营收 / 年亏 $1 亿+</strong>：每一次&quot;催化&quot;后必须依靠新催化才能维持估值</li>
 <li>Aurora INL <strong>首座商业部署 2027-2028+</strong>，仍很远</li>
@@ -213,7 +225,7 @@
 <li>公用事业行业利率敏感 + 资本密集</li>
 </ul>
 <hr>
-<h2>6. 风险评估</h2>
+<h2 id="6-风险评估">6. 风险评估</h2>
 <p><strong>整体风险等级</strong>：<strong>Extreme</strong>（pre-revenue + 高短仓 + 极端波动）</p>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>风险类型</th>
@@ -257,7 +269,7 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>7. 结论</h2>
+<h2 id="7-结论">7. 结论</h2>
 <p><strong>方向偏好</strong>：<strong>Speculative Bullish（投机）</strong></p>
 <p><strong>确信度</strong>：<strong>4/10</strong>（<strong>纯期权式仓位</strong>，非投资）</p>
 <p><strong>建议持仓周期</strong>：</p>
@@ -273,7 +285,7 @@
 <li>2027–2028：首座商业部署</li>
 </ul>
 <hr>
-<h2>操作建议小结</h2>
+<h2 id="操作建议小结">操作建议小结</h2>
 <ul>
 <li>⚠️ <strong>Speculative Position Only</strong> —— 单笔仓位 ≤ 1% 总投资组合</li>
 <li>✅ 5/12 财报前最多建 0.5% 仓</li>
@@ -285,7 +297,7 @@
 </ul>
 <p>*建议下一步：<code>/strategy OKLO long</code>（仅在愿做 binary 投机时）*</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://www.businesswire.com/news/home/20260506124210/en/Oklos-NRC-Principal-Design-Criteria-Topical-Report-Approved-for-Aurora-Powerhouse-in-Idaho" target="_blank" rel="noopener">Oklo NRC PDC Approval Aurora – BusinessWire</a></li>
 <li><a href="https://www.businesswire.com/news/home/20260428631386/en/Oklo-Announces-Date-for-First-Quarter-2026-Financial-Results-and-Business-Update-Call" target="_blank" rel="noopener">Oklo Q1 2026 Earnings Date – BusinessWire</a></li>
@@ -301,6 +313,7 @@
 <li><a href="https://www.marketbeat.com/stocks/NYSE/OKLO/forecast/" target="_blank" rel="noopener">OKLO Forecast – MarketBeat</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#1-价格与技术面">1. 价格与技术面</a></li><li><a class="toc-l2" href="#2-基本面快照">2. 基本面快照</a></li><li><a class="toc-l2" href="#3-近期催化与新闻">3. 近期催化与新闻</a></li><li><a class="toc-l2" href="#4-情绪面">4. 情绪面</a></li><li><a class="toc-l2" href="#5-多空辩论">5. 多空辩论</a></li><li><a class="toc-l3" href="#多头逻辑bull-case">多头逻辑（Bull Case）</a></li><li><a class="toc-l3" href="#空头逻辑bear-case">空头逻辑（Bear Case）</a></li><li><a class="toc-l2" href="#6-风险评估">6. 风险评估</a></li><li><a class="toc-l2" href="#7-结论">7. 结论</a></li><li><a class="toc-l2" href="#操作建议小结">操作建议小结</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>

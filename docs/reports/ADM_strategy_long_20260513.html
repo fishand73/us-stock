@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADM LONG 交易策略</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-13.html">← 返回 2026-05-13</a>
+    <p class="eyebrow">Strategy · 2026-05-13</p>
+    <h1>ADM LONG 交易策略</h1>
+    <p class="summary">由 <code>data/analyses/ADM_strategy_long_20260513.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>ADM LONG 交易策略</h1>
+<p><strong>日期</strong>: 2026-05-13</p>
+<p><strong>方向</strong>: <strong>LONG</strong>(多头)</p>
+<p><strong>当前价</strong>: ~$81.04(盘中,日内区间 $79.41-$81.86,今日触及 52周新高)</p>
+<p><strong>策略类型</strong>: <strong>Breakout + Catalyst Play</strong>(突破 + 政策催化跟随)</p>
+<hr>
+<h2 id="策略整体定性">⚠️ 策略整体定性</h2>
+<p>这是一笔<strong>顺势 + 政策驱动</strong>的中线多头:</p>
+<ul>
+<li>ADM 技术面 <strong>Strong Buy(9 Buy / 0 Sell)</strong>,1 年涨幅 +62%。趋势完全多头。</li>
+<li><strong>基本面拐点已确认</strong>: Q1 EPS Beat + FY26 EPS 指引上调 +20% + 中国 25Mt 大豆 + EPA RVO 终稿。</li>
+<li><strong>结构性 buy-the-dip 标的</strong>: Dividend King 53 年加派,适合做&quot;加仓回踩、不慌持有&quot;。</li>
+<li><strong>核心风险</strong>: 短期 price-in 较深,股价已超分析师均价 PT $76.17 — <strong>不建议追高入场,等回踩</strong>。</li>
+<li>信心评分:<strong>7/10</strong>(高于空头方案的 5.5/10)。</li>
+</ul>
+<hr>
+<h2 id="1-交易设置">1. 交易设置</h2>
+<h3 id="入场计划三段式-优先等回踩">入场计划(三段式 — 优先等回踩)</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价位</th>
+<th>触发条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>保守入场(首选)</strong></td>
+<td><strong>$77.00-78.50</strong></td>
+<td>峰会后回踩至分析师均价 PT 区域,量缩企稳 → 主仓位 40-50%</td>
+</tr>
+<tr>
+<td><strong>激进入场(突破)</strong></td>
+<td><strong>$82.50+</strong></td>
+<td>日线收盘 &gt; $82.50 放量(volume &gt; 1.3x 30日均量)→ 主仓位 30%</td>
+</tr>
+<tr>
+<td><strong>加仓 1</strong></td>
+<td><strong>$74.00</strong></td>
+<td>跌至 JPM PT + 突破前平台 → 加 20-30%</td>
+</tr>
+<tr>
+<td><strong>加仓 2</strong></td>
+<td><strong>$71-72</strong></td>
+<td>跌至 50日均线/200日均线汇合区(深回踩)→ 加 20%</td>
+</tr>
+<tr>
+<td><strong>不入场区</strong></td>
+<td><strong>$83-85</strong></td>
+<td>短期超买,等回落或放量突破 $85</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>:</p>
+<p>1. <strong>均价 PT 是天然吸筹位</strong>: $77.00 = 分析师 consensus $76.17 上方,机构会主动接盘。</p>
+<p>2. <strong>峰会后 sell-the-news 回落给机会</strong>: 即使峰会顺利,股价短期可能回踩 $77-78 → 这是最佳进场窗口。</p>
+<p>3. <strong>结构性突破 = 趋势加速</strong>: 若放量突破 $82.50 → 进入&quot;无阻力区&quot;,目标 $85-90。</p>
+<p>4. <strong>不追高的纪律</strong>: 当前价 $81 = 52周新高,已超均价 PT,直接追=R/R 难看。</p>
+<p><strong>最佳入场时点</strong>:</p>
+<ul>
+<li><strong>5/16 周一 — 5/22 周五</strong>:看峰会消息发酵 → 寻找 $77-78 区域的支撑信号(量缩、十字星、锤子线)</li>
+<li><strong>5/20 除息日(派息 $0.52)</strong>:股价自动 -$0.52,可能短暂砸出便宜筹码 → 适合首次建仓</li>
+<li>不要在峰会期间(5/14-15)入场,等噪声出清</li>
+</ul>
+<hr>
+<h3 id="仓位规模">仓位规模</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议总配置</th>
+<th>最大仓位</th>
+<th>分批节奏</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>$10K</strong></td>
+<td>5-7% ($500-700)</td>
+<td>8 股 + 1 张看涨价差</td>
+<td>首仓 4 股 + 加仓 4 股</td>
+</tr>
+<tr>
+<td><strong>$50K</strong></td>
+<td>5-7% ($2.5-3.5K)</td>
+<td>40 股 + 5 张价差</td>
+<td>首仓 20 股 + 两次加仓</td>
+</tr>
+<tr>
+<td><strong>$100K</strong></td>
+<td>5-7% ($5-7K)</td>
+<td>80 股 + 10 张价差</td>
+<td>首仓 40 股 + 两次加仓</td>
+</tr>
+<tr>
+<td><strong>$500K(长线红利)</strong></td>
+<td>8-10% ($40-50K)</td>
+<td>500 股(纯股票为主)</td>
+<td>分 3 批,长持 6-12 月</td>
+</tr>
+</tbody></table></div>
+<p><strong>单笔交易风险上限</strong>: <strong>2%</strong>(顺势 + Dividend King 防御性可适度放宽)</p>
+<p><strong>做多股数公式</strong>: 假设首仓入场 $78,止损 $73(-6.4%):</p>
+<ul>
+<li>单股最大亏损 = $78 - $73 = $5</li>
+<li>$50K 账户 × 2% = $1,000 风险 ÷ $5 = <strong>200 股首仓</strong>(可分两次建仓)</li>
+</ul>
+<hr>
+<h3 id="止损">止损</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>止损类型</th>
+<th>价位</th>
+<th>理由</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>硬止损</strong></td>
+<td><strong>$72.50</strong></td>
+<td>跌破 50日均线/突破平台 + JPM PT $74 下方 → 趋势破坏</td>
+</tr>
+<tr>
+<td><strong>收盘止损</strong></td>
+<td>日线收盘 &lt; $73.50</td>
+<td>收盘确认,日内插针不算</td>
+</tr>
+<tr>
+<td><strong>时间止损</strong></td>
+<td><strong>2026-07-31</strong></td>
+<td>若 2.5 月内未到 $85,thesis 偏弱,重新评估</td>
+</tr>
+<tr>
+<td><strong>基本面止损</strong></td>
+<td>EPS 指引下调</td>
+<td>若公司任何时点下调 FY26 EPS 指引 → 立即平仓</td>
+</tr>
+</tbody></table></div>
+<p><strong>100 股最大亏损</strong>: 入场 $78 → 止损 $72.50 = <strong>-$550</strong>(-7%)</p>
+<hr>
+<h3 id="盈利目标">盈利目标</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>目标</th>
+<th>价位</th>
+<th>%涨幅</th>
+<th>行动</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>T1(保守)</strong></td>
+<td><strong>$85.00</strong></td>
+<td>+9%(从 $78)</td>
+<td>平 1/3 仓 + 止损移到 $78(保本)</td>
+</tr>
+<tr>
+<td><strong>T2(基准)</strong></td>
+<td><strong>$90.00</strong></td>
+<td>+15%(从 $78)</td>
+<td>平 1/3 仓 + 止损移到 $82(锁 +5%)</td>
+</tr>
+<tr>
+<td><strong>T3(冲击/红利长持)</strong></td>
+<td><strong>$95-100</strong></td>
+<td>+22-28%</td>
+<td>剩余 1/3 转长持,追踪止损至 $88</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/收益比</strong>:</p>
+<ul>
+<li>入场 $78,止损 $72.50(风险 $5.50)</li>
+<li>T1 $85 = 收益 $7 → <strong>1.3 : 1</strong>(可接受)</li>
+<li>T2 $90 = 收益 $12 → <strong>2.2 : 1</strong>(理想)</li>
+<li>T3 $95 = 收益 $17 → <strong>3.1 : 1</strong>(优秀)</li>
+<li><strong>加权预期 R/R: 2.2 : 1</strong>(优于空头方案的 1.6 : 1)</li>
+</ul>
+<hr>
+<h3 id="仓位管理规则">仓位管理规则</h3>
+<p>1. <strong>触及 T1 ($85)</strong>: 立即平 1/3 仓,止损移到 $78(保本)。</p>
+<p>2. <strong>触及 T2 ($90)</strong>: 平另 1/3,止损移到 $82(锁 +5%)。</p>
+<p>3. <strong>5/14-15 峰会</strong>: 若已建仓 → <strong>持有不动</strong>(中线策略,事件本是利好);若未建仓 → 等峰会消息后再行动。</p>
+<p>4. <strong>触及止损 $72.50</strong>: 立即平仓,<strong>不补仓不期待回头</strong>。</p>
+<p>5. <strong>5/20 除息日</strong>: 股价自动 -$0.52,<strong>视为天然加仓窗口</strong>(若未满仓)。</p>
+<p>6. <strong>横盘 10 个交易日</strong>: 不立即平仓,但减小新加仓力度;等 Q2 财报方向。</p>
+<p>7. <strong>持有过 Q2 财报</strong>(8 月初):仅当已经获利 ≥ +10% 且仓位 ≤ 6%,否则财报前减仓 1/3 留观察仓。</p>
+<p>8. <strong>股息再投资</strong>: 6/10 收到的股息可用于 DRIP 复利(长线持仓者)。</p>
+<hr>
+<h2 id="2-期权方案适用中短期-杠杆放大">2. 期权方案(适用中短期 + 杠杆放大)</h2>
+<p>✅ <strong>ADM 多头适合用期权放大收益</strong>:IV ~26-27% 中等,call debit spread 性价比好。</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>策略</th>
+<th>细节</th>
+<th>单张成本(估算)</th>
+<th>最大收益</th>
+<th>盈亏平衡</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>首选 Call Debit Spread(中)</strong></td>
+<td>买 7/17 $80C / 卖 7/17 $87.5C</td>
+<td>~$300-350 / 张</td>
+<td>$400-450 / 张</td>
+<td>$83.0-83.5</td>
+</tr>
+<tr>
+<td>激进 Wide Call Spread</td>
+<td>买 7/17 $80C / 卖 7/17 $92.5C</td>
+<td>~$420-470 / 张</td>
+<td>$780-830 / 张</td>
+<td>$84.2-84.7</td>
+</tr>
+<tr>
+<td>单腿买入认购</td>
+<td>买 7/17 $80C</td>
+<td>~$350-400 / 张</td>
+<td>无限</td>
+<td>$83.5-84.0</td>
+</tr>
+<tr>
+<td><strong>激进价差 + 远月</strong></td>
+<td>买 9/19 $80C / 卖 9/19 $95C</td>
+<td>~$580 / 张</td>
+<td>$920 / 张</td>
+<td>$85.8</td>
+</tr>
+<tr>
+<td>Bull Put Spread(收取权利金)</td>
+<td>卖 7/17 $75P / 买 7/17 $70P</td>
+<td>净收 ~$80 / 张</td>
+<td>$80 / 张</td>
+<td>$74.2</td>
+</tr>
+</tbody></table></div>
+<p><strong>期权选择理由</strong>:</p>
+<ul>
+<li><strong>IV ~26-27%</strong> 中等水平 → call debit spread 比裸买便宜约 30-40%,且风险有上限。</li>
+<li><strong>7/17 到期</strong> 跨越:峰会(5/14-15)+ 除息(5/20)+ 8 月初 Q2 财报前(避免财报 IV 崩溃)。</li>
+<li><strong>9/19 远月</strong>: 给 Q2 财报留时间 + 政策催化继续发酵窗口 → 更适合 high-conviction 长线交易者。</li>
+<li><strong>Bull Put Spread</strong>: 在 $75 不破的情况下白拿权利金,<strong>适合&quot;我看不太跌但也不强烈看涨&quot;的中性偏多观点</strong>。</li>
+</ul>
+<p><strong>实际下单示例</strong>(中等账户 $50K,中线多头):</p>
+<ul>
+<li><strong>基础仓</strong>: 30 股股票 @ $78 = $2,340</li>
+<li><strong>杠杆仓</strong>: 3 张 7/17 $80/$87.5 Call Debit Spread = $900-1,050</li>
+<li>总成本 ~$3,300,占账户 6.6%</li>
+<li>最大潜在收益:股票部分 $360(T1)~ $660(T2)+ 期权部分 ~$1,200-1,350</li>
+<li>最大潜在亏损:股票 -$150(止损)+ 期权全损 $1,050 = -$1,200(2.4% 账户)</li>
+</ul>
+<hr>
+<h2 id="3-关键日期与催化">3. 关键日期与催化</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>预期影响(多头视角)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-14~15</strong></td>
+<td>🔥 <strong>特朗普-习近平北京峰会</strong></td>
+<td><strong>核心利好催化</strong> — 若有正式协议或现货大豆采购公告 → 直接跳涨</td>
+</tr>
+<tr>
+<td><strong>2026-05-20</strong></td>
+<td>除息日(派息 $0.52/股)</td>
+<td>-$0.52 短打,<strong>逢低加仓窗口</strong></td>
+</tr>
+<tr>
+<td><strong>2026-06-10</strong></td>
+<td>股息发放</td>
+<td>红利党到账,<strong>DRIP 复利</strong></td>
+</tr>
+<tr>
+<td><strong>2026-06~07</strong></td>
+<td>北半球大豆生长季</td>
+<td>天气/产量数据驱动</td>
+</tr>
+<tr>
+<td><strong>2026-06-19 / 7-17 / 9-19</strong></td>
+<td>月度期权到期</td>
+<td>期权策略到期日</td>
+</tr>
+<tr>
+<td><strong>2026-07-31</strong></td>
+<td>时间止损节点</td>
+<td>若未到 $85 重评估</td>
+</tr>
+<tr>
+<td><strong>2026-08 上旬</strong></td>
+<td><strong>Q2 2026 财报</strong></td>
+<td>高波动 — 若指引再上修 → 第二波拉升</td>
+</tr>
+<tr>
+<td><strong>2026-09 中</strong></td>
+<td>EPA 后续政策细则</td>
+<td>任何新解读都可能再推动</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="4-情景分析">4. 情景分析</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>情景</th>
+<th>概率</th>
+<th>价位目标</th>
+<th>行动</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Bull(大牛)</strong>: 峰会重大协议 + Q2 EPS 继续上修 + 25Mt 大豆现货公告</td>
+<td>25%</td>
+<td><strong>$95-100</strong>(+22-28%)</td>
+<td>持到 T3 + 长线</td>
+</tr>
+<tr>
+<td><strong>Base(基准)</strong>: 峰会顺利无新催化,基本面持续兑现指引</td>
+<td>50%</td>
+<td><strong>$85-90</strong>(+9-15%)</td>
+<td>平 T1-T2,保留长线红利仓</td>
+</tr>
+<tr>
+<td><strong>Bear(回调)</strong>: 峰会破裂或宏观突发利空,但基本面未破</td>
+<td>18%</td>
+<td><strong>$70-74</strong>(-5% ~ -9%)</td>
+<td>加仓 1+2,跌破 $72.5 止损</td>
+</tr>
+<tr>
+<td><strong>Disaster(黑天鹅)</strong>: Luthar 案爆出新黑料 / EPA 政策反转</td>
+<td>7%</td>
+<td><strong>$65 以下</strong></td>
+<td>触止损 $72.5 全平,认账</td>
+</tr>
+</tbody></table></div>
+<p><strong>期望值(EV)粗算(基于 $78 入场)</strong>:</p>
+<ul>
+<li>0.25 × (+22%) + 0.50 × (+11%) + 0.18 × (-7%) + 0.07 × (-7%)</li>
+<li>= 5.5% + 5.5% - 1.26% - 0.49%</li>
+<li>= <strong>+9.25% 预期回报</strong>(单笔 EV 大幅为正)</li>
+</ul>
+<hr>
+<h2 id="5-入场前检查清单">5. 入场前检查清单</h2>
+<ul>
+<li>[ ] 价格在 $77-78.50 区间(首选入场窗口),或确认放量突破 $82.50</li>
+<li>[ ] 不在 5/14-15 峰会窗口期内挂单(事件波动太大)</li>
+<li>[ ] 5/20 除息日已纳入仓位计算(无意外影响)</li>
+<li>[ ] 期权 IV 未异常飙升 &gt;35%(若飙升改用价差非裸 Call)</li>
+<li>[ ] 止损单已挂 $72.50(硬止损)+ 设置 $73.50 收盘提醒</li>
+<li>[ ] 仓位 ≤ 总账户 7%(单笔上限)</li>
+<li>[ ] 已设新闻警报(关键词:China soybean order, EPA SAF, Trump-Xi summit outcome, Luthar trial)</li>
+<li>[ ] 同时记录&quot;如果错了&quot;的具体平仓触发条件,而非只想盈利场景</li>
+</ul>
+<hr>
+<h2 id="6-三种持仓风格的具体建议">6. 三种持仓风格的具体建议</h2>
+<h3 id="a-swing-trader波段1-4-周">A. Swing Trader(波段,1-4 周)</h3>
+<ul>
+<li>入场:$77-78 回踩区或 $82.5 放量突破</li>
+<li>仓位:账户 3-5%</li>
+<li>出场:T1 $85 平一半,T2 $90 平剩余</li>
+<li>工具:股票 + Call Debit Spread $80/$87.5 7/17</li>
+<li>不持过 Q2 财报(8 月初)</li>
+</ul>
+<h3 id="b-position-trader持仓1-6-月">B. Position Trader(持仓,1-6 月)</h3>
+<ul>
+<li>入场:$77-78 主仓 + $74 加仓</li>
+<li>仓位:账户 5-7%</li>
+<li>出场:T2 $90 平 1/3 + T3 $95-100 平 1/3,剩余 1/3 转长线</li>
+<li>工具:股票为主,辅以 9/19 远月价差</li>
+<li><strong>持过 Q2 财报</strong>(预期指引继续上修)</li>
+</ul>
+<h3 id="c-dividend-compound红利长持12-月">C. Dividend Compound(红利长持,12 月+)</h3>
+<ul>
+<li>入场:任何 $75-78 价位,不刻意择时</li>
+<li>仓位:账户 8-10%</li>
+<li>出场:无固定目标,基本面未变就持有,享受 53 年加派复利</li>
+<li>工具:纯股票 + DRIP 自动复利</li>
+<li>不止损,<strong>仅在 EPS 指引下调 / Dividend 中断时退出</strong></li>
+</ul>
+<hr>
+<h2 id="7-策略综合判断">7. 策略综合判断</h2>
+<p><strong>策略信心</strong>: <strong>7/10</strong>(显著高于空头方案的 5.5/10)</p>
+<p><strong>最佳预期</strong>: <strong>+22-28%($95-100,3-6 月内)</strong></p>
+<p><strong>最坏(被止损)</strong>: <strong>-1.5% ~ -2% 账户(controlled loss)</strong></p>
+<p><strong>首选执行(中线交易者)</strong>: <strong>股票 40-60% + 7/17 $80/$87.5 Call Debit Spread 40%</strong></p>
+<hr>
+<h2 id="8-重要提醒">8. 重要提醒</h2>
+<p>1. <strong>不要追高 $81 以上</strong>: 当前价已超 consensus PT,等回踩或确认突破再入场。</p>
+<p>2. <strong>峰会 = 双刃剑</strong>: 是核心利好,但短期可能 sell the news → 不在峰会窗口建仓。</p>
+<p>3. <strong>Dividend King 心态</strong>: ADM 适合&quot;持有不动&quot;,日内波动很正常,<strong>不要因为 ±3% 的波动就出场</strong>。</p>
+<p>4. <strong>核心 thesis 锚点</strong>: 公司 FY26 EPS 指引 $4.15-$4.70。<strong>任何时点指引下调都是 thesis 破坏信号 → 必须平仓</strong>。</p>
+<p>5. <strong>政策风险监控</strong>: EPA RVO 后续解读 / Luthar 案民事进展 / SAF 政策反复 — 任何意外都需重评估。</p>
+<p>6. <strong>不要贪心追 home run</strong>: T2 $90 是 UBS Street-high,实际触及概率 ~40-50%。T3 $95+ 是中长线目标,<strong>不要在 +15% 时还期待 +30% 而错过 T2 出场点</strong>。</p>
+<hr>
+<h2 id="9-与空头策略的对比">9. 与空头策略的对比</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>维度</th>
+<th>LONG 策略</th>
+<th>SHORT 策略</th>
+</tr></thead><tbody>
+<tr>
+<td>与趋势</td>
+<td><strong>顺势</strong> ✅</td>
+<td>逆势 ⚠️</td>
+</tr>
+<tr>
+<td>与共识</td>
+<td>顺(机构持续上调)</td>
+<td>逆</td>
+</tr>
+<tr>
+<td>R/R</td>
+<td><strong>2.2 : 1</strong> ✅</td>
+<td>1.6 : 1</td>
+</tr>
+<tr>
+<td>预期 EV</td>
+<td><strong>+9.25%</strong> ✅</td>
+<td>+4.05%</td>
+</tr>
+<tr>
+<td>信心</td>
+<td><strong>7/10</strong> ✅</td>
+<td>5.5/10</td>
+</tr>
+<tr>
+<td>持仓周期</td>
+<td>1-6 月(灵活)</td>
+<td>2-4 周(限定)</td>
+</tr>
+<tr>
+<td>风险来源</td>
+<td>1-2 个(指引下调、Luthar)</td>
+<td>5+ 个(趋势+共识+股息+技术)</td>
+</tr>
+<tr>
+<td>适合场景</td>
+<td><strong>主力交易方向</strong></td>
+<td>战术性短打/对冲</td>
+</tr>
+</tbody></table></div>
+<p><strong>结论</strong>: <strong>LONG 是结构性首选,SHORT 仅用作对冲或战术性短打</strong>。两者可在同一账户共存:大部分本金做多 ADM,小部分用 Put Spread 对冲峰会下行风险。</p>
+<hr>
+<p><strong>数据来源</strong>: ADM 分析文件 <code>data/analyses/ADM_20260513.md</code>、Nasdaq 期权链、Yahoo Finance、MarketBeat 财报日历、ADM IR 股息公告、UBS/Barclays/JPM/MS 分析师报告,截至 2026-05-13。</p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#策略整体定性">⚠️ 策略整体定性</a></li><li><a class="toc-l2" href="#1-交易设置">1. 交易设置</a></li><li><a class="toc-l3" href="#入场计划三段式-优先等回踩">入场计划(三段式 — 优先等回踩)</a></li><li><a class="toc-l3" href="#仓位规模">仓位规模</a></li><li><a class="toc-l3" href="#止损">止损</a></li><li><a class="toc-l3" href="#盈利目标">盈利目标</a></li><li><a class="toc-l3" href="#仓位管理规则">仓位管理规则</a></li><li><a class="toc-l2" href="#2-期权方案适用中短期-杠杆放大">2. 期权方案(适用中短期 + 杠杆放大)</a></li><li><a class="toc-l2" href="#3-关键日期与催化">3. 关键日期与催化</a></li><li><a class="toc-l2" href="#4-情景分析">4. 情景分析</a></li><li><a class="toc-l2" href="#5-入场前检查清单">5. 入场前检查清单</a></li><li><a class="toc-l2" href="#6-三种持仓风格的具体建议">6. 三种持仓风格的具体建议</a></li><li><a class="toc-l3" href="#a-swing-trader波段1-4-周">A. Swing Trader(波段,1-4 周)</a></li><li><a class="toc-l3" href="#b-position-trader持仓1-6-月">B. Position Trader(持仓,1-6 月)</a></li><li><a class="toc-l3" href="#c-dividend-compound红利长持12-月">C. Dividend Compound(红利长持,12 月+)</a></li><li><a class="toc-l2" href="#7-策略综合判断">7. 策略综合判断</a></li><li><a class="toc-l2" href="#8-重要提醒">8. 重要提醒</a></li><li><a class="toc-l2" href="#9-与空头策略的对比">9. 与空头策略的对比</a></li></ul></aside>
+  </main>
+</body>
+</html>

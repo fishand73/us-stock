@@ -33,3 +33,12 @@ AI 辅助的美股分析体系：扫描候选标的、深度多维分析、生�
 - 已保存的分析：`data/analyses/TICKER_YYYYMMDD.md`
 - 当前自选股：`data/watchlist.md`
 - 配置 / 偏好：`config/settings.md`
+
+## 部署
+静态站点托管在 **Cloudflare Pages**（项目名 `us-stock`，域名 `us-stock.xqd.one`）。本地一键发布：
+
+```bash
+./scripts/deploy.sh
+```
+
+脚本会先用 `scripts/build_pages.py` 重新生成 `docs/reports/*.html`，再通过 `npx wrangler pages deploy docs` 推送到 Cloudflare。首次使用需 `npx wrangler login` 登录 Cloudflare 账户。

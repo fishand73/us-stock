@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>美股扫描结果 — 2026-05-08</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
   <header class="detail-header">
-    <a class="back-link" href="../index.html">← 返回总览</a>
-    <p class="eyebrow">Detailed Report</p>
+    <a class="back-link" href="../dates/2026-05-08.html">← 返回 2026-05-08</a>
+    <p class="eyebrow">Daily Scan · 2026-05-08</p>
     <h1>美股扫描结果 — 2026-05-08</h1>
     <p class="summary">由 <code>data/scans/scan_20260508.md</code> 生成。</p>
   </header>
@@ -17,7 +29,7 @@
     <article class="detail-content">
 <h1>美股扫描结果 — 2026-05-08</h1>
 <p><strong>主题过滤</strong>：AI / 算力 / DRAM / 闪存 / 电力 / 模型 / 消费电子</p>
-<h2>发布版摘要</h2>
+<h2 id="发布版摘要">发布版摘要</h2>
 <p>本次扫描的主线是 <strong>AI 基础设施扩散</strong>：交易热度从 GPU 龙头继续外溢到 HBM/DRAM、NAND/HDD、电力与 AI 软件。发布结论按执行优先级重排如下：</p>
 <ul>
 <li><strong>可执行</strong>：AAPL、TLN、NVDA。AAPL 与 TLN 具备较清晰建仓区间；NVDA 质量最高，但 5/20 财报前需控制仓位。</li>
@@ -26,7 +38,7 @@
 <li><strong>投机仓</strong>：OKLO、INOD。仅适合小仓位事件交易，不应作为核心持仓。</li>
 </ul>
 <p><strong>优先深度跟进顺序</strong>：AAPL → NVDA → TLN → MU → AVGO。若只选防守型核心仓，优先 AAPL / CEG；若选进攻仓，优先 TLN / AVGO / VST。</p>
-<h2>Top 候选股一览</h2>
+<h2 id="top-候选股一览">Top 候选股一览</h2>
 <div class="table-wrap detail-table"><table><thead><tr>
 <th>排名</th>
 <th>代码</th>
@@ -205,57 +217,57 @@
 </tr>
 </tbody></table></div>
 <hr>
-<h2>重点候选简评</h2>
-<h3>MU — Micron Technology</h3>
+<h2 id="重点候选简评">重点候选简评</h2>
+<h3 id="mu-micron-technology">MU — Micron Technology</h3>
 <ul>
 <li><strong>核心逻辑</strong>：HBM 把 DRAM 产能虹吸光，通用 DRAM 紧缺、价格连续两季环比 +30%，分析师 Mizuho 预测 FY27 营收 +66%、EPS +80%。</li>
 <li><strong>关键催化</strong>：HBM 2028 市场超 1000 亿；近 12 月涨幅约 700%。</li>
 <li><strong>风险</strong>：估值已演绎极致，回调幅度可能很猛；周期股顶部识别困难。</li>
 <li><strong>下一步</strong>：<code>/analyze MU</code></li>
 </ul>
-<h3>SNDK — SanDisk</h3>
+<h3 id="sndk-sandisk">SNDK — SanDisk</h3>
 <ul>
 <li><strong>核心逻辑</strong>：NAND 闪存纯标的，AI 数据中心 SSD 拉动，YTD +493%，市值约 2000 亿。</li>
 <li><strong>关键催化</strong>：WDC 已完成最后 750 万股清仓减持（2026-02-18），抛压解除。</li>
 <li><strong>风险</strong>：股价 $1370 流动性变薄，单日波动剧烈；二级发行历史。</li>
 <li><strong>下一步</strong>：<code>/analyze SNDK</code></li>
 </ul>
-<h3>VST — Vistra</h3>
+<h3 id="vst-vistra">VST — Vistra</h3>
 <ul>
 <li><strong>核心逻辑</strong>：最大独立电力运营商，AWS（1200MW Comanche Peak 核电）、Meta（2600+MW）长协 PPA 锁定；近期 -25% 回调可能是入场窗。</li>
 <li><strong>关键催化</strong>：40 亿收购 Cogentrix（PJM/ISO-NE 5500MW 燃气）；2026 EBITDA 68–76 亿。</li>
 <li><strong>风险</strong>：电力股拥挤交易，回调可能未走完；商品价格敏感。</li>
 <li><strong>下一步</strong>：<code>/analyze VST</code></li>
 </ul>
-<h3>PLTR — Palantir</h3>
+<h3 id="pltr-palantir">PLTR — Palantir</h3>
 <ul>
 <li><strong>核心逻辑</strong>：基本面与股价背离 — Q1 美国营收翻倍（+104%），商业 +133%，但 YTD -20%。</li>
 <li><strong>关键催化</strong>：全年指引上修至 76.5 亿（+71%）；估值消化中。</li>
 <li><strong>风险</strong>：估值仍是 AI 软件最贵之一；情绪两极。</li>
 <li><strong>下一步</strong>：<code>/analyze PLTR</code></li>
 </ul>
-<h3>CEG — Constellation Energy</h3>
+<h3 id="ceg-constellation-energy">CEG — Constellation Energy</h3>
 <ul>
 <li><strong>核心逻辑</strong>：全美最大核电运营商，Calpine 并购后形成&quot;核 + 气 + 地热&quot;组合，可向超大规模数据中心客户提供 firming 服务。</li>
 <li><strong>关键催化</strong>：与 MSFT、Google、Meta 的长期 PPA。</li>
 <li><strong>风险</strong>：监管审批/项目延期；估值已不便宜。</li>
 <li><strong>下一步</strong>：<code>/analyze CEG</code></li>
 </ul>
-<h3>AAPL — Apple</h3>
+<h3 id="aapl-apple">AAPL — Apple</h3>
 <ul>
 <li><strong>核心逻辑</strong>：Q2 营收 1112 亿（+17%），iPhone 570 亿、Services 310 亿、毛利率创纪录 49.3%。</li>
 <li><strong>关键催化</strong>：6/8–6/12 WWDC（Apple Intelligence + Siri 重构），秋季 iPhone 17 + 折叠机周期，9/1 CEO 换届（John Ternus 接任）。</li>
 <li><strong>风险</strong>：2026 智能手机出货可能 -5%（内存涨价压价），消费疲弱。</li>
 <li><strong>下一步</strong>：<code>/analyze AAPL</code></li>
 </ul>
-<h3>INOD — Innodata（高波动短线候选）</h3>
+<h3 id="inod-innodata高波动短线候选">INOD — Innodata（高波动短线候选）</h3>
 <ul>
 <li><strong>核心逻辑</strong>：单日 +73.4%，AI 数据标注/训练数据服务，EPS 超预期 83%。</li>
 <li><strong>关键催化</strong>：2026 指引大幅上调。</li>
 <li><strong>风险</strong>：单日爆涨后回踩概率高；客户集中度风险；属追涨而非建底仓。</li>
 <li><strong>下一步</strong>：<code>/analyze INOD</code>（仅在愿做日内/事件交易时考虑）</li>
 </ul>
-<h3>TLN / OKLO — 核电 SMR 主题</h3>
+<h3 id="tln-oklo-核电-smr-主题">TLN / OKLO — 核电 SMR 主题</h3>
 <ul>
 <li><strong>核心逻辑</strong>：AI 数据中心电力缺口（到 2030 年需 1.4 万亿美元投资），SMR 是中长期解决方案。</li>
 <li><strong>关键催化</strong>：TLN 与 X-Energy 在 PJM 推 Xe-100 SMR；OKLO 与 NVDA、洛斯阿拉莫斯、空军合作。</li>
@@ -263,7 +275,7 @@
 <li><strong>下一步</strong>：<code>/analyze TLN</code>（更稳健）或 <code>/analyze OKLO</code>（投机）</li>
 </ul>
 <hr>
-<h2>宏观与市场基调</h2>
+<h2 id="宏观与市场基调">宏观与市场基调</h2>
 <ul>
 <li><strong>VIX ≈ 17.08</strong>：低位，风险偏好整体在线；4 月曾在 17.4–28 区间波动，Fed 议息与大科技财报触发过抛售。</li>
 <li><strong>Fed Funds 上限 3.75%</strong>：自 2025-09 累计降息 75bp 后已暂停 5 个月；10Y 美债回升至 4.35%，对成长股估值有压制。</li>
@@ -272,17 +284,17 @@
 <li><strong>风格</strong>：奖励 AI 变现确定性（INOD、PLTR、MU），惩罚融资稀释/客户集中（KDK 单日 -34.5%）。</li>
 </ul>
 <hr>
-<h2>建议加入 watchlist.md</h2>
+<h2 id="建议加入-watchlistmd">建议加入 watchlist.md</h2>
 <ul>
 <li><strong>核心仓</strong>（高确定性，等回调）：MU、SNDK、CEG、AAPL</li>
 <li><strong>进攻仓</strong>（趋势 + 催化）：VST、PLTR、AVGO、TLN</li>
 <li><strong>观察仓</strong>（高弹性 / 高风险）：OKLO、INOD、GLW、WDC</li>
 </ul>
 <hr>
-<h2>优先深度分析建议</h2>
+<h2 id="优先深度分析建议">优先深度分析建议</h2>
 <p><strong>MU → VST → PLTR → AAPL</strong>（覆盖存储、电力、AI 软件、消费电子四大主题，且都临近重要催化事件）</p>
 <hr>
-<h2>数据来源</h2>
+<h2 id="数据来源">数据来源</h2>
 <ul>
 <li><a href="https://www.tradingview.com/markets/stocks-usa/market-movers-active/" target="_blank" rel="noopener">Most Active US Stocks – TradingView</a></li>
 <li><a href="https://stockmarketwatch.com/movers/today" target="_blank" rel="noopener">Today&#x27;s Top Gaining and Most Active Stocks</a></li>
@@ -304,6 +316,7 @@
 <li><a href="https://science-technology.news-articles.net/content/2026/05/05/qualcomm-s-strategic-pivot-to-on-device-ai-and-hardware-integration.html" target="_blank" rel="noopener">Qualcomm Pivot to On-Device AI</a></li>
 </ul>
     </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#发布版摘要">发布版摘要</a></li><li><a class="toc-l2" href="#top-候选股一览">Top 候选股一览</a></li><li><a class="toc-l2" href="#重点候选简评">重点候选简评</a></li><li><a class="toc-l3" href="#mu-micron-technology">MU — Micron Technology</a></li><li><a class="toc-l3" href="#sndk-sandisk">SNDK — SanDisk</a></li><li><a class="toc-l3" href="#vst-vistra">VST — Vistra</a></li><li><a class="toc-l3" href="#pltr-palantir">PLTR — Palantir</a></li><li><a class="toc-l3" href="#ceg-constellation-energy">CEG — Constellation Energy</a></li><li><a class="toc-l3" href="#aapl-apple">AAPL — Apple</a></li><li><a class="toc-l3" href="#inod-innodata高波动短线候选">INOD — Innodata（高波动短线候选）</a></li><li><a class="toc-l3" href="#tln-oklo-核电-smr-主题">TLN / OKLO — 核电 SMR 主题</a></li><li><a class="toc-l2" href="#宏观与市场基调">宏观与市场基调</a></li><li><a class="toc-l2" href="#建议加入-watchlistmd">建议加入 watchlist.md</a></li><li><a class="toc-l2" href="#优先深度分析建议">优先深度分析建议</a></li><li><a class="toc-l2" href="#数据来源">数据来源</a></li></ul></aside>
   </main>
 </body>
 </html>
