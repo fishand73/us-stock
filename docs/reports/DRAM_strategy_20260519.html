@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRAM LONG 交易策略</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-19.html">← 返回 2026-05-19</a>
+    <p class="eyebrow">Strategy · 2026-05-19</p>
+    <h1>DRAM LONG 交易策略</h1>
+    <p class="summary">由 <code>data/analyses/DRAM_strategy_20260519.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>DRAM LONG 交易策略</h1>
+<p><strong>日期</strong>：2026-05-19（美东盘中）</p>
+<p><strong>方向</strong>：LONG</p>
+<p><strong>当前价格</strong>：$51.10（5/18 收盘）；今日区间预计在 $50–$52 之间</p>
+<p><strong>策略类型</strong>：<strong>催化剂博弈（Samsung 罢工 T-2 日）+ 趋势延续</strong></p>
+<p>&gt; ⚠️ <strong>关键背景</strong>：</p>
+<p>&gt; - <strong>2026-05-21 (周四, ET)</strong>：Samsung 50,000 工人罢工启动，预计 18 天 —— 是头号 binary 催化剂。</p>
+<p>&gt; - 该 ETF 已上市 47 个交易日，<strong>+100% YTD</strong>，技术面无 50/200 SMA 参考。</p>
+<p>&gt; - 持仓 73% 集中在 SK Hynix + Samsung + Micron 三家，<strong>Samsung 是 #2 大权重</strong>。</p>
+<p>&gt; - 注意：DRAM 期权链 IV 较高但流动性有限，<strong>优先用正股</strong>；如需对冲改用 MU 期权（替代品）。</p>
+<hr>
+<h2 id="交易设置">交易设置</h2>
+<h3 id="入场计划">入场计划</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A1. 激进 / 事件前</strong>（明天 5/20 美东盘中）</td>
+<td>$50–$52</td>
+<td>当日不破 $48；NVDA 财报 5/20 盘后<strong>先决</strong> —— 若 NVDA 财报&quot;in-line 或 beat&quot; 再确认入场，否则跳到 A3</td>
+</tr>
+<tr>
+<td><strong>A2. 罢工确认入场</strong></td>
+<td>5/21 开盘后 30 分钟，价格 ≥ $52</td>
+<td>Samsung 罢工<strong>正式开始</strong>（非和解）→ 突破入场</td>
+</tr>
+<tr>
+<td><strong>A3. 回踩入场</strong>（保守 / 首选）</td>
+<td>$46–$48</td>
+<td>NVDA 财报后若内存板块情绪降温回踩；或罢工和解传闻</td>
+</tr>
+<tr>
+<td><strong>加仓位 2</strong></td>
+<td>较初始入场 +8%（约 $56）</td>
+<td>趋势延续且持仓量持续增加</td>
+</tr>
+<tr>
+<td><strong>不入场红线</strong></td>
+<td>&lt; $44 或单日 -10%</td>
+<td>整体 setup 破，等结构修复</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：</p>
+<ul>
+<li><strong>$50–$52</strong> 是 5/15–5/18 整理区间，事件前可低调建仓。</li>
+<li><strong>$52+ 突破点</strong>：5/15 单日 +13% 后高点附近，Samsung 罢工启动是基本面催化剂，趋势延续概率高。</li>
+<li><strong>$46–$48</strong> 是 5/12 周低点 + 2 周整理下沿，意外回踩这里风险回报最佳。</li>
+<li><strong>$44</strong> 是 -14% 跌幅 → 等同于 ETF 单月内动量结构终止。</li>
+</ul>
+<p><strong>最佳入场时机（美东）</strong>：</p>
+<ul>
+<li>优先窗口 <strong>5/21 美东开盘 30 分钟后</strong>（避开开盘伪突破，等待罢工事实确认）。</li>
+<li>次选 <strong>5/20 美东盘后</strong> —— NVDA 财报指引若强（H200 中国订单），可顺势在 ETF 盘后做小仓位。</li>
+<li>避开 <strong>5/19–20 美东开盘 90 分钟</strong>（NVDA 财报前避险流入预期）。</li>
+</ul>
+<hr>
+<h3 id="仓位管理">仓位管理</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议配置</th>
+<th>最大仓位</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>3–5%（$300–$500）</td>
+<td>6–10 股</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>4–6%（$2,000–$3,000）</td>
+<td>40–60 股</td>
+</tr>
+<tr>
+<td>$100,000</td>
+<td>5–8%（$5,000–$8,000）</td>
+<td>100–155 股</td>
+</tr>
+</tbody></table></div>
+<p><strong>单笔交易风险</strong>：账户总值的 <strong>0.75–1% 上限</strong>（高波动 + 集中度风险，下调风险预算）</p>
+<p><strong>A3 入场 $47，止损 $44 的情况下</strong>：</p>
+<ul>
+<li>$50K 账户 × 1% 风险 = $500 风险预算</li>
+<li>$500 / ($47 - $44) = <strong>166 股</strong>（≈ $7,800，约 16% 仓位 —— 此时需把仓位上限挪到风险预算之内）</li>
+</ul>
+<p>&gt; ⚠️ 由于 ETF 单日波幅可达 13%，<strong>实际仓位上限应同时受&quot;仓位规模&quot;和&quot;风险预算&quot;两者限制</strong>，取小值。</p>
+<hr>
+<h3 id="止损">止损</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>止损类型</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>硬止损</strong></td>
+<td>$44</td>
+<td>-12% 至 -14%（按入场价），结构性破位线</td>
+</tr>
+<tr>
+<td><strong>收盘止损</strong></td>
+<td>$46</td>
+<td>收盘跌破 $46 = 2 周整理下沿失守</td>
+</tr>
+<tr>
+<td><strong>时间止损</strong></td>
+<td><strong>2026-06-09 (ET)</strong></td>
+<td>罢工 18 天结束 + 缓冲一周；若 setup 仍未兑现，离场</td>
+</tr>
+<tr>
+<td><strong>追踪止损</strong></td>
+<td>涨 12% 后挂 10% trailing</td>
+<td>锁定动量利润</td>
+</tr>
+</tbody></table></div>
+<p><strong>每 100 股最大亏损</strong>（A3 入场 $47，止损 $44）：$300（-6.4%）；按 A1 $51 入场则 -13.7%</p>
+<hr>
+<h3 id="止盈目标">止盈目标</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>目标</th>
+<th>价格</th>
+<th>自 $47 涨幅</th>
+<th>自 $51 涨幅</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>T1（保守）</strong></td>
+<td>$55</td>
+<td>+17%</td>
+<td>+7.8%</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td><strong>T2（基准）</strong></td>
+<td>$60</td>
+<td>+27.6%</td>
+<td>+17.6%</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td><strong>T3（拉伸）</strong></td>
+<td>$66+</td>
+<td>+40%</td>
+<td>+29%</td>
+<td>剩余移动止损</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/回报比</strong>（A3 入场 $47，止损 $44，T2 $60）：<strong>($60-$47)/($47-$44) = 4.3 : 1</strong> ✅</p>
+<p><strong>风险/回报比</strong>（A1 入场 $51，止损 $44，T2 $60）：<strong>1.3 : 1</strong> ⚠️（事件型，可接受）</p>
+<hr>
+<h3 id="持仓管理规则">持仓管理规则</h3>
+<p>1. <strong>价格触及 T1（$55）</strong>：止损上移至 <strong>入场价（盈亏平衡）</strong>。</p>
+<p>2. <strong>价格触及 T2（$60）</strong>：止损跟进至 <strong>$55</strong>；累计已卖出 2/3 仓位。</p>
+<p>3. <strong>5/21 美东开盘罢工和解传闻</strong>：盘前若出现&quot;谈判突破&quot;标题，<strong>立即减仓 1/2</strong>，等开盘观察。</p>
+<p>4. <strong>5/21–5/22 单日反向 ≥ 5%</strong>：触发&quot;事件反转&quot;协议 —— 全额止损，不补仓。</p>
+<p>5. <strong>6/4 AVGO 财报、6/25 MU 财报临近</strong>：T2 之前<strong>减仓至 1/3 以下</strong>过财报，事件叠加风险过高。</p>
+<p>6. <strong>横盘 5 个交易日且 NVDA/MU 同步走弱</strong>：减仓 1/3，重估论点。</p>
+<hr>
+<h2 id="期权替代方案">期权替代方案</h2>
+<p>⚠️ <strong>DRAM 期权流动性新发偏弱、IV 较高</strong>。三种结构按推荐度排：</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>策略</th>
+<th>细节（参考行权与到期，需现场核 IV）</th>
+<th>估算成本</th>
+<th>最大利润</th>
+<th>盈亏平衡</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A. DRAM 看涨价差</strong>（首选）</td>
+<td>买 6/20 $52C / 卖 6/20 $60C</td>
+<td>~$2.5–3.5 / 张</td>
+<td>$4.5–5.5 / 张</td>
+<td>$54.5–55.5</td>
+</tr>
+<tr>
+<td><strong>B. MU 看涨价差</strong>（流动性最佳的代理）</td>
+<td>买 MU 6/20 $730C / 卖 $800C</td>
+<td>~$25–30 / 张</td>
+<td>$40–45 / 张</td>
+<td>$755–760</td>
+</tr>
+<tr>
+<td><strong>C. DRAM 直接买 call</strong>（IV 高，不推荐）</td>
+<td>买 6/20 $55C</td>
+<td>~$2.5–3.5 / 张</td>
+<td>理论无限</td>
+<td>$57.5–58.5</td>
+</tr>
+</tbody></table></div>
+<p><strong>期权使用逻辑</strong>：</p>
+<ul>
+<li>ETF call spread 把 <strong>IV 风险锁住</strong>（DRAM 30-day IV 估计 60%+，单边 long call 会被 theta 吃掉）。</li>
+<li><strong>MU 期权流动性远好于 DRAM</strong>，且 MU 在 DRAM ETF 里权重 ~25% —— 是高度相关代理。</li>
+<li>仓位：单张价差权利金 ≤ 账户 0.5%（事件型仓位）。</li>
+<li><strong>不建议卖 put</strong> —— 任何 NVDA/罢工反向意外都可能造成 10%+ 跳空。</li>
+</ul>
+<hr>
+<h2 id="关键日期与催化剂美东时区">关键日期与催化剂（美东时区）</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>预期影响</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-20 (周三, 盘后)</strong></td>
+<td><strong>NVDA Q1 FY27 财报</strong></td>
+<td><strong>极高</strong> —— 间接验证 AI capex / HBM 需求；DRAM 可能 ±5% 跳空</td>
+</tr>
+<tr>
+<td><strong>2026-05-21 (周四)</strong></td>
+<td><strong>Samsung 罢工启动</strong>（50K 工人，预计 18 天）</td>
+<td><strong>极高</strong> —— 核心事件，binary</td>
+</tr>
+<tr>
+<td>2026-05-21 (周四)</td>
+<td>Fed 5 月会议纪要</td>
+<td>中 —— 利率敏感</td>
+</tr>
+<tr>
+<td>2026-05-22 (周五)</td>
+<td>月度期权到期</td>
+<td>低 —— DRAM 期权链尚浅</td>
+</tr>
+<tr>
+<td><strong>2026-06-04 (周四, 盘后)</strong></td>
+<td><strong>AVGO 财报</strong></td>
+<td>高 —— AI ASIC + HBM 需求温度计</td>
+</tr>
+<tr>
+<td>2026-06-08 前后</td>
+<td>Samsung 罢工原定结束（18 天）</td>
+<td>高 —— 罢工延续/扩大 vs 和解</td>
+</tr>
+<tr>
+<td><strong>2026-06-17/18</strong></td>
+<td>FOMC 6 月会议</td>
+<td>中-高 —— 加息预期（45% 概率）</td>
+</tr>
+<tr>
+<td>2026-06-20 (周五)</td>
+<td>月度期权到期</td>
+<td>中 —— 价差结构到期日</td>
+</tr>
+<tr>
+<td><strong>2026-06-25 前后 (盘后)</strong></td>
+<td><strong>MU Q3 FY26 财报</strong></td>
+<td><strong>极高</strong> —— HBM 量价 + 指引验证</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="情景分析">情景分析</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>情景</th>
+<th>概率</th>
+<th>6 月底价格</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>多头</strong>：罢工 ≥ 14 天 + Samsung HBM4 受阻 + MU 财报 beat-and-raise</td>
+<td>30%</td>
+<td>$66–$75</td>
+<td>T3 拉伸</td>
+</tr>
+<tr>
+<td><strong>基准</strong>：罢工 7–14 天 + 局部供给冲击，价格延续上行但放慢</td>
+<td>40%</td>
+<td>$55–$62</td>
+<td>T1/T2 兑现</td>
+</tr>
+<tr>
+<td><strong>空头-1</strong>：罢工短期和解（&lt; 5 天），事件溢价回吐</td>
+<td>20%</td>
+<td>$44–$48</td>
+<td>触发 $44 硬止损</td>
+</tr>
+<tr>
+<td><strong>空头-2</strong>：NVDA 5/20 财报指引不及，AI 板块连带回调</td>
+<td>10%</td>
+<td>$40–$45</td>
+<td>不入场，观望</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="入场前清单">入场前清单</h2>
+<ul>
+<li>[ ] <strong>优先 5/21 美东开盘 30 分钟后</strong>入场（罢工确认）；不要 5/20 盘中盲追</li>
+<li>[ ] 5/20 NVDA 财报盘后结果已知，DRAM 反应方向已明</li>
+<li>[ ] 价格已抵达 A1/A2/A3 任一目标区间</li>
+<li>[ ] Samsung 工会<strong>未在 5/20–5/21 前突然和解</strong>（盘前查标题）</li>
+<li>[ ] 仓位计算 = min(账户 × 1% / (入场 - 止损), 仓位上限)，取小值</li>
+<li>[ ] 止损单已挂（GTC 单，止损价 $44 / $46 收盘）</li>
+<li>[ ] 6/25 MU 财报前减仓计划已写入日历</li>
+<li>[ ] 备用 MU 期权代理方案已准备（DRAM 期权流动性不足时切换）</li>
+</ul>
+<hr>
+<p><strong>策略信念分</strong>：<strong>7/10</strong></p>
+<ul>
+<li>加分：事件催化剂极强（罢工 + 供给售罄）、相对工具唯一性、订单簿（RPO）侧验证</li>
+<li>减分：47 天 +100% 极端动量、73% 集中度风险、ETF 期权流动性差、回调风险高</li>
+</ul>
+<p><strong>最优结果</strong>：3–6 周内 <strong>+30% 至 +40%</strong>（罢工延续 + Samsung HBM4 良率问题 + MU 财报超预期）</p>
+<p><strong>最差结果（被止损）</strong>：A3 入场 -6.4%；A1 入场 -13.7%（事件型激进入场代价）</p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#交易设置">交易设置</a></li><li><a class="toc-l3" href="#入场计划">入场计划</a></li><li><a class="toc-l3" href="#仓位管理">仓位管理</a></li><li><a class="toc-l3" href="#止损">止损</a></li><li><a class="toc-l3" href="#止盈目标">止盈目标</a></li><li><a class="toc-l3" href="#持仓管理规则">持仓管理规则</a></li><li><a class="toc-l2" href="#期权替代方案">期权替代方案</a></li><li><a class="toc-l2" href="#关键日期与催化剂美东时区">关键日期与催化剂（美东时区）</a></li><li><a class="toc-l2" href="#情景分析">情景分析</a></li><li><a class="toc-l2" href="#入场前清单">入场前清单</a></li></ul></aside>
+  </main>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVDA LONG 交易策略</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-20.html">← 返回 2026-05-20</a>
+    <p class="eyebrow">Strategy · 2026-05-20</p>
+    <h1>NVDA LONG 交易策略</h1>
+    <p class="summary">由 <code>data/analyses/NVDA_strategy_20260520.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>NVDA LONG 交易策略</h1>
+<p><strong>日期</strong>：2026-05-20（财报当日设计；5/21 开盘执行）</p>
+<p><strong>方向</strong>：<strong>LONG</strong></p>
+<p><strong>最后确认价格</strong>：$224.92（5/20 12:09 PM EDT，<strong>盘后财报前</strong>）</p>
+<p><strong>策略类型</strong>：<strong>催化剂博弈（财报反应跟随）+ 趋势延续</strong></p>
+<p>&gt; ⚠️ <strong>数据局限说明</strong>：本策略撰写时（美东 5/21 凌晨）NVDA Q1 FY27 财报已于 5/20 盘后发布，但 SEC EDGAR / CNBC / NVDA IR / Yahoo 实时报价页全部返回 403 或仍显示 5/20 盘中数据，搜索引擎尚未索引盘后反应。<strong>因此策略以&quot;三情景分支剧本&quot;形式给出</strong>，用户在 5/21 开盘前据实际盘后/盘前价位选取对应分支执行。</p>
+<hr>
+<h2 id="第一步确认盘后盘前反应用户必须先做这一步">第一步：确认盘后/盘前反应（用户必须先做这一步）</h2>
+<p>打开 Yahoo Finance / TradingView，<strong>查看 5/20 盘后 4:00-8:00 PM ET 与 5/21 盘前的 NVDA 价格</strong>，对照下表落入哪一情景：</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>反应区间</th>
+<th>5/21 开盘大致定位</th>
+<th>对应剧本</th>
+</tr></thead><tbody>
+<tr>
+<td>盘后 / 盘前价 <strong>&gt;$236</strong> (+5%+ vs 收盘)</td>
+<td>跳空上突破 ATH</td>
+<td><strong>剧本 A：超预期 + 指引上调</strong></td>
+</tr>
+<tr>
+<td>盘后 / 盘前价 <strong>$216–$235</strong>（±5% 区间）</td>
+<td>区间震荡</td>
+<td><strong>剧本 B：符合预期 / In-line</strong></td>
+</tr>
+<tr>
+<td>盘后 / 盘前价 <strong>&lt;$210</strong> (-5%+ vs 收盘)</td>
+<td>跳空下杀</td>
+<td><strong>剧本 C：Miss / 指引下修</strong></td>
+</tr>
+</tbody></table></div>
+<hr>
+<h1>剧本 A：超预期 + 指引上调（概率 35%）</h1>
+<h2 id="触发条件">触发条件</h2>
+<ul>
+<li>Q1 营收 &gt;$81B（beat &gt;2%）+ Q2 指引 ≥$85B + 毛利率 ≥75.5% + 中国营收实质入账路径明确</li>
+</ul>
+<h2 id="入场计划">入场计划</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td>激进入场</td>
+<td>$238–$240</td>
+<td>5/21 开盘后 30 分钟若守住 $236 ATH 之上即入场</td>
+</tr>
+<tr>
+<td>保守入场</td>
+<td>$242–$245</td>
+<td>突破 $240 → 回踩 $238 不破再确认入场</td>
+</tr>
+<tr>
+<td>加仓位 2</td>
+<td>$250</td>
+<td>若初始入场奏效，突破 $250 心理整数加 1/3</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：突破 ATH + 财报背书 = 趋势再加速；早晨 30 分钟波动消化 IV crush 后才能确认方向。</p>
+<p><strong>最佳入场时机</strong>：<strong>5/21 10:00 AM ET 之后</strong>（避开开盘 15 分钟流动性陷阱与 IV crush 瞬时 dump）。</p>
+<h3 id="仓位管理剧本-a">仓位管理（剧本 A）</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议配置</th>
+<th>最大仓位</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>6%（$600）</td>
+<td>2-3 股</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>8%（$4,000）</td>
+<td>16-17 股</td>
+</tr>
+<tr>
+<td>$250,000</td>
+<td>8-10%（$20,000-25,000）</td>
+<td>84-105 股</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场后立即挂单</strong>：硬止损 $222（-7%）。</p>
+<h3 id="止损与止盈剧本-a">止损与止盈（剧本 A）</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>项目</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td>硬止损</td>
+<td>$222</td>
+<td>跌破前 ATH $235.74 + 缺口下沿</td>
+</tr>
+<tr>
+<td>收盘止损</td>
+<td>$228</td>
+<td>日 K 收盘越过 ATH 下方即离场</td>
+</tr>
+<tr>
+<td>T1（保守）</td>
+<td>$250</td>
+<td>突破后短期目标 / 心理整数关 / +5%</td>
+</tr>
+<tr>
+<td>T2（基准）</td>
+<td>$275.83</td>
+<td>分析师平均 PT / +15-18%</td>
+</tr>
+<tr>
+<td>T3（拉伸）</td>
+<td>$325</td>
+<td>HSBC 高 PT 区 / +35%</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/回报比</strong>：以激进入场 $239 计，止损 $222（-7%）、T2 $275（+15%）→ <strong>R:R ≈ 2.1:1</strong>。</p>
+<hr>
+<h1>剧本 B：符合预期 / In-line（概率 45%）</h1>
+<h2 id="触发条件-1">触发条件</h2>
+<ul>
+<li>Q1 营收 $79–81B + Q2 指引 $82–84B + 毛利率 74.5–75.5% + 中国语焉不详</li>
+</ul>
+<h2 id="入场计划-1">入场计划</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>不在 5/21 开盘当天入场</strong></td>
+<td>—</td>
+<td>等待 IV crush 与方向确认</td>
+</tr>
+<tr>
+<td>战术性建仓 1</td>
+<td>$218–$220</td>
+<td>5/21 收盘后第二/第三天回踩支撑</td>
+</tr>
+<tr>
+<td>战术性建仓 2</td>
+<td>$210–$212</td>
+<td>5/22-5/26 之间深度回踩 50DMA 上方</td>
+</tr>
+<tr>
+<td>战术性建仓 3</td>
+<td>$200–$203</td>
+<td>如出现板块二次抛压</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：In-line = &quot;sell-the-news&quot;概率最高，但底层 $1T 订单可见性仍在 → 回踩做多。</p>
+<p><strong>最佳入场时机</strong>：<strong>5/22 或 5/23 第二/第三天反应</strong>；不在 IV crush 当天入场。</p>
+<h3 id="仓位管理剧本-b">仓位管理（剧本 B）</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议配置</th>
+<th>最大仓位</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>4%（$400）</td>
+<td>2 股</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>5-6%（$2,500-3,000）</td>
+<td>11-14 股</td>
+</tr>
+<tr>
+<td>$250,000</td>
+<td>6-8%（$15,000-20,000）</td>
+<td>68-90 股</td>
+</tr>
+</tbody></table></div>
+<h3 id="止损与止盈剧本-b">止损与止盈（剧本 B）</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>项目</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td>硬止损</td>
+<td>$191</td>
+<td>50DMA</td>
+</tr>
+<tr>
+<td>收盘止损</td>
+<td>$200</td>
+<td>心理整数 + 50DMA 缓冲</td>
+</tr>
+<tr>
+<td>T1</td>
+<td>$228</td>
+<td>财报当日 IV crush 回测位</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>$245</td>
+<td>重新挑战 ATH 上沿</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>$275</td>
+<td>平均 PT</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/回报比</strong>：以 $215 入场，止损 $200（-7%）、T2 $245（+14%）→ <strong>R:R ≈ 2:1</strong>。</p>
+<hr>
+<h1>剧本 C：Miss / 指引下修（概率 20%）</h1>
+<h2 id="触发条件-2">触发条件</h2>
+<ul>
+<li>Q1 营收 &lt;$78B 或 Q2 指引 &lt;$82B 或毛利率 &lt;74% 或 HBM 瓶颈披露</li>
+</ul>
+<h2 id="入场计划-2">入场计划</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>5/21 开盘不入场</strong></td>
+<td>—</td>
+<td>急跌当天不做接刀</td>
+</tr>
+<tr>
+<td>第一档观察</td>
+<td>$200–$207</td>
+<td>5/21-5/22 急跌后稳住再看</td>
+</tr>
+<tr>
+<td>第一档入场</td>
+<td>$193–$195</td>
+<td>跌破 50DMA $191 后第一次反弹失败回踩</td>
+</tr>
+<tr>
+<td>加仓位 2</td>
+<td>$175–$180</td>
+<td>跌破 200DMA $185 后深度回测</td>
+</tr>
+<tr>
+<td>加仓位 3（极限）</td>
+<td>$160–$165</td>
+<td>1 月初支撑 / 全板块大底信号</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：NVDA miss 是周期性事件，不是结构性破坏；$1T 订单可见性 + 86% 市场份额底层逻辑未变。<strong>等到恐慌情绪宣泄后</strong>分批左侧。</p>
+<p><strong>最佳入场时机</strong>：恐慌抛售第 2-3 天，技术上 RSI &lt;30 + 成交量异常放大后。</p>
+<h3 id="仓位管理剧本-c">仓位管理（剧本 C）</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议配置（分 3 批）</th>
+<th>最大仓位</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>5%（$500）</td>
+<td>2-3 股</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>8-10%（$4,000-5,000）</td>
+<td>21-26 股</td>
+</tr>
+<tr>
+<td>$250,000</td>
+<td>10-12%（$25,000-30,000）</td>
+<td>128-154 股</td>
+</tr>
+</tbody></table></div>
+<h3 id="止损与止盈剧本-c">止损与止盈（剧本 C）</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>项目</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td>硬止损（综合）</td>
+<td>$155</td>
+<td>跌破即结构破坏；3 月低位</td>
+</tr>
+<tr>
+<td>T1</td>
+<td>$215</td>
+<td>IV crush 后第一次反弹</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>$245</td>
+<td>缺口回补</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>$275</td>
+<td>趋势恢复 / 分析师平均 PT</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/回报比</strong>：以 $193 入场，止损 $175（-9%）、T2 $245（+27%）→ <strong>R:R ≈ 3:1</strong>（最佳风险回报）。</p>
+<hr>
+<h2 id="期权替代方案适用所有剧本">期权替代方案（适用所有剧本）</h2>
+<p>&gt; NVDA 财报后 IV 会从 ~45% crush 至 ~30%，<strong>任何买长期 call/put 在 5/21 当天均亏 IV</strong>。</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>策略</th>
+<th>适用剧本</th>
+<th>细节</th>
+<th>优势</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Bull Call Spread</strong></td>
+<td>剧本 A</td>
+<td>买 $240C / 卖 $260C，到期 6/20/2026</td>
+<td>锁定上行 $20 × 100 = $2000，成本受 IV crush 拖累小</td>
+</tr>
+<tr>
+<td><strong>现金担保 put</strong></td>
+<td>剧本 B / C</td>
+<td>卖 $200P 到期 6/20/2026</td>
+<td>卖出权利金 ~$3-5（IV crush 后才有利可图）</td>
+</tr>
+<tr>
+<td><strong>Calendar Call Spread</strong></td>
+<td>剧本 B</td>
+<td>卖 5/30 周 $230C + 买 6/20 $230C</td>
+<td>利用近月 IV crush 套权利金</td>
+</tr>
+<tr>
+<td><strong>Diagonal Put Spread</strong></td>
+<td>剧本 C 防守</td>
+<td>买 6/20 $200P + 卖 5/30 周 $190P</td>
+<td>下行 $10-20 区间获利空间</td>
+</tr>
+</tbody></table></div>
+<p><strong>关键提示</strong>：<strong>5/21 开盘当天不买裸 call / put</strong>（IV crush 会立刻吞掉 30-40% 权利金）。</p>
+<hr>
+<h2 id="关键日期与催化剂已对齐-521-视角">关键日期与催化剂（已对齐 5/21+ 视角）</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>预期影响</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-21</strong></td>
+<td>NVDA 财报后第一交易日</td>
+<td><strong>决定剧本 A / B / C</strong></td>
+</tr>
+<tr>
+<td>2026-06 上旬</td>
+<td>AVGO Q2 FY26 财报</td>
+<td>AI ASIC 竞品参考</td>
+</tr>
+<tr>
+<td>2026-06 中旬</td>
+<td>美联储 FOMC</td>
+<td>宏观流动性</td>
+</tr>
+<tr>
+<td>2026-07-30</td>
+<td>Meta / MSFT / GOOGL Q2 财报（AI capex 指引）</td>
+<td>NVDA 客户支出验证</td>
+</tr>
+<tr>
+<td>2026-Q3</td>
+<td>AMD MI450 / Helios 大规模部署</td>
+<td>NVDA 86% 份额防御战</td>
+</tr>
+<tr>
+<td>2026 H2</td>
+<td>Vera Rubin 平台首批出货</td>
+<td>下一波估值锚定</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="总情景加权概率与预期">总情景加权概率与预期</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>情景</th>
+<th>概率</th>
+<th>1 周价位</th>
+<th>4 周价位</th>
+<th>期望操作</th>
+</tr></thead><tbody>
+<tr>
+<td>剧本 A：突破 ATH</td>
+<td>35%</td>
+<td>$240-250</td>
+<td>$260-275</td>
+<td>追击趋势，T2 兑现</td>
+</tr>
+<tr>
+<td>剧本 B：区间震荡</td>
+<td>45%</td>
+<td>$215-228</td>
+<td>$230-245</td>
+<td>左侧分批，T1-T2 兑现</td>
+</tr>
+<tr>
+<td>剧本 C：跳空下杀</td>
+<td>20%</td>
+<td>$193-207</td>
+<td>$215-235</td>
+<td>等恐慌后左侧入场，R:R 最佳</td>
+</tr>
+</tbody></table></div>
+<p><strong>加权目标价（4 周）</strong>：$237（vs 当前 $224.92 → +5.4%）。</p>
+<hr>
+<h2 id="入场前清单521-开盘前必查">入场前清单（5/21 开盘前必查）</h2>
+<ul>
+<li>[ ] <strong>已查实际盘后/盘前价位</strong>，确认落入 A / B / C 哪一剧本</li>
+<li>[ ] 价格已抵达 / 接近计划入场水位</li>
+<li>[ ] 财报新闻已浏览（毛利率、Q2 指引、中国营收说明）</li>
+<li>[ ] 成交量已确认（无异常稀薄）</li>
+<li>[ ] 已计算仓位，不超过最大风险阈值</li>
+<li>[ ] 入场后立刻挂出止损单已准备就绪</li>
+<li>[ ] <strong>持有时间预算</strong>：剧本 A 1-2 周；剧本 B 2-4 周；剧本 C 4-8 周</li>
+</ul>
+<hr>
+<p><strong>策略信念分</strong>：<strong>7/10</strong>（结构看涨；但财报后第一天结果未知，最佳路径是剧本 B + 剧本 C 的左侧建仓机会）</p>
+<p><strong>最优结果</strong>：4 周内 +15-25%（剧本 A 突破 / 剧本 C 抄底成功）</p>
+<p><strong>最差结果</strong>：-7~-10%（任一剧本止损被打到）</p>
+<hr>
+<p>*下一步：5/21 开盘前查盘后反应 → 选择对应剧本 → 执行入场。可发送&quot;NVDA 实际盘后反应 [价位/方向]&quot;我会立刻收敛到单一剧本并细化。*</p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#第一步确认盘后盘前反应用户必须先做这一步">第一步：确认盘后/盘前反应（用户必须先做这一步）</a></li><li><a class="toc-l2" href="#触发条件">触发条件</a></li><li><a class="toc-l2" href="#入场计划">入场计划</a></li><li><a class="toc-l3" href="#仓位管理剧本-a">仓位管理（剧本 A）</a></li><li><a class="toc-l3" href="#止损与止盈剧本-a">止损与止盈（剧本 A）</a></li><li><a class="toc-l2" href="#触发条件-1">触发条件</a></li><li><a class="toc-l2" href="#入场计划-1">入场计划</a></li><li><a class="toc-l3" href="#仓位管理剧本-b">仓位管理（剧本 B）</a></li><li><a class="toc-l3" href="#止损与止盈剧本-b">止损与止盈（剧本 B）</a></li><li><a class="toc-l2" href="#触发条件-2">触发条件</a></li><li><a class="toc-l2" href="#入场计划-2">入场计划</a></li><li><a class="toc-l3" href="#仓位管理剧本-c">仓位管理（剧本 C）</a></li><li><a class="toc-l3" href="#止损与止盈剧本-c">止损与止盈（剧本 C）</a></li><li><a class="toc-l2" href="#期权替代方案适用所有剧本">期权替代方案（适用所有剧本）</a></li><li><a class="toc-l2" href="#关键日期与催化剂已对齐-521-视角">关键日期与催化剂（已对齐 5/21+ 视角）</a></li><li><a class="toc-l2" href="#总情景加权概率与预期">总情景加权概率与预期</a></li><li><a class="toc-l2" href="#入场前清单521-开盘前必查">入场前清单（5/21 开盘前必查）</a></li></ul></aside>
+  </main>
+</body>
+</html>

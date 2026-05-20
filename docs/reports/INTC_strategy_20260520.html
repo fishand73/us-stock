@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INTC LONG 交易策略</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-20.html">← 返回 2026-05-20</a>
+    <p class="eyebrow">Strategy · 2026-05-20</p>
+    <h1>INTC LONG 交易策略</h1>
+    <p class="summary">由 <code>data/analyses/INTC_strategy_20260520.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>INTC LONG 交易策略</h1>
+<p><strong>日期</strong>：2026-05-20（设计），5/21 开盘执行</p>
+<p><strong>方向</strong>：<strong>LONG</strong>（短线 + 中期分离）</p>
+<p><strong>最后确认价格</strong>：$116.65（5/20 12:09 PM EDT 盘中，+5.28%）</p>
+<p><strong>日内区间</strong>：$116.20 – <strong>$121.94</strong>（已突破 5/8 收盘 $125 阻力前哨）</p>
+<p><strong>策略类型</strong>：<strong>叙事驱动突破 + 半导体板块跟随 + 严格等回调左侧</strong></p>
+<p>&gt; ⚠️ 注意：INTC 已涨 ~400%（过去 12 个月）+ Apple Foundry deal <strong>仍是 preliminary 框架协议</strong>（未签正式合同、未披露量级 / 产品 / 时间表）。本策略<strong>双轨制</strong>：① 短线 swing 跟随趋势；② 中期左侧等深度回调建仓。<strong>不建议中长期单一价位 buy-and-hold</strong>。</p>
+<hr>
+<h2 id="交易设置">交易设置</h2>
+<h3 id="入场计划双轨制">入场计划（双轨制）</h3>
+<h4>轨道 A：短线 Swing（1-2 周）</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td>激进入场</td>
+<td>$116–$118</td>
+<td>5/21 开盘后 30 分钟若守住 $116 之上即入场（追今日动能）</td>
+</tr>
+<tr>
+<td>保守入场</td>
+<td>$112–$114</td>
+<td>5/21-5/22 回踩 50DMA $112.48 不破再入场（更安全）</td>
+</tr>
+<tr>
+<td>加仓位 2</td>
+<td>$122–$124</td>
+<td>突破 $122 阻力后回踩 $120 不破加仓</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：5/20 +5.28% 跳空 + Microsoft Surface / Samsung Galaxy Book6 / 18A 供应优势叙事三重共振，技术上 50DMA 已上穿且 RSI 仍有空间。<strong>短期目标 $125-$132 是上方阻力区</strong>。</p>
+<p><strong>最佳入场时机</strong>：<strong>5/21 10:00 AM ET 后</strong>，看 NVDA 财报反应外溢方向；NVDA +5%+ → INTC 跟涨追买；NVDA -5%+ → INTC 跌至 $108-$110 重新评估。</p>
+<h4>轨道 B：中期左侧（1-3 个月）</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td>第一档</td>
+<td>$98–$102</td>
+<td>5/14 关键缺口下沿，回踩此区分批 1/3 仓</td>
+</tr>
+<tr>
+<td>第二档</td>
+<td>$90–$95</td>
+<td>200DMA 上方深度回测，加 1/3 仓</td>
+</tr>
+<tr>
+<td>第三档（极限）</td>
+<td>$80–$85</td>
+<td>200DMA $79 附近 / Burry 喊顶兑现的恐慌大底</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：基本面拐点真实（Q1 beat $1.2B + DCAI +22% + 18A 良率 &gt;60%），但估值需要回吐到 30-40x 远期 P/E 才合理 → $90-100 区间是中期最佳建仓窗口。</p>
+<hr>
+<h3 id="仓位管理">仓位管理</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>轨道 A（短线）配置</th>
+<th>轨道 B（中期）配置</th>
+<th>合计上限</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>3%（$300，2-3 股）</td>
+<td>5%（$500，5 股分三批）</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>4%（$2,000，17 股）</td>
+<td>6-8%（$3,000-4,000，30 股分三批）</td>
+<td>10-12%</td>
+</tr>
+<tr>
+<td>$250,000</td>
+<td>5%（$12,500，108 股）</td>
+<td>8-10%（$20,000-25,000，200-260 股分三批）</td>
+<td>13-15%</td>
+</tr>
+</tbody></table></div>
+<p><strong>单笔交易风险</strong>：账户总值的 1-2% 上限。</p>
+<p><strong>轨道 A 在 $117 应买入股数</strong>（账户 $50,000 × 2% 风险 / ($117 - $108) 止损区间）= <strong>111 股</strong>（按 17 股仓位上限取小）→ 实际 <strong>17 股</strong>。</p>
+<hr>
+<h3 id="止损">止损</h3>
+<h4>轨道 A 止损（短线）</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>止损类型</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td>硬止损</td>
+<td>$108</td>
+<td>5/19 收盘 / 5/20 盘中低 $116.20 减一个 ATR</td>
+</tr>
+<tr>
+<td>收盘止损</td>
+<td>$110</td>
+<td>日 K 收盘破 $110 即离场</td>
+</tr>
+<tr>
+<td>时间止损</td>
+<td>2026-06-05</td>
+<td>若 2 周内未触及 $125，重新评估</td>
+</tr>
+</tbody></table></div>
+<p><strong>轨道 A 每 100 股最大亏损</strong>：$117 入场，止损 $108 → <strong>$900</strong>（-7.7%）</p>
+<h4>轨道 B 止损（中期）</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>止损类型</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td>硬止损</td>
+<td>$72</td>
+<td>200DMA $79 下方一个 ATR；结构破坏</td>
+</tr>
+<tr>
+<td>收盘止损</td>
+<td>$78</td>
+<td>跌破 200DMA 强制止损</td>
+</tr>
+<tr>
+<td>时间止损</td>
+<td>2026-09-30</td>
+<td>6 个月内 Apple Foundry deal 无正式合同 / 客户名单升级 → 离场</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="止盈目标">止盈目标</h3>
+<h4>轨道 A（短线 1-2 周）</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>目标</th>
+<th>价格</th>
+<th>涨幅</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td>T1（保守）</td>
+<td>$125</td>
+<td>+7%（vs $117）</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td>T2（基准）</td>
+<td>$132.75</td>
+<td>+13%（ATH）</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td>T3（拉伸）</td>
+<td>$140</td>
+<td>+20%（Benchmark 高 PT）</td>
+<td>剩余 1/3 移动止损追 $135</td>
+</tr>
+</tbody></table></div>
+<p><strong>轨道 A R:R</strong>：$117 入场，止损 $108 (-7.7%)、T2 $132.75 (+13%) → <strong>R:R ≈ 1.7:1</strong>（中等偏低）</p>
+<h4>轨道 B（中期 3-6 个月）</h4>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>目标</th>
+<th>价格</th>
+<th>涨幅</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td>T1（保守）</td>
+<td>$112</td>
+<td>+12%（vs $100 均价）</td>
+<td>卖出 1/3</td>
+</tr>
+<tr>
+<td>T2（基准）</td>
+<td>$125</td>
+<td>+25%</td>
+<td>卖出 1/3</td>
+</tr>
+<tr>
+<td>T3（拉伸）</td>
+<td>$150</td>
+<td>+50%（Melius 高 PT）</td>
+<td>剩余 1/3 持有</td>
+</tr>
+</tbody></table></div>
+<p><strong>轨道 B R:R</strong>：$100 均价，止损 $78 (-22%)、T2 $125 (+25%) → <strong>R:R ≈ 1.1:1</strong>（不诱人但已是 INTC 风险特征）</p>
+<hr>
+<h3 id="持仓管理规则">持仓管理规则</h3>
+<p>1. <strong>轨道 A 价格触及 T1 ($125)</strong>：止损上移至 $117（盈亏平衡）+ 卖 1/3。</p>
+<p>2. <strong>轨道 A 价格触及 T2 ($132.75)</strong>：止损跟进至 $125；累计卖出 2/3。</p>
+<p>3. <strong>第 1 天即触发止损</strong>：全额止损，不做加仓摊低，<strong>绝对禁忌</strong>因为 400% 涨幅后 -7% 可能扩大为 -25%。</p>
+<p>4. <strong>横盘超过 5 天且无催化剂</strong>：重新评估，考虑离场。INTC 的&quot;叙事消耗&quot;周期约 7-14 天。</p>
+<p>5. <strong>Apple 公开发声</strong>：</p>
+<ul>
+<li>正面（&quot;continuing with TSMC&quot;以外的任何表述）→ 持有</li>
+<li>负面（&quot;continuing with TSMC for foreseeable future&quot;）→ 立即清仓</li>
+</ul>
+<p>6. <strong>Burry 喊顶或新增空头披露</strong>：仅作为辅助信号，不主动加仓。</p>
+<p>7. <strong>临近 Q2&#x27;26 财报（2026-07 下旬）</strong>：轨道 A 必须在财报前 1 周清仓（IV crush + 估值审视风险）；轨道 B 可持有过财报。</p>
+<hr>
+<h2 id="期权替代方案">期权替代方案</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>策略</th>
+<th>适用轨道</th>
+<th>细节</th>
+<th>成本估算</th>
+<th>最大利润</th>
+<th>盈亏平衡</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Bull Call Spread</strong></td>
+<td>轨道 A</td>
+<td>买 $120C / 卖 $135C，到期 2026-06-20</td>
+<td>~$5/张</td>
+<td>$10 × 100 = $1000</td>
+<td>$125</td>
+</tr>
+<tr>
+<td><strong>Cash-Secured Put</strong></td>
+<td>轨道 B 建仓</td>
+<td>卖 $100P，到期 2026-08-15</td>
+<td>权利金 ~$4-6</td>
+<td>$400-600 + 若被指派以 $100 接货</td>
+<td>$95-96 净成本</td>
+</tr>
+<tr>
+<td><strong>Bull Put Spread</strong></td>
+<td>轨道 A 防守</td>
+<td>卖 $110P / 买 $100P，到期 2026-06-20</td>
+<td>净 credit ~$2</td>
+<td>$200</td>
+<td>$108</td>
+</tr>
+<tr>
+<td><strong>Diagonal Call Spread</strong></td>
+<td>轨道 B 增强</td>
+<td>买 2026-12 $100C / 卖 2026-06 $130C</td>
+<td>净 debit ~$15</td>
+<td>看时间衰减</td>
+<td>复杂</td>
+</tr>
+</tbody></table></div>
+<p><strong>期权使用逻辑</strong>：INTC 当前 IV ~50%（财报前抢跑后）→ 卖权利金优于买权利金；轨道 B 中期建仓优先用现金担保 put（$100 strike），既能拿权利金又能在被指派时拿到目标价位。</p>
+<hr>
+<h2 id="关键日期与催化剂">关键日期与催化剂</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>预期影响</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-20 盘后</strong></td>
+<td>NVDA 财报</td>
+<td>INTC 短线方向决定因素</td>
+</tr>
+<tr>
+<td>2026-06 上旬</td>
+<td>Computex Taipei（Intel 18A 工艺展示）</td>
+<td>高（产品/客户披露窗口）</td>
+</tr>
+<tr>
+<td>2026-06 至 09 月</td>
+<td>Apple-Intel deal 正式合同披露 / 否认</td>
+<td><strong>决定性</strong>（轨道 B 时间止损依据）</td>
+</tr>
+<tr>
+<td>2026-07 下旬</td>
+<td>Q2&#x27;26 财报（IFS 外部营收 + DCAI 续航）</td>
+<td>极高（轨道 A 必须避开）</td>
+</tr>
+<tr>
+<td>2026-09</td>
+<td>Apple iPhone 17 发布会（A19 芯片代工归属）</td>
+<td>高</td>
+</tr>
+<tr>
+<td>2026-10</td>
+<td>Intel Foundry Direct Connect 大会（外部客户名单）</td>
+<td>极高</td>
+</tr>
+<tr>
+<td>2026-Q4</td>
+<td>Panther Lake 量产爬坡 + 18A-P 客户 ramp</td>
+<td>高</td>
+</tr>
+<tr>
+<td>持续</td>
+<td>美国政府减持节奏（~50B 持仓）</td>
+<td>中</td>
+</tr>
+<tr>
+<td>持续</td>
+<td>SOXX 板块情绪（Burry SOXX 空头）</td>
+<td>中</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="情景分析">情景分析</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>情景</th>
+<th>概率</th>
+<th>1 个月价位</th>
+<th>3 个月价位</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>多头：Apple deal 升级 + Q2 beat + 18A 客户名单扩大</strong></td>
+<td>25%</td>
+<td>$130-140</td>
+<td>$145-160</td>
+<td>轨道 A T2/T3 兑现；轨道 B 持有至 T3</td>
+</tr>
+<tr>
+<td><strong>基准：维持当前叙事 + 板块震荡</strong></td>
+<td>50%</td>
+<td>$108-125</td>
+<td>$100-130</td>
+<td>轨道 A 区间高抛低吸；轨道 B 暂不出击</td>
+</tr>
+<tr>
+<td><strong>空头：Apple deal 落空 / 板块抛压 / Burry 喊顶兑现</strong></td>
+<td>25%</td>
+<td>$90-105</td>
+<td>$75-95</td>
+<td>轨道 A 止损；<strong>轨道 B 在 $90-100 启动建仓</strong>（左侧最佳点）</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="入场前清单">入场前清单</h2>
+<ul>
+<li>[ ] <strong>NVDA 5/20 盘后反应已查实</strong>（决定 INTC 5/21 开盘方向）</li>
+<li>[ ] 价格已抵达 / 接近计划入场水位</li>
+<li>[ ] 成交量已确认（5/20 已确认强势放量）</li>
+<li>[ ] 未来 24 小时内无重大新闻事件可能造成不利跳空（Apple WWDC 6/8 注意）</li>
+<li>[ ] 已计算仓位，不超过最大风险阈值（轨道 A+B 合计 ≤15%）</li>
+<li>[ ] 入场后立刻挂出止损单已准备就绪</li>
+<li>[ ] 入场前已知道两个方向各自的退出方案</li>
+<li>[ ] <strong>轨道 B 资金已预留</strong>：不动用轨道 A 资金回补轨道 B</li>
+</ul>
+<hr>
+<h2 id="综合评估">综合评估</h2>
+<p><strong>策略信念分</strong>：<strong>6/10</strong></p>
+<ul>
+<li>多头叙事真实（Apple + Q1 beat + 政府托底）但 5.5/10 信念分扣在&quot;价格已 price-in 1.5×&quot;</li>
+<li>短线轨道 A 风险/收益比 1.7:1 偏低 → 仓位轻、止损紧</li>
+<li>中期轨道 B 必须等回调，<strong>当前 $116 不是中期建仓点</strong></li>
+</ul>
+<p><strong>最优结果</strong>：</p>
+<ul>
+<li>轨道 A：2 周内 +13-20%（$132-$140）</li>
+<li>轨道 B：3-6 月内 +25-50%（$125-$150 from $100 均价）</li>
+</ul>
+<p><strong>最差结果（被止损）</strong>：</p>
+<ul>
+<li>轨道 A：-7-10%（受控）</li>
+<li>轨道 B：-22%（极限场景）</li>
+</ul>
+<p><strong>最适合的用户档案</strong>：</p>
+<ul>
+<li>已持仓：维持，设移动止损 $108，持有过 5/21 短期反应</li>
+<li>未持仓 + 短线偏好：仅参与轨道 A，仓位 ≤5%</li>
+<li>未持仓 + 中期偏好：<strong>等！</strong> 在 $90-100 区间分批左侧</li>
+</ul>
+<hr>
+<p>*下一步：5/21 看 NVDA 反应 → 确认 INTC 开盘方向 → 执行轨道 A 或观望等轨道 B 触发；可发&quot;INTC 实际 5/21 开盘 [价位/方向]&quot;以收敛策略。*</p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#交易设置">交易设置</a></li><li><a class="toc-l3" href="#入场计划双轨制">入场计划（双轨制）</a></li><li><a class="toc-l3" href="#仓位管理">仓位管理</a></li><li><a class="toc-l3" href="#止损">止损</a></li><li><a class="toc-l3" href="#止盈目标">止盈目标</a></li><li><a class="toc-l3" href="#持仓管理规则">持仓管理规则</a></li><li><a class="toc-l2" href="#期权替代方案">期权替代方案</a></li><li><a class="toc-l2" href="#关键日期与催化剂">关键日期与催化剂</a></li><li><a class="toc-l2" href="#情景分析">情景分析</a></li><li><a class="toc-l2" href="#入场前清单">入场前清单</a></li><li><a class="toc-l2" href="#综合评估">综合评估</a></li></ul></aside>
+  </main>
+</body>
+</html>

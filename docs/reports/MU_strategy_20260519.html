@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MU LONG 交易策略</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-19.html">← 返回 2026-05-19</a>
+    <p class="eyebrow">Strategy · 2026-05-19</p>
+    <h1>MU LONG 交易策略</h1>
+    <p class="summary">由 <code>data/analyses/MU_strategy_20260519.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>MU LONG 交易策略</h1>
+<p><strong>日期</strong>：2026-05-19（美东盘中）</p>
+<p><strong>方向</strong>：LONG</p>
+<p><strong>当前价格</strong>：$715.80（5/18 收）；ATH $818.67（本月内）；3 个 session 已回调 -11%</p>
+<p><strong>策略类型</strong>：<strong>回调入场 + 催化剂博弈（Samsung 罢工 5/21 + Q3 FY26 财报 6/24）</strong></p>
+<p>&gt; ⚠️ <strong>关键背景</strong>（按美东时区）：</p>
+<p>&gt; - <strong>当前状态</strong>：MU 从 $818.67 ATH 回调 11% → 价格在 $715 形成短期支撑（5/18 day low $715.12）。</p>
+<p>&gt; - <strong>5/20（明日，盘后）</strong>：NVDA Q1 FY27 财报 → HBM 需求温度计，间接影响 MU。</p>
+<p>&gt; - <strong>5/21</strong>：Samsung 50K 工人罢工启动 → MU 直接受益（供给减少 + 价格上行）。</p>
+<p>&gt; - <strong>6/24（盘后）</strong>：MU 自家 Q3 FY26 财报 —— consensus $33.59B 营收 / EPS $19.02 normalized；历史隐含波幅 7.5%。</p>
+<p>&gt; - RSI 65–75（已超买），50-day SMA $479（仍远低于现价 +49%），趋势完好但极度拉伸。</p>
+<hr>
+<h2 id="交易设置">交易设置</h2>
+<h3 id="入场计划">入场计划</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A1. 当前位入场</strong>（回调企稳）</td>
+<td>$710–$735</td>
+<td>价格守住 $715 5/18 低点 + 5/19 美东盘中放量上行</td>
+</tr>
+<tr>
+<td><strong>A2. 深度回踩</strong>（首选 ROI）</td>
+<td>$680–$700</td>
+<td>5/20 NVDA 财报后若情绪转冷，回踩前期突破区</td>
+</tr>
+<tr>
+<td><strong>A3. 突破入场</strong>（追势）</td>
+<td><strong>$762+ 收盘</strong></td>
+<td>重夺 5/14 高点 $776 区域，趋势重启</td>
+</tr>
+<tr>
+<td><strong>加仓位 2</strong></td>
+<td>初始入场 +6%（约 $760–$775）</td>
+<td>趋势确认 + 罢工延续</td>
+</tr>
+<tr>
+<td><strong>不入场红线</strong></td>
+<td>&lt; $660 或单日 -8%</td>
+<td>跌破 5/15 关键支撑 = 整个 setup 破</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：</p>
+<ul>
+<li><strong>$715 是 5/18 day low + 自然回调止跌位</strong>。从 $818 跌至 $715 = 12.6%，已消化短期超买。</li>
+<li><strong>$680–$700 区</strong>：从 ATH 回调 14–17%，对应 5/5–5/8 突破区，是机构补仓位置。</li>
+<li><strong>$762</strong> 是上一波高点 + 突破后再次站稳的确认信号；如果加仓只在突破确认后。</li>
+<li><strong>$660 以下</strong>：意味着 50-day SMA ($479) 上方失去任何中继支撑，结构破。</li>
+</ul>
+<p><strong>最佳入场时机（美东）</strong>：</p>
+<ul>
+<li><strong>5/19 美东 开盘 60 分钟后</strong>：如果 $715 守住且回踩量缩，A1 入场 1/3 ~ 1/2 试仓。</li>
+<li><strong>5/20 NVDA 财报盘后</strong>：观察 MU 盘后反应。NVDA 弱 → 等 A2；NVDA 强 → 5/21 开盘补仓。</li>
+<li><strong>5/21 美东开盘</strong>：Samsung 罢工正式开始日 —— 关键确认窗口。</li>
+<li><strong>避开 6/23 美东最后 1 小时和 6/24 盘前</strong>（财报临近，避免不必要的 IV 风险）。</li>
+</ul>
+<hr>
+<h3 id="仓位管理">仓位管理</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议配置</th>
+<th>最大仓位</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>5–7%（$500–$700）</td>
+<td>0.7–1 股（注意整股下限）</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>6–8%（$3,000–$4,000）</td>
+<td>4–6 股</td>
+</tr>
+<tr>
+<td>$100,000</td>
+<td>7–10%（$7,000–$10,000）</td>
+<td>10–14 股</td>
+</tr>
+</tbody></table></div>
+<p><strong>单笔交易风险</strong>：账户总值的 <strong>1–1.5%</strong>（财报前减仓后此风险预算成立）</p>
+<p><strong>A1 入场 $720，止损 $665 的情况下</strong>：</p>
+<ul>
+<li>$50K 账户 × 1.5% 风险 = $750 风险预算</li>
+<li>$750 / ($720 - $665) = <strong>13 股</strong>（≈ $9,360，对应仓位 18%；按&quot;风险预算 vs 仓位上限取小值&quot;会先触发仓位上限 → <strong>6 股 / $4,320 / 8.6%</strong>）</li>
+</ul>
+<p>&gt; ⚠️ MU 股价高（$700+），整股交易颗粒度较粗，可考虑用 fractional shares 或期权降低名义敞口。</p>
+<hr>
+<h3 id="止损">止损</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>止损类型</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>硬止损</strong></td>
+<td><strong>$665</strong></td>
+<td>-7.6% (A1 $720)；5/14 周低点 + 整数关 $660 之上 buffer</td>
+</tr>
+<tr>
+<td><strong>收盘止损</strong></td>
+<td>$690</td>
+<td>收盘跌破 $700 = 短期支撑失守</td>
+</tr>
+<tr>
+<td><strong>时间止损</strong></td>
+<td><strong>2026-06-13（ET）</strong></td>
+<td>罢工 18 天结束 + 财报前 11 天；若届时未上行，离场避开财报</td>
+</tr>
+<tr>
+<td><strong>追踪止损</strong></td>
+<td>涨 10%（约 $790）后挂 8% trailing</td>
+<td>锁定罢工事件溢价</td>
+</tr>
+</tbody></table></div>
+<p><strong>每股最大亏损</strong>（A1 $720，止损 $665）：$55 / 股（-7.6%）</p>
+<p><strong>每 1 股最大亏损</strong>：$55</p>
+<p><strong>每 6 股最大亏损</strong>（典型 $50K 账户仓位）：$330（账户 0.66% —— 安全）</p>
+<hr>
+<h3 id="止盈目标">止盈目标</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>目标</th>
+<th>价格</th>
+<th>自 $720 涨幅</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>T1（保守）</strong></td>
+<td>$780</td>
+<td>+8.3%</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td><strong>T2（ATH 回踩）</strong></td>
+<td><strong>$820</strong></td>
+<td>+13.9%</td>
+<td>卖出 1/3 仓位；同时减仓至 1/3 准备过财报</td>
+</tr>
+<tr>
+<td><strong>T3（财报后拉伸）</strong></td>
+<td>$880–$920</td>
+<td>+22–28%</td>
+<td>剩余仓位，财报后趋势确认后移动止损</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/回报比</strong>（A1 $720 入场，止损 $665，T2 $820）：<strong>($820-$720)/($720-$665) = 1.8 : 1</strong> ⚠️</p>
+<p><strong>风险/回报比</strong>（A2 $690 入场，止损 $665，T2 $820）：<strong>($820-$690)/($690-$665) = 5.2 : 1</strong> ✅</p>
+<p>&gt; A2 深度回踩入场风险回报最佳；A1 当前位入场需要靠加仓位 2 拉高有效 R/R。</p>
+<hr>
+<h3 id="持仓管理规则">持仓管理规则</h3>
+<p>1. <strong>价格触及 T1（$780）</strong>：止损上移至 <strong>入场价（盈亏平衡）</strong>。</p>
+<p>2. <strong>价格触及 T2（$820）</strong>：止损跟进至 <strong>$780</strong>；累计已卖出 2/3 仓位；<strong>剩余 1/3 决定是否过财报</strong>。</p>
+<p>3. <strong>5/21 美东盘前 Samsung 工会和解传闻</strong>：立即减仓 1/2，等开盘观察方向。</p>
+<p>4. <strong>6/24 财报（必读规则）</strong>：</p>
+<ul>
+<li>默认<strong>减仓至 1/3 以下过财报</strong>（参考 NVDA 策略相同原则）；</li>
+<li>仅保留账户 &lt; 0.5% 风险的&quot;事件 lottery 仓位&quot;过财报；</li>
+<li>财报前如果 IV &gt; 8%（高于历史均值 7.5%），可考虑期权 spread 替代正股。</li>
+</ul>
+<p>5. <strong>横盘 5 个交易日且 NVDA / DRAM 同步走弱</strong>：减仓 1/3，重估论点。</p>
+<p>6. <strong>跌破 $700 收盘</strong>：直接减仓 50%（不等硬止损）。</p>
+<hr>
+<h2 id="期权替代方案">期权替代方案</h2>
+<p>MU 期权流动性深、IV 中性（~50–60%）—— <strong>比 DRAM 期权更适合做结构化交易</strong>。</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>策略</th>
+<th>细节（参考行权与到期，需现场核 IV）</th>
+<th>估算成本</th>
+<th>最大利润</th>
+<th>盈亏平衡</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A. 看涨价差</strong>（首选，事件驱动）</td>
+<td>买 6/20 $730C / 卖 6/20 $800C</td>
+<td>~$25–30 / 张</td>
+<td>$40–45 / 张</td>
+<td>$755–760</td>
+</tr>
+<tr>
+<td><strong>B. 跨财报看涨价差</strong>（持有过财报）</td>
+<td>买 7/18 $750C / 卖 7/18 $850C</td>
+<td>~$35–42 / 张</td>
+<td>$58–65 / 张</td>
+<td>$785–792</td>
+</tr>
+<tr>
+<td><strong>C. 备兑卖出 put</strong>（持仓建仓替代）</td>
+<td>卖 6/20 $680P</td>
+<td>收 ~$15–20 / 张</td>
+<td>$1,500–2,000 / 张</td>
+<td>跌破 $660 被指派</td>
+</tr>
+<tr>
+<td><strong>D. 财报前</strong>：日历价差</td>
+<td>卖 6/20 $750C / 买 7/18 $750C</td>
+<td>~$5–10 净付出</td>
+<td>IV 差获利</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<p><strong>期权使用逻辑</strong>：</p>
+<ul>
+<li>6/20 到期价差<strong>完美卡在财报前</strong> —— 拿到罢工 + NVDA 财报双催化剂，但<strong>避开</strong> MU 自家 6/24 财报 IV crush。</li>
+<li>7/18 价差 = 过财报 lottery，但成本翻倍；只在高信念时用。</li>
+<li><strong>不建议裸 long call</strong>：MU IV 已经偏高，财报前 theta 衰减明显。</li>
+</ul>
+<hr>
+<h2 id="关键日期与催化剂美东时区">关键日期与催化剂（美东时区）</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>预期影响</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-20 (周三, 盘后)</strong></td>
+<td><strong>NVDA Q1 FY27 财报</strong></td>
+<td><strong>极高</strong> —— HBM 需求间接验证，MU 单日可能 ±5%</td>
+</tr>
+<tr>
+<td><strong>2026-05-21 (周四)</strong></td>
+<td><strong>Samsung 罢工启动</strong>（50K 工人 / 18 天）</td>
+<td><strong>极高</strong> —— MU 直接受益（供给冲击 + 价格上行）</td>
+</tr>
+<tr>
+<td>2026-05-21 (周四)</td>
+<td>Fed 5 月会议纪要</td>
+<td>中</td>
+</tr>
+<tr>
+<td>2026-06-04 (周四, 盘后)</td>
+<td>AVGO 财报</td>
+<td>中-高 —— AI ASIC + HBM 间接信号</td>
+</tr>
+<tr>
+<td><strong>2026-06-08 前后</strong></td>
+<td>Samsung 罢工原定结束</td>
+<td>高 —— 延续 vs 和解</td>
+</tr>
+<tr>
+<td>2026-06-17/18</td>
+<td>FOMC 6 月会议</td>
+<td>中-高</td>
+</tr>
+<tr>
+<td>2026-06-20 (周五)</td>
+<td>月度期权到期</td>
+<td>高 —— A 方案到期日</td>
+</tr>
+<tr>
+<td><strong>2026-06-24 (周三, 盘后)</strong></td>
+<td><strong>MU Q3 FY26 财报</strong> —— consensus $33.59B / EPS $19.02</td>
+<td><strong>极高</strong> —— 隐含波幅 ~7.5%，binary</td>
+</tr>
+<tr>
+<td>2026-07-18 (周五)</td>
+<td>月度期权到期</td>
+<td>中 —— B 方案到期日</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="情景分析">情景分析</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>情景</th>
+<th>概率</th>
+<th>6 月底 / 财报后价格</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>多头</strong>：罢工 ≥ 14 天 + 财报 beat-and-raise（FY27 指引 $36B+）</td>
+<td>30%</td>
+<td>$880–$950</td>
+<td>T3 拉伸；财报前减仓至 1/3 仍能吃事件红利</td>
+</tr>
+<tr>
+<td><strong>基准</strong>：罢工 7–14 天，财报 in-line</td>
+<td>40%</td>
+<td>$780–$840</td>
+<td>T1/T2 兑现；财报前减仓避免 IV crush</td>
+</tr>
+<tr>
+<td><strong>空头-1</strong>：罢工 &lt; 5 天和解 + NVDA 5/20 财报弱</td>
+<td>20%</td>
+<td>$660–$700</td>
+<td>触发 $665 止损</td>
+</tr>
+<tr>
+<td><strong>空头-2</strong>：MU 6/24 财报指引不及 / 毛利率不达预期</td>
+<td>10%</td>
+<td>$620–$680</td>
+<td>财报前已减仓，剩余仓位 -10–15%</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="入场前清单">入场前清单</h2>
+<ul>
+<li>[ ] <strong>5/19 美东不在第一小时内追涨</strong>，等 $715 守住量缩信号</li>
+<li>[ ] <strong>5/20 NVDA 财报后</strong>评估 MU 盘后反应再决定 5/21 加仓节奏</li>
+<li>[ ] 价格已抵达 A1（$710–$735）/ A2（$680–$700）/ A3（$762+）任一区间</li>
+<li>[ ] Samsung 工会<strong>未在 5/20–5/21 突然和解</strong>（盘前查标题）</li>
+<li>[ ] 仓位计算 = min(账户 × 1.5% / (入场 - 止损), 仓位上限 10%)</li>
+<li>[ ] 止损单已挂（硬止损 $665 GTC）</li>
+<li>[ ] <strong>6/13 时间止损 + 6/24 财报前减仓至 1/3</strong> 写入日历提醒</li>
+<li>[ ] 备用期权方案准备（6/20 价差用于事件型仓位，7/18 用于跨财报）</li>
+</ul>
+<hr>
+<p><strong>策略信念分</strong>：<strong>7.5/10</strong></p>
+<ul>
+<li>加分：罢工 + NVDA + 财报三催化剂叠加；MU 已从 ATH 回调 11% 释放短期超买；分析师共识仍持续上修；HBM 售罄确定性极高</li>
+<li>减分：50-day SMA 远在 $479（趋势已极致拉伸）；财报前 IV 风险；过去一周 +38% 后任何宏观风险都会放大回吐</li>
+</ul>
+<p><strong>最优结果</strong>：5–6 周内 <strong>+22% 至 +28%</strong>（罢工延续 + 财报 beat-and-raise + 趋势重启）</p>
+<p><strong>最差结果（被止损）</strong>：A1 入场 -7.6%；A2 入场 -3.6%（受控亏损）</p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#交易设置">交易设置</a></li><li><a class="toc-l3" href="#入场计划">入场计划</a></li><li><a class="toc-l3" href="#仓位管理">仓位管理</a></li><li><a class="toc-l3" href="#止损">止损</a></li><li><a class="toc-l3" href="#止盈目标">止盈目标</a></li><li><a class="toc-l3" href="#持仓管理规则">持仓管理规则</a></li><li><a class="toc-l2" href="#期权替代方案">期权替代方案</a></li><li><a class="toc-l2" href="#关键日期与催化剂美东时区">关键日期与催化剂（美东时区）</a></li><li><a class="toc-l2" href="#情景分析">情景分析</a></li><li><a class="toc-l2" href="#入场前清单">入场前清单</a></li></ul></aside>
+  </main>
+</body>
+</html>

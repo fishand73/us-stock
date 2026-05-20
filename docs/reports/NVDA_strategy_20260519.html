@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVDA LONG 交易策略</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    (function () {
+      try {
+        var k = "us-stock-theme";
+        var s = localStorage.getItem(k);
+        var t = s || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换主题">☾ 深色</button>
+  <header class="detail-header">
+    <a class="back-link" href="../dates/2026-05-19.html">← 返回 2026-05-19</a>
+    <p class="eyebrow">Strategy · 2026-05-19</p>
+    <h1>NVDA LONG 交易策略</h1>
+    <p class="summary">由 <code>data/analyses/NVDA_strategy_20260519.md</code> 生成。</p>
+  </header>
+  <main class="detail-layout">
+    <article class="detail-content">
+<h1>NVDA LONG 交易策略</h1>
+<p><strong>日期</strong>：2026-05-19（财报 T-1 日）</p>
+<p><strong>方向</strong>：LONG</p>
+<p><strong>当前价格</strong>：$225.83</p>
+<p><strong>策略类型</strong>：<strong>催化剂博弈 + 财报后趋势确认（双轨）</strong></p>
+<p>&gt; ⚠️ <strong>关键背景</strong>：明天（5/20）盘后是 Q1 FY27 财报，期权暗示 ±7–9%（约 $16–20）波幅。本策略<strong>默认主战场在财报后</strong>，以正股趋势单为主，事件日仅用受限风险的期权 lottery ticket。<strong>不建议用正股满仓裸抗财报。</strong></p>
+<hr>
+<h2 id="交易设置">交易设置</h2>
+<h3 id="入场计划">入场计划</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>触发类型</th>
+<th>价格水位</th>
+<th>条件</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A. 财报前正股</strong>（不推荐）</td>
+<td>$222–$226</td>
+<td>仅限&quot;已持有&quot;的仓位继续滚动；新建议跳过</td>
+</tr>
+<tr>
+<td><strong>B1. 财报后突破入场</strong>（首选）</td>
+<td>财报次日 ≥ $245 且收盘站稳</td>
+<td>beat-and-raise，趋势确认，追涨</td>
+</tr>
+<tr>
+<td><strong>B2. 财报后回踩入场</strong>（首选）</td>
+<td>$205–$212</td>
+<td>beat 但被卖出（IV crush 拖累）/ 50 日 SMA 区域回踩</td>
+</tr>
+<tr>
+<td><strong>C. 加仓位 2</strong></td>
+<td>较 B1/B2 入场价 +5–7% 且无破位</td>
+<td>趋势延续后金字塔加仓</td>
+</tr>
+<tr>
+<td><strong>D. 失败止损补充入场</strong></td>
+<td>$185–$190（200 日 SMA）</td>
+<td>仅用于深度承接，需要看到成交量缩量企稳</td>
+</tr>
+</tbody></table></div>
+<p><strong>入场逻辑</strong>：</p>
+<ul>
+<li>$245 之上 = 公司指引 Q2 &gt; $85B 的&quot;双 beat-and-raise&quot;信号，趋势重启。</li>
+<li>$205–$212 = 50 日 SMA + 5/18 低点附近，<strong>最佳风险回报区</strong>。</li>
+<li>$185–$190 = 200 日 SMA，逻辑级支撑；若被击穿，整个 AI 板块趋势作废。</li>
+</ul>
+<p><strong>最佳入场时机</strong>：</p>
+<ul>
+<li><strong>5/21 美东开盘 30 分钟后</strong>（避开开盘搏杀和电子盘虚高），让财报结果在现金市场充分消化。</li>
+<li>不建议<strong>财报当日（5/20）盘中追涨</strong>，IV 已经 pricing in 大部分预期。</li>
+</ul>
+<hr>
+<h3 id="仓位管理">仓位管理</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>账户规模</th>
+<th>建议配置</th>
+<th>最大仓位</th>
+</tr></thead><tbody>
+<tr>
+<td>$10,000</td>
+<td>5–8%（$500–$800）</td>
+<td>2–3 股</td>
+</tr>
+<tr>
+<td>$50,000</td>
+<td>6–10%（$3,000–$5,000）</td>
+<td>13–22 股</td>
+</tr>
+<tr>
+<td>$100,000</td>
+<td>8–12%（$8,000–$12,000）</td>
+<td>35–53 股</td>
+</tr>
+</tbody></table></div>
+<p><strong>单笔交易风险</strong>：账户总值的 <strong>1–1.5% 上限</strong>（事件后高波动，下调风险预算）</p>
+<p><strong>入场 $210，止损 $192 的情况下</strong>：</p>
+<ul>
+<li>$50K 账户 × 1.5% 风险 = $750 风险预算</li>
+<li>$750 / ($210 - $192) = <strong>41 股</strong></li>
+</ul>
+<hr>
+<h3 id="止损">止损</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>止损类型</th>
+<th>价位</th>
+<th>逻辑</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>硬止损</strong></td>
+<td>$192</td>
+<td>200 日 SMA $185.44 + buffer，长期趋势防线</td>
+</tr>
+<tr>
+<td><strong>收盘止损</strong></td>
+<td>$205</td>
+<td>B2 入场情况下的当日收盘止损</td>
+</tr>
+<tr>
+<td><strong>时间止损</strong></td>
+<td>2026-06-20</td>
+<td>财报后 1 个月未上行 → 论点失效，离场</td>
+</tr>
+<tr>
+<td><strong>追踪止损</strong></td>
+<td>价格上涨 10% 后挂 8% trailing</td>
+<td>锁定利润</td>
+</tr>
+</tbody></table></div>
+<p><strong>每 100 股最大亏损</strong>（B2 入场 $210，止损 $192）：$1,800（-8.6%）</p>
+<hr>
+<h3 id="止盈目标">止盈目标</h3>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>目标</th>
+<th>价格</th>
+<th>自 $210 涨幅</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>T1（保守）</strong></td>
+<td>$245</td>
+<td>+16.7%</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td><strong>T2（基准 = 分析师 PT 均值）</strong></td>
+<td>$270</td>
+<td>+28.6%</td>
+<td>卖出 1/3 仓位</td>
+</tr>
+<tr>
+<td><strong>T3（拉伸 / 全垒打）</strong></td>
+<td>$300+</td>
+<td>+43%</td>
+<td>剩余仓位移动止损</td>
+</tr>
+</tbody></table></div>
+<p><strong>风险/回报比</strong>（自 $210 入场，止损 $192，T2 $270）：<strong>3.3 : 1</strong> ✅</p>
+<hr>
+<h3 id="持仓管理规则">持仓管理规则</h3>
+<p>1. <strong>价格触及 T1（$245）</strong>：止损上移至 <strong>$210（盈亏平衡）</strong>。</p>
+<p>2. <strong>价格触及 T2（$270）</strong>：止损跟进至 <strong>$245</strong>；累计已卖出 2/3 仓位。</p>
+<p>3. <strong>财报次日（5/21）即触发止损</strong>：全额止损，<strong>不做加仓摊低</strong>——财报破位是结构性事件，不是抖动。</p>
+<p>4. <strong>横盘超过 5 个交易日且无催化剂</strong>：减仓 1/3，重新评估论点（看 AI 板块宽度、SMH、AVGO 等）。</p>
+<p>5. <strong>临近下一财报（2026-08）</strong>：<strong>T2 之前减仓至 1/3 以下过财报</strong>；本策略本身已经在做财报后入场，不再过下一次财报全仓。</p>
+<hr>
+<h2 id="期权替代方案重点财报日-binary-play">期权替代方案（重点：财报日 binary play）</h2>
+<p>明天财报是受限风险结构的最佳应用场景。三种结构按风险递增：</p>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>策略</th>
+<th>细节</th>
+<th>成本（参考）</th>
+<th>最大利润</th>
+<th>盈亏平衡</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>A. 买入看涨价差</strong>（保守）</td>
+<td>买 5/22 $230C / 卖 $250C</td>
+<td>~$6 / 张</td>
+<td>$14 / 张（+233%）</td>
+<td>$236</td>
+</tr>
+<tr>
+<td><strong>B. 跨周看涨价差</strong>（首选）</td>
+<td>买 6/20 $235C / 卖 $270C</td>
+<td>~$10–12 / 张</td>
+<td>$23–25 / 张</td>
+<td>$245–247</td>
+</tr>
+<tr>
+<td><strong>C. Long call</strong>（激进）</td>
+<td>买 6/20 $240C</td>
+<td>~$8–10 / 张</td>
+<td>无限</td>
+<td>$248–250</td>
+</tr>
+</tbody></table></div>
+<p><strong>期权使用逻辑</strong>：</p>
+<ul>
+<li>IV 抬升（IVR 61，30-day IV 44–47%）= <strong>裸 long call 不划算</strong>，IV crush 会吃掉 1/3 价值。</li>
+<li><strong>优先用价差（call spread）锁定 IV crush 风险</strong>，卖出更高行权价的 call 来对冲。</li>
+<li>财报后第二天，如果方向对了，<strong>5/22 短期 spread 可以拿到 200%+</strong>；如果错了，最多亏权利金。</li>
+<li>仓位：单张价差权利金 ≤ 账户 0.5%（这是 lottery ticket，不是核心仓位）。</li>
+</ul>
+<hr>
+<h2 id="关键日期与催化剂">关键日期与催化剂</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>日期</th>
+<th>事件</th>
+<th>预期影响</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>2026-05-20（明日）</strong></td>
+<td><strong>NVDA Q1 FY27 财报</strong>（盘后 5pm ET）</td>
+<td><strong>极高波幅 ±7–9%</strong>；IV crush 50%+</td>
+</tr>
+<tr>
+<td>2026-05-21</td>
+<td>财报后首日交易</td>
+<td>趋势确认日；首选入场窗口</td>
+</tr>
+<tr>
+<td>2026-05-21</td>
+<td>Fed 5 月会议纪要</td>
+<td>利率敏感度高</td>
+</tr>
+<tr>
+<td>2026-06-04</td>
+<td>AVGO 财报</td>
+<td>AI ASIC 竞争温度计</td>
+</tr>
+<tr>
+<td>2026-06-17–18</td>
+<td>FOMC 6 月会议</td>
+<td>加息预期催化（45% 概率）</td>
+</tr>
+<tr>
+<td>2026-06-20</td>
+<td>月度期权到期</td>
+<td>价差结构到期日</td>
+</tr>
+<tr>
+<td>2026-07-16</td>
+<td>TSM 财报</td>
+<td>上游产能验证 NVDA 出货</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="情景分析">情景分析</h2>
+<div class="table-wrap detail-table"><table><thead><tr>
+<th>情景</th>
+<th>概率</th>
+<th>5/21 开盘价格</th>
+<th>操作</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>多头情景</strong>：Q2 指引 &gt; $85B + 中国 H200 首批确认</td>
+<td>25%</td>
+<td>跳空 $245+</td>
+<td>B1 追涨入场，目标 T3 $300+</td>
+</tr>
+<tr>
+<td><strong>基准情景</strong>：beat + 指引 in-line（$80–84B）</td>
+<td>50%</td>
+<td>$215–$240 区间震荡</td>
+<td>B2 回踩 $210–$212 入场，目标 T2 $270</td>
+</tr>
+<tr>
+<td><strong>空头情景</strong>：指引不及（&lt; $80B）或毛利率下修</td>
+<td>20%</td>
+<td>跌至 $200–$210</td>
+<td><strong>观望</strong>，等 200 日 SMA 测试</td>
+</tr>
+<tr>
+<td><strong>黑天鹅</strong>：中国 H200 政策反转 / 重大下修</td>
+<td>5%</td>
+<td>跌穿 $185</td>
+<td><strong>不入场</strong>，整个 AI 板块趋势作废</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="入场前清单">入场前清单</h2>
+<ul>
+<li>[ ] <strong>明天 5/20 盘前不开新仓</strong>（等财报）</li>
+<li>[ ] 5/21 等开盘 30 分钟后再做决策（避开 IV-crush 噪音）</li>
+<li>[ ] 价格已抵达 / 接近 B1（$245+）或 B2（$205–$212）水位</li>
+<li>[ ] 成交量已确认（财报次日通常 3–5× 均量）</li>
+<li>[ ] 已计算仓位 = (账户 × 1.5%) / (入场 - 止损)</li>
+<li>[ ] <strong>下一个重大事件（FOMC 6/17）已计入仓位周期</strong></li>
+<li>[ ] 止损单挂出 + 双向退出方案明确</li>
+<li>[ ] 期权 spread 的对冲腿已同时挂出（如使用期权方案）</li>
+</ul>
+<hr>
+<p><strong>策略信念分</strong>：<strong>7/10</strong></p>
+<ul>
+<li>多头基本面强（Blackwell 平台切换完成、PEG 0.68、$50B 中国期权），技术面长期完好</li>
+<li>扣 3 分：明天财报 binary、估值已 price in 大部分多头预期、定制 ASIC 蚕食边际可见</li>
+</ul>
+<p><strong>最优结果</strong>：6–8 周内 +28–43%（至 T2/T3 区间）</p>
+<p><strong>最差结果（被止损）</strong>：-8.6%（B2 入场情景下的受控亏损）</p>
+    </article>
+<aside class="toc" aria-label="目录"><h2>本页目录</h2><ul><li><a class="toc-l2" href="#交易设置">交易设置</a></li><li><a class="toc-l3" href="#入场计划">入场计划</a></li><li><a class="toc-l3" href="#仓位管理">仓位管理</a></li><li><a class="toc-l3" href="#止损">止损</a></li><li><a class="toc-l3" href="#止盈目标">止盈目标</a></li><li><a class="toc-l3" href="#持仓管理规则">持仓管理规则</a></li><li><a class="toc-l2" href="#期权替代方案重点财报日-binary-play">期权替代方案（重点：财报日 binary play）</a></li><li><a class="toc-l2" href="#关键日期与催化剂">关键日期与催化剂</a></li><li><a class="toc-l2" href="#情景分析">情景分析</a></li><li><a class="toc-l2" href="#入场前清单">入场前清单</a></li></ul></aside>
+  </main>
+</body>
+</html>
